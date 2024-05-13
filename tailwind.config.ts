@@ -7,12 +7,44 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "1rem",
+    },
+    screens: {
+      xs: "450px",
+      // => @media (min-width: 450px) { ... }
+
+      sm: "575px",
+      // => @media (min-width: 576px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "992px",
+      // => @media (min-width: 992px) { ... }
+
+      xl: "1200px",
+      // => @media (min-width: 1200px) { ... }
+
+      "2xl": "1400px",
+      // => @media (min-width: 1400px) { ... }
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+     colors: {
+      current: "currentColor",
+      transparent: "transparent",
+      black: "#222222",
+      davy_grey: "#555555",
+      yellow_tan: "#FDE179",
+      seafoam_blue: "#73CFA8",
+      dark_jungle_green: "#222222",
+      crystal_blue: "#73B1FF",
+      white: "#FFFFFF",
+      quaternary:"#FDE077",
+
+     }
+
     },
   },
   plugins: [],
