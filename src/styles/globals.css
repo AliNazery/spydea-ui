@@ -30,6 +30,88 @@ body {
     line-height: 1.625;
     --tw-text-opacity: 1;
     color: rgb(85 85 85 / var(--tw-text-opacity));
+    
+}
+
+.btn-primary {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: .375rem;
+  padding: 13px 1.75rem;
+  font-size: 15px;
+  font-weight: 600;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .2s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Merriweather, sans-serif;
+  font-weight: 700;
+  line-height: 1.375;
+  --tw-text-opacity: 1;
+  color: rgb(34 34 34 / var(--tw-text-opacity));
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+  display: block;
+  vertical-align: middle;
+}
+
+btn.btn-sm {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+@media (min-width: 575px) {
+  .btn.btn-sm {
+      padding-top: 15px;
+      padding-bottom: 15px;
+  }
+}
+
+.btn-outline-primary {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.btn {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: .375rem;
+  padding: 13px 1.75rem;
+  font-size: 15px;
+  font-weight: 600;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .2s;
+}
+
+@layer components{
+  /* .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition-property: padding;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s;
+} */
 }
 
 @media (min-width: 1024px) {
