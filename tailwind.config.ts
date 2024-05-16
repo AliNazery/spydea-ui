@@ -42,6 +42,7 @@ const config: Config = {
       crystal_blue: "#73B1FF",
       white: "#FFFFFF",
       quaternary:"#FDE077",
+      geraldine: "#FB9289"
       
 
      }

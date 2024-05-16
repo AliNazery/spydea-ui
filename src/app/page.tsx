@@ -11,6 +11,7 @@ import Main from "@/components/Hero/Main";
 import MLayout from "@/components/MLayout/MLayout";
 import Brands from "@/components/Brands/Brands";
 import Features from "@/components/Features/Features";
+import Experience from "@/components/Experience/Experience";
 
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function Home() {
         <Hero/>
         <Brands/>
         <Features/>
+        <Experience/>
         {/* <Main/> */}
     </main>
   );

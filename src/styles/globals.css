@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,6 +34,17 @@ body {
     --tw-text-opacity: 1;
     color: rgb(85 85 85 / var(--tw-text-opacity));
     
+}
+
+
+body {
+  --tw-bg-opacity: 1;
+  /* background-color: rgb(255 255 255 / var(--tw-bg-opacity)); */
+  font-family: Maven Pro, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+  --tw-text-opacity: 1;
+  color: rgb(85 85 85 / var(--tw-text-opacity));
 }
 
 .btn-primary {
@@ -123,5 +137,11 @@ btn.btn-sm {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media (min-width: 768px) {
+  .h2, h2 {
+      font-size: 2.28886641rem;
   }
 }
