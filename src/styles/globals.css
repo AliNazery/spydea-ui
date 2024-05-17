@@ -103,6 +103,17 @@ btn.btn-sm {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
+.link-animation {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fcf5de, #000);
+  background-size: 0 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .4s cubic-bezier(.42,0,.36,.96);
+}
+.link-animation:hover {
+  background-size: 100% 2px;
+}
 
 .btn {
   display: inline-block;
@@ -144,4 +155,29 @@ btn.btn-sm {
   .h2, h2 {
       font-size: 2.28886641rem;
   }
+}
+
+
+
+.feature.triangle-up::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 253 255 / var(--tw-bg-opacity));
+  content: "";
+}
+
+.feature.triangle-down:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 253 255 / var(--tw-bg-opacity));
+  --tw-content: "";
+  content: var(--tw-content);
 }

@@ -12,6 +12,10 @@ import MLayout from "@/components/MLayout/MLayout";
 import Brands from "@/components/Brands/Brands";
 import Features from "@/components/Features/Features";
 import Experience from "@/components/Experience/Experience";
+import Acheivement from "@/components/Acheivment/Acheivement";
+import Footer from "@/components/Footer/Footer";
+import Innovative from "@/components/Innovative/Innovative";
+import Article from "@/components/Article/Article";
 
 
 export const metadata: Metadata = {
@@ -31,7 +35,11 @@ export default function Home() {
         <Brands/>
         <Features/>
         <Experience/>
+        <Acheivement/>
+        <Innovative/>
+        <Article/>
         {/* <Main/> */}
+        <Footer/>
     </main>
   );
 }

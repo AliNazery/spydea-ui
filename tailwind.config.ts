@@ -31,6 +31,22 @@ const config: Config = {
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
+      backgroundColor: {
+        'white': 'rgba(255, 255, 255, 1)', // Set your custom background color and opacity here
+        'custom-blue': 'rgba(115, 177, 255, 0.1)',
+        'custom-red': 'hsla(5, 93%, 76%, 0.1)',
+        'theme-light': 'rgba(243, 240, 240, var(--tw-bg-opacity))',
+      },
+      fontFamily: {
+        'secondary': ['Merriweather', 'sans-serif'],
+        'primary': ['Maven Pro', 'sans-serif'],
+      },
+      boxShadow: {
+        'default': '0 15px 60px rgba(0, 0, 0, .06)',
+      },
+      content:{
+        'wama':'url("/images/logo/logo.png")',
+      },
      colors: {
       current: "currentColor",
       transparent: "transparent",
@@ -42,7 +58,8 @@ const config: Config = {
       crystal_blue: "#73B1FF",
       white: "#FFFFFF",
       quaternary:"#FDE077",
-      geraldine: "#FB9289"
+      geraldine: "#FB9289",
+      dark : "rgb(34 34 34 / 1)",
       
 
      }
