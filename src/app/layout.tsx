@@ -1,6 +1,10 @@
 import MLayout from "@/components/MLayout/MLayout";
+import Announcement from "@/components/announcement/Announcement";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import '../styles/globals.css'
+import Navbar from "./Navber";
+import Footer from "@/components/Footer/Footer";
 // import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Announcement/>
+        <Navbar/>
           {children}
+        <Footer/>
         </body>
     </html>
   );

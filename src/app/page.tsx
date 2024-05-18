@@ -26,10 +26,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-        <Announcement/>
+        {/* <Announcement/> */}
         {/* <MHeader/> */}
         {/* <Header/> */}
-        <Navber/>
+        {/* <Navber/> */}
         {/* <Section/> */}
         <Hero/>
         <Brands/>
@@ -39,7 +39,7 @@ export default function Home() {
         <Innovative/>
         <Article/>
         {/* <Main/> */}
-        <Footer/>
+        {/* <Footer/> */}
     </main>
   );
 }

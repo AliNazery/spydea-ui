@@ -47,7 +47,9 @@ export default function Footer() {
                         </div>
                         <div className="hidden lg:col-5 xl:col-6 lg:block">
                             <div className="cta-clip-path relative" data-aos="fade-right-md">
+                                {/* <div className='absolute -z-10 h-[250px] w-[250px] custom-bg-opacity custom-content absolute left-[20%] top-[5%] custom-bg-opacity custom-content'> */}
                                 <img alt="banner image" loading="lazy" width="470" height="484" decoding="async" data-nimg="1" className="mx-auto block transparent"  src="../images/footer/cta-image-1.png"/>
+                                {/* </div> */}
                             </div>
                         </div>
                     </div>
@@ -152,10 +154,10 @@ export default function Footer() {
                 </div>
             </div>
             <div data-aos="fade-in" data-aos-delay="50" className="container relative z-30 pt-[80px] lg:pt-[130px] ">
-                <div className="row items-center justify-center pb-10 lg:justify-between">
+                <div className="flex flex-wrap items-center justify-center pb-10 lg:justify-between">
                     <div className="col-auto">
                         <a href="index.html">
-                            <img alt="spydea" loading="lazy" width="164" height="38" decoding="async" data-nimg="1" className='transparent' src=""/>
+                            <img alt="spydea" loading="lazy" width="164" height="38" decoding="async" data-nimg="1" className='transparent' src="../images/footer/logo-light.png"/>
                         </a>
                     </div>
                     <div className="pt-10 lg:col-6 lg:pt-0">
@@ -166,69 +168,69 @@ export default function Footer() {
                     </div>
                 </div>
                 <hr className="h-[1px] border-0 border-b border-light/20 border-opacity-30 bg-transparent"/>
-                <div className="row gy-5 py-7 text-center lg:g-4 sm:py-14 sm:text-left">
-                    <div className="sm:col-6 md:col-4 lg:col-3 xl:col-3">
+                <div className="flex flex-wrap gy-5 py-7 text-center lg:g-4 sm:py-14 sm:text-left">
+                    <div className="sm:col-6 md:col-4 lg:flex-none w-1/4 xl:flex-none w-1/4">
                         <div className="widget lg:pl-16">
-                            <h3 className="widget-title">Company</h3>
-                            <ul className="widget-content">
+                            <h3 className="mb-8">Company</h3>
+                            <ul className="flex flex-col gap-6">
                                 <li>
-                                    <a href="/about">About us</a>
+                                    <a href="/about" className='hover:underline hover:underline-offset-4'>About us</a>
                                 </li>
                                 <li>
-                                    <a href="/contact">Contact us</a>
+                                    <a href="/contact" className='hover:underline hover:underline-offset-4'>Contact us</a>
                                 </li>
                                 <li>
-                                    <a href="/pricing">Pricing</a>
+                                    <a href="/pricing" className='hover:underline hover:underline-offset-4'>Pricing</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div className="sm:col-6 md:col-4 lg:col-2 xl:col-2">
+                    <div className="sm:col-6 md:col-4 lg:flex-none w-1/6 xl:flex-none w-1/6">
                         <div className="widget pl-0">
-                            <h3 className="widget-title">Resources</h3>
-                            <ul className="widget-content">
+                            <h3 className=" mb-8">Resources</h3>
+                            <ul className="flex flex-col gap-6">
                                 <li>
-                                    <a href="/blog">Blog</a>
+                                    <a href="/blog" className='hover:underline hover:underline-offset-4'>Blog</a>
                                 </li>
                                 <li>
-                                    <a href="/career">Career</a>
+                                    <a href="/career"className='hover:underline hover:underline-offset-4'>Career</a>
                                 </li>
                                 <li>
-                                    <a href="/terms-conditions">Terms &amp;Conditions</a>
+                                    <a href="/terms-conditions" className='hover:underline hover:underline-offset-4'>Terms &amp;Conditions</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div className="sm:col-6 md:col-4 lg:col-4 xl:col-3">
+                    <div className="sm:col-6 md:col-4 lg:flex-none w-1/3 xl:col-3">
                         <div className="widget lg:pl-8">
-                            <h3 className="widget-title">Email</h3>
+                            <h3 className="mb-8">Email</h3>
                             <div className="mx-auto -mt-1 mb-4 w-fit text-[22px] font-bold text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
                                 <a href="mailto:hello@themefisher.com">hello@themefisher.com</a>
                             </div>
-                            <ul className="social-icons justify-center sm:justify-start">
-                                <li>
-                                    <a className="inline-block" aria-label="FaFacebook" href="https://facebook.com/" target="_blank" rel="noopener noreferrer nofollow">
+                            <ul className="flex flex-wrap items-center gap-4 font-merriweather justify-center sm:justify-start">
+                                <li className='inline-block text-white'>
+                                    <a className="inline-block h-[45px] w-[45px] transform-none rounded-full bg-[rgba(34,34,34,0.9)] text-center text-base leading-[45px] transition-transform ease-out duration-300" aria-label="FaFacebook" href="https://facebook.com/" target="_blank" rel="noopener noreferrer nofollow">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="inline-block" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a className="inline-block" aria-label="FaSkype" href="https://skype.com/" target="_blank" rel="noopener noreferrer nofollow">
+                                <li className='inline-block text-white'>
+                                    <a className="inline-block h-[45px] w-[45px] transform-none rounded-full bg-[rgba(34,34,34,0.9)] text-center text-base leading-[45px] transition-transform ease-out duration-300" aria-label="FaSkype" href="https://skype.com/" target="_blank" rel="noopener noreferrer nofollow">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="inline-block" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"></path>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a className="inline-block" aria-label="FaTwitter" href="https://twitter.com/" target="_blank" rel="noopener noreferrer nofollow">
+                                <li className='inline-block text-white'>
+                                    <a className="inline-block h-[45px] w-[45px] transform-none rounded-full bg-[rgba(34,34,34,0.9)] text-center text-base leading-[45px] transition-transform ease-out duration-300" aria-label="FaTwitter" href="https://twitter.com/" target="_blank" rel="noopener noreferrer nofollow">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="inline-block" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a className="inline-block" aria-label="FaLinkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer nofollow">
+                                <li className='inline-block text-white'>
+                                    <a className="inline-block h-[45px] w-[45px] transform-none rounded-full bg-[rgba(34,34,34,0.9)] text-center text-base leading-[45px] transition-transform ease-out duration-300" aria-label="FaLinkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer nofollow">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="inline-block" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
                                         </svg>
@@ -237,9 +239,9 @@ export default function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <div className="sm:col-6 md:col-6 lg:col-3 xl:col-3">
+                    <div className="sm:col-6 md:col-6 lg:flex-none w-1/4 xl:flex-none w-1/4">
                         <div className="xl:pl-16">
-                            <h3 className="widget-title">Call US</h3>
+                            <h3 className="mb-8">Call US</h3>
                             <div className="mx-auto -mt-1 w-fit text-[22px] font-bold text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
                                 <a href="tel:+94746-388817">+94746-388817</a>
                             </div>
@@ -247,7 +249,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <hr className="h-[1px] border-0 border-b border-light/20 border-opacity-30 bg-transparent"/>
-                <p className="copyright">
+                <p className="pt-12 pb-12 text-center text-[15px] leading-[1.625] text-white/50">
                     2023 Design and Developed by <a href="https://themefisher.com/">Themefisher</a>
                 </p>
             </div>

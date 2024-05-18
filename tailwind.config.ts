@@ -36,10 +36,12 @@ const config: Config = {
         'custom-blue': 'rgba(115, 177, 255, 0.1)',
         'custom-red': 'hsla(5, 93%, 76%, 0.1)',
         'theme-light': 'rgba(243, 240, 240, var(--tw-bg-opacity))',
+        'theme-dark': 'rgba(0, 0, 0, var(--tw-bg-opacity))',
       },
       fontFamily: {
         'secondary': ['Merriweather', 'sans-serif'],
         'primary': ['Maven Pro', 'sans-serif'],
+        'merriweather': ['Merriweather', 'sans-serif'],
       },
       boxShadow: {
         'default': '0 15px 60px rgba(0, 0, 0, .06)',

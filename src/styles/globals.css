@@ -127,6 +127,28 @@ btn.btn-sm {
   transition-duration: .2s;
 }
 
+.btn-outline-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.btn-primary:hover {
+  --tw-bg-opacity: 0.8;
+}
+
+@layer components {
+  .custom-bg-opacity {
+    --tw-bg-opacity: 1;
+    background-color: rgba(115, 177, 255, var(--tw-bg-opacity));
+  }
+  
+  .custom-content {
+    content: var(--tw-content);
+    --tw-content: "";
+  }
+}
+
 @layer components{
   /* .navbar {
     display: flex;
@@ -180,4 +202,21 @@ btn.btn-sm {
   background-color: rgb(244 253 255 / var(--tw-bg-opacity));
   --tw-content: "";
   content: var(--tw-content);
+}
+
+.widget-title {
+  margin-bottom: 1rem;
+  font-family: Maven Pro, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+
+@layer components{
+  
+.social-icons li a{
+  @apply inline-block h-[45px] w-[45px] transform-none rounded-full bg-[rgba(34,34,34,0.9)] text-center text-base leading-[45px] transition-transform ease-out duration-300;
+}
 }
