@@ -1,0 +1,23 @@
+/* src/styles/base.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: inherit;
+    font-weight: inherit
+}
+@layer base{
+    a{
+      @apply bg-transparent text-inherit no-underline
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Merriweather, sans-serif;
+    font-weight: 700;
+    line-height: 1.375;
+    --tw-text-opacity: 1;
+    color: rgb(34 34 34 / var(--tw-text-opacity));
+  }

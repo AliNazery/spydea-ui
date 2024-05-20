@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navbar-brand img {
+      @apply max-h-full w-130px max-w-full;
+    }
+  
+    .media-element {
+      @apply max-w-full h-auto;
+    }
+  
+    .media-display {
+      @apply block align-middle;
+    }
+   
+  }
+
+
+  @layer components{
+  
+    .social-icons li a{
+      @apply inline-block h-[45px] w-[45px] transform-none rounded-full bg-[rgba(34,34,34,0.9)] text-center text-base leading-[45px] transition-transform ease-out duration-300;
+    }
+    .row{
+      @apply flex flex-wrap -mx-6 -mt-0 ;
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0; 
+        margin-top: calc(var(--bs-gutter-y) * -1); 
+        margin-right: calc(var(--bs-gutter-x) / -2); 
+        margin-left: calc(var(--bs-gutter-x) / -2);
+    }
+    .col{
+      @apply pr-6 pl-6 mt-0
+    }
+    .btn-primary{
+      @apply border border-black bg-black text-white
+    }
+    .btn-outline-primary {
+      @apply border border-black bg-white text-black
+    }
+    .btn {
+      @apply inline-block whitespace-nowrap rounded-lg px-7 py-[13px] text-[15px] font-semibold transition-colors duration-200
+
+    }
+    /* .custom.btn{
+      @apply @pply inline-block whitespace-nowrap rounded-md px-7 py-[13px] text-[15px] font-semibold transition-colors transition-bg transition-border transition-all duration-200 ease-in-out 
+    } */
+    .btn.btn-sm {
+      @apply pl-10 pr-10 ;
+      sm:pt-15;
+      sm:pb-15
+    }
+
+    .header{
+      @apply sticky top-0 transition-colors duration-200
+    }
+    /* .link-animation {
+      @apply border-b-0 bg-gradient-to-b from-transparent to-transparent, bg-gradient-to-b from-fcf5de to-black bg-no-repeat bg-bottom bg-0/2px transition-background-size duration-400 ease-in-out
+    } */
+    .nav-dropdown-link {
+     @apply block w-full p-1 px-4  text-[15px] font-normal transition-colors transition-opacity transition-shadow transition-transform duration-150 ease-in-out py-2
+    }
+}

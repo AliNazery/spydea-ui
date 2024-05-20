@@ -1,49 +1,190 @@
-import React from 'react'
+"use client";
+import Link from "next/link";
+import { useState , useEffect} from "react";
 
-export default function Header() {
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [sticky, setSticky] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  const handleStickyNavbar = () => {
+    if (window.scrollY >= 80) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleStickyNavbar);
+  });
+
   return (
-    <header className='bg-quaternary/20 z-50 header sticky top-0 transition duration-200 ease-in-out'>
-        <div className='navbar flex flex-wrap items-center justify-center pt-4 pb-4 transition duration-200 ease-in-out' >
-        <div className='container mx-auto'>
-            <nav className='relative z-30 pt-6 pb-6 navbar mx-auto w-full px-6'>
-            <a className='lg:text-18 xl:text-15 bg-transparent text-current no-underline' href="/">
-                <img src="./images/logo/logo-dark.png"
-                    alt="spydea" 
-                    loading="lazy" 
-                    width="158" 
-                    height="36" 
-                    decoding="async" 
-                    className="filter invert" 
-                    data-nimg="1" />
-            </a>
-            {/*  navbar-wrapper */}
-            <div className='lg:visible lg:static lg:h-auto lg:w-auto lg:flex-row lg:overflow-visible lg:bg-transparent lg:p-0 lg:opacity-100 lg:filter lg:drop-shadow-none lg:ml-auto lg:flex lg:flex-1 lg:bg-opacity-100 lg:transition-opacity lg:duration-300
-            md:absolute md:left-0 md:top-full md:ml-auto md:flex md:h-0 md:w-full md:flex-1 md:flex-col-reverse md:overflow-hidden md:bg-white md:bg-opacity-100 md:p-0 md:opacity-0 md:transition-opacity md:duration-300'>
-                {/* navbar nav */}
-                <ul className='md:text-left lg:(text-center) md:(order-3 ml-auto mr-auto flex w-full flex-col items-center)
-                lg:(order-2 ml-auto mr-0 w-auto flex-row bg-transparent)'>
-                    {/* class nav-item */}
-                    <li className='lg:(text-left relative z-10 mr-0) md:(relative text-center mr-0)'>
-                        <a className='md:(text-sm cursor-pointer select-none)lg:(pl-0 text-base select-none pt-4 pb-4)' href="/">Home</a>
-                    </li>
-                    <li className='lg:(text-left relative mr-0) md:(relative text-center z-10 mr-0)'>
-                        <a className='md:(text-sm cursor-pointer select-none block px-4 py-2 text-center font-normal transition-all duration-150 bg-transparent hover:text-gray-700)
-                        lg:(text-base pt-4 pb-4 hover:text-gray-700)' href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                    </li>
-
-                </ul>
-
+    <header className="header z-50 bg-quaternary/20">
+      <nav className="flex flex-wrap items-center justify-between pt-4 pb-4 transition-padding duration-200 ease-in-out container relative z-30 lg:py-6">
+        <Link href="/" className="navbar-brand text-[15px]">
+          <img
+            alt="spydea"
+            loading="lazy"
+            width="158"
+            height="36"
+            decoding="async"
+            style={{ color: "transparent" }}
+            src="/images/logo/logo-dark.png"
+          />
+        </Link>
+        <button
+          className={`navbar-toggler group relative ml-auto lg:hidden md:block ${isOpen ? "active" : ""}`}
+          aria-label="navbar toggler"
+          onClick={toggleMenu}
+        >
+          <div className="relative flex h-[30px] w-[30px] transform items-center justify-center overflow-hidden rounded-full ring-0 transition-all duration-200">
+            <div
+              className={`flex h-[15px] w-[18px] origin-center transform flex-col justify-between overflow-hidden transition-all duration-300 ${isOpen ? "h-[21px]" : ""
+                }`}
+            >
+              <div
+                className={`h-[2px] w-7 origin-left transform bg-dark transition-all duration-300 ${isOpen ? "translate-x-10" : ""
+                  }`}
+              ></div>
+              <div
+                className={`h-[2px] w-7 transform rounded bg-dark transition-all delay-75 duration-300 ${isOpen ? "translate-x-10" : ""
+                  }`}
+              ></div>
+              <div
+                className={`h-[2px] w-7 origin-left transform bg-dark transition-all delay-150 duration-300 ${isOpen ? "translate-x-10" : ""
+                  }`}
+              ></div>
+              <div
+                className={`absolute top-2.5 flex w-0 -translate-x-10 transform items-center justify-between transition-all duration-500 ${isOpen ? "w-12 translate-x-0" : ""
+                  }`}
+              >
+                <div
+                  className={`absolute h-[2px] w-5 rotate-0 transform bg-dark transition-all delay-300 duration-500 ${isOpen ? "rotate-45" : ""
+                    }`}
+                ></div>
+                <div
+                  className={`absolute h-[2px] w-5 -rotate-0 transform bg-dark transition-all delay-300 duration-500 ${isOpen ? "-rotate-45" : ""
+                    }`}
+                ></div>
+              </div>
             </div>
-
-         </nav>
-         </div>
+          </div>
+        </button>
+        <div className={`lg:flex ${isOpen ? "block" : "hidden"} w-full lg:w-auto bg-transparent visible static h-auto flex-row overflow-visible p-0 opacity-100 filter-none drop-shadow-n`}>
+          <ul className="order-2 ml-auto mr-0 p-0 items-center w-auto flex-row bg-transparent flex space-x-9 md:text-left">
+            <li className="relative z-10 mr-0">
+              <Link href="/" className="nav-link text-[15px] cursor-pointer select-none lg:py-4 lg:pl-0 bg-transparent">
+                Home
+              </Link>
+            </li>
+            <li className="relative z-10 mr-0">
+              <Link href="/about" className="nav-link text-[15px] cursor-pointer select-none lg:py-4 lg:pl-0 bg-transparent">
+                About
+              </Link>
+            </li>
+            <li className="relative z-10 mr-0">
+              <Link href="/blog" className="nav-link text-[15px] cursor-pointer select-none lg:py-4 lg:pl-0 bg-transparent">
+                Blog
+              </Link>
+            </li>
+            <li className="relative z-10 mr-0 lg:text-left nav-dropdown group">
+              <label htmlFor="expand" className="cursor-pointer">
+                <span className="nav-link text-[15px] cursor-pointer select-none lg:py-4 lg:pl-0 bg-transparent inline-flex items-center hover:text-black">
+                  Pages
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    strokeWidth="0"
+                    viewBox="0 0 16 16"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M7.976 10.072l4.357-4.357.62.618L8.284 11h-.618L3 6.333l.619-.618 4.357 4.357z"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <input className="peer hidden" type="checkbox" id="expand" />
+              <ul className="nav-dropdown-list absolute hidden peer-checked:block lg:group-hover:block lg:group-hover:opacity-100 shadow-lg w-[250px] rounded-md bg-white p-3">
+                <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2">
+                  <Link href="/elements" className="nav-dropdown-link block w-full p-1 px-4 font-normal text-gray-900">
+                    Elements
+                  </Link>
+                </li>
+                <li className="nav-dropdown-item">
+                  <Link href="/integration" className="nav-dropdown-link">
+                    Integration
+                  </Link>
+                </li>
+                <li className="nav-dropdown-item">
+                  <Link href="/careers" className="nav-dropdown-link">
+                    Careers
+                  </Link>
+                </li>
+                <li className="nav-dropdown-item">
+                  <Link href="/pricing" className="nav-dropdown-link">
+                    Pricing
+                  </Link>
+                </li>
+                <li className="nav-dropdown-item">
+                  <Link href="/authors" className="nav-dropdown-link">
+                    Authors
+                  </Link>
+                </li>
+                <li className="nav-dropdown-item">
+                  <Link href="/contact" className="nav-dropdown-link">
+                    Contact
+                  </Link>
+                </li>
+                <li className="nav-dropdown-item">
+                  <Link href="/sign-up" className="nav-dropdown-link">
+                    Sign up
+                  </Link>
+                </li>
+                <li className="nav-dropdown-item">
+                  <Link
+                    href="/terms-conditions"
+                    className="nav-dropdown-link"
+                  >
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li className="nav-dropdown-item">
+                  <Link href="/404" className="nav-dropdown-link">
+                    404 Page
+                  </Link>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div className="order-2 mx-auto mb-4 flex flex-col items-center lg:mx-0 lg:mb-0 lg:ml-7 lg:flex-row">
+            <div className="flex flex-col justify-center gap-5 pt-4 text-center lg:ml-7 lg:flex-row lg:gap-7 lg:pt-0 lg:text-left">
+              <Link href="/login" className="btn btn-outline-primary w-52 lg:w-auto">
+                Login
+              </Link>
+              <Link href="/contact" className="btn btn-primary w-52 lg:w-auto">
+                Get Started
+              </Link>
+            </div>
+          </div>
         </div>
+      </nav>
+      <div className="line-bg absolute z-20 flex justify-between">
+        <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
+        <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
+        <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
+        <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
+        <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
+        <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
+      </div>
     </header>
-  )
-}
+  );
+};
+
+export default Header;

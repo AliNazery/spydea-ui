@@ -30,7 +30,26 @@ const config: Config = {
       "2xl": "1536px",
       // => @media (min-width: 1400px) { ... }
     },
+    variants: {
+      extend: {
+        padding: ['responsive'], // Enable responsive padding utilities
+      },
+    },
     extend: {
+      transitionProperty: {
+        'padding': 'padding',
+        'header': 'color, background-color, border-color, text-decoration-color, fill, stroke',
+      },
+      transitionTimingFunction: {
+        'custom': 'cubic-bezier(.4,0,.2,1)',
+      },
+      transitionDuration: {
+        '200': '0.2s',
+      },
+      spacing:{
+        'gutter-x': 'var(--bs-gutter-x)',
+        'gutter-y': 'var(--bs-gutter-y)',
+      },
       backgroundColor: {
         'white': 'rgba(255, 255, 255, 1)', // Set your custom background color and opacity here
         'custom-blue': 'rgba(115, 177, 255, 0.1)',
@@ -48,6 +67,9 @@ const config: Config = {
       },
       content:{
         'wama':'url("/images/logo/logo.png")',
+      },
+      width: {
+        '130px': '130px',
       },
      colors: {
       current: "currentColor",

@@ -18,6 +18,7 @@ import Innovative from "@/components/Innovative/Innovative";
 import Article from "@/components/Article/Article";
 
 
+
 export const metadata: Metadata = {
   title: "Free Next.js Template for Startup and SaaS",
   description: "This is Home for Startup Nextjs Template",
@@ -28,9 +29,10 @@ export default function Home() {
     <main>
         {/* <Announcement/> */}
         {/* <MHeader/> */}
-        {/* <Header/> */}
+        <Header/>
         {/* <Navber/> */}
         {/* <Section/> */}
+        
         <Hero/>
         <Brands/>
         <Features/>
