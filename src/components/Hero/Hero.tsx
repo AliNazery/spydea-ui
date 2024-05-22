@@ -3,12 +3,12 @@ import HeroPhoto from "./HeroPhoto";
 
 export function Hero() {
   return (
-    <div className="shadow-black dark:bg-gray-800 flex relative z-20 items-center overflow-hidden">
+    <div className="shadow-black dark:bg-gray-800 flex relative z-20 items-center overflow-hidden after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-60 after:h-full after:w-full after:clip-path-custom-shape">
         <div className="container mx-auto px-1 flex relative py-16 z-30">
             <div className="sm:w-2/3 lg:w-2/5 flex flex-col flex-1 relative z-20">
-                <h1 className="mb-6 text-[35px] sm:text-[50px] xl:text-[65px] aos-init aos-animate flex flex-col leading-none text-gray-800">
-                The smarter way to save documents
-                </h1>
+                    <h1 className="mb-6 text-[35px] sm:text-[50px] xl:text-[65px] aos-init aos-animate flex flex-col leading-none text-gray-800">
+                        The smarter way to save documents
+                    </h1>
                 <p className="text-sm sm:text-base text-gray-700 dark:text-white">
                      Pellen tesque in ipsum id orci porta dapibus. Sed port titor lectus nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed suscipit tortor eghet felis porttitor volutpat. Vivamus  
                 </p>

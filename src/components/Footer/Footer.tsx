@@ -171,7 +171,7 @@ export default function Footer() {
                 <div className="flex flex-wrap gy-5 py-7 text-center lg:g-4 sm:py-14 sm:text-left">
                     <div className="sm:col-6 md:col-4 lg:flex-none w-1/4 xl:flex-none w-1/4">
                         <div className="widget lg:pl-16">
-                            <h3 className="mb-8">Company</h3>
+                            <h3 className="mb-8 text-white font-bold">Company</h3>
                             <ul className="flex flex-col gap-6">
                                 <li>
                                     <a href="/about" className='hover:underline hover:underline-offset-4'>About us</a>
@@ -187,10 +187,10 @@ export default function Footer() {
                     </div>
                     <div className="sm:col-6 md:col-4 lg:flex-none w-1/6 xl:flex-none w-1/6">
                         <div className="widget pl-0">
-                            <h3 className=" mb-8">Resources</h3>
+                            <h3 className=" mb-8 text-white font-bold">Resources</h3>
                             <ul className="flex flex-col gap-6">
                                 <li>
-                                    <a href="/blog" className='hover:underline hover:underline-offset-4'>Blog</a>
+                                    <a href="/blog" className='hover:underline hover:underline-offset-4 text-davy_grey'>Blog</a>
                                 </li>
                                 <li>
                                     <a href="/career"className='hover:underline hover:underline-offset-4'>Career</a>
@@ -203,7 +203,7 @@ export default function Footer() {
                     </div>
                     <div className="sm:col-6 md:col-4 lg:flex-none w-1/3 xl:col-3">
                         <div className="widget lg:pl-8">
-                            <h3 className="mb-8">Email</h3>
+                            <h3 className="mb-8 text-white font-bold">Email</h3>
                             <div className="mx-auto -mt-1 mb-4 w-fit text-[22px] font-bold text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
                                 <a href="mailto:hello@themefisher.com">hello@themefisher.com</a>
                             </div>
@@ -241,7 +241,7 @@ export default function Footer() {
                     </div>
                     <div className="sm:col-6 md:col-6 lg:flex-none w-1/4 xl:flex-none w-1/4">
                         <div className="xl:pl-16">
-                            <h3 className="mb-8">Call US</h3>
+                            <h3 className="mb-8 text-white font-bold">Call US</h3>
                             <div className="mx-auto -mt-1 w-fit text-[22px] font-bold text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
                                 <a href="tel:+94746-388817">+94746-388817</a>
                             </div>

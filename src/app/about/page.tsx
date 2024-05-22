@@ -19,7 +19,7 @@ export default function About() {
                 <span className=" inline-block h-full opacity-50 md:opacity-100"></span>
             </div>
         </div>
-        <Header/>
+        {/* <Header/> */}
         <MainSection/>
         <GallerySection/>
         <Vision/>

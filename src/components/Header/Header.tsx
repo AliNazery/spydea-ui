@@ -21,8 +21,8 @@ const Header = () => {
   });
 
   return (
-    <header className="header z-50 bg-quaternary/20">
-      <nav className="flex flex-wrap items-center justify-between pt-4 pb-4 transition-padding duration-200 ease-in-out container relative z-30 lg:py-6">
+    <header className={`header z-50  ${sticky ? 'bg-white shadow-lg' : 'bg-quaternary/20'}`}>
+      <nav className="flex flex-wrap items-center justify-between pt-4 pb-4 transition-padding duration-200 ease-in-out container relative z-30 lg:py-[10px]">
         <Link href="/" className="navbar-brand text-[15px]">
           <img
             alt="spydea"
@@ -71,9 +71,9 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </button>
-        <div className={`lg:flex ${isOpen ? "block" : "hidden"} w-full lg:w-auto bg-transparent visible static h-auto flex-row overflow-visible p-0 opacity-100 filter-none drop-shadow-n`}>
-          <ul className="order-2 ml-auto mr-0 p-0 items-center w-auto flex-row bg-transparent flex space-x-9 md:text-left">
+        </button> 
+        <div className={`lg:flex ${isOpen ? "flex flex-col bg-white justify-between items-center" : "hidden"} w-full lg:w-auto bg-transparent visible static h-auto rounded-xl flex-row overflow-visible py-4 opacity-100 filter-none drop-shadow-n`}>
+          <ul className={`order-2 w-auto ${isOpen ? "flex flex-col items-center bg-white w-full md:w-auto space-y-4 py-4" : "hidden"} md:flex md:flex-col md:items-center md:space-y-4 lg:flex-row lg:space-x-9 lg:space-y-0`}>
             <li className="relative z-10 mr-0">
               <Link href="/" className="nav-link text-[15px] cursor-pointer select-none lg:py-4 lg:pl-0 bg-transparent">
                 Home

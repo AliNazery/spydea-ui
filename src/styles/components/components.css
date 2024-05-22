@@ -52,6 +52,9 @@
       sm:pt-15;
       sm:pb-15
     }
+    .btn.btn-md {
+      @apply pl-10 pr-10 pt-[17px] pb-[17px]
+    }
 
     .header{
       @apply sticky top-0 transition-colors duration-200
