@@ -65,6 +65,7 @@ const config: Config = {
         'custom-red': 'hsla(5, 93%, 76%, 0.1)',
         'theme-light': 'rgba(243, 240, 240, var(--tw-bg-opacity))',
         'theme-dark': 'rgba(0, 0, 0, var(--tw-bg-opacity))',
+        'quote': '#f4fdff',
       },
       fontFamily: {
         'secondary': ['Merriweather', 'sans-serif'],
@@ -81,6 +82,8 @@ const config: Config = {
       },
       width: {
         '130px': '130px',
+        'col-10': '83.33333333333334%',
+        'col-6':'50%'
       },
      colors: {
       current: "currentColor",
@@ -101,6 +104,7 @@ const config: Config = {
       quinary:"#73B1FF",
       aboutbg:"#FFF9E4",
       abphoto:"#F9FAFB",
+      borderColor:"#F9FAFB",
       
 
      }

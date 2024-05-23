@@ -4,7 +4,7 @@ import React from 'react'
 export default function page() {
   return (
     <>
-    <section className="section page-header relative overflow-hidden pb-96 after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-60 after:h-full after:w-full after:clip-path-custom-shape">
+    <section className="section page-header relative overflow-hidden mb-12 pb-96 after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-60 after:h-full after:w-full after:clip-path-custom-shape">
         <div className="container relative mb-[40px] z-30" >
             <div className="row items-center">
                 <div className="mx-auto mb-[40px] text-center lg:col-7">
@@ -59,19 +59,21 @@ export default function page() {
             </svg>
         </div>
     </section>
-    <section className="section-md relative mt-[-28rem] overflow-hidden md:mt-[-32rem] py-16">
+    <section className="section-md relative mt-[-28rem] mb-40 overflow-hidden md:mt-[-32rem] md:py-16">
     <div className="container relative z-30">
-        <div className="row relative">
-            <div className="mx-auto lg:w-3/4 xl:w-7/12">
+        <div className="flex flex-wrap -mx-[calc(1.5rem/2)] -mt-[calc(0)] relative">
+            <div className="mx-auto md:w-col-10 box-border max-w-full">
                 <div data-aos="fade-up-sm" className="shadow-default rounded-2xl bg-white px-8 py-10 sm:px-16 sm:py-14">
-                    <form className="flex flex-wrap space-y-3 mt-0 -mx-[0.75] text-dark" method="post">
-                        <div className="w-full">
-                            <label htmlFor="fname" className="mb-3 block font-semibold">First Name</label>
-                            <input type="text" className="w-full rounded-lg border border-opacity-100 border-gray-300 px-3 py-5 sm:py-[1rem]" placeholder="Your First Name" id="fname" name="fname" required/>
-                        </div>
-                        <div className="w-full">
-                            <label htmlFor="lname" className="mb-3 block font-semibold">Last Name</label>
-                            <input type="text" className="w-full rounded-lg border border-opacity-100 border-gray-300 px-3 py-5 sm:py-[1rem]" placeholder="Your Last Name" id="lname"  name="lname"required/>
+                    <form className="flex flex-wrap space-y-6 -mt-6 -mx-3 text-dark" method="post">
+                        <div className='flex flex-row justify-between w-full gap-2 '>
+                            <div className="sm:w-1/2">
+                                <label htmlFor="fname" className="mb-3 block font-semibold">First Name</label>
+                                <input type="text" className="w-full rounded-lg border border-opacity-100 border-gray-300 px-5 py-5 sm  q:py-4" placeholder="Your First Name" id="fname" name="fname" required/>
+                            </div>
+                            <div className="sm:w-1/2">
+                                <label htmlFor="lname" className="mb-3 block font-semibold">Last Name</label>
+                                <input type="text" className="w-full rounded-lg border border-opacity-100 border-gray-300 px-3 py-5 sm:py-4" placeholder="Your Last Name" id="lname"  name="lname"required/>
+                            </div>
                         </div>
                         <div className="w-full">
                             <label htmlFor="email" className="mb-3 block font-semibold">Email Address</label>
@@ -106,8 +108,8 @@ export default function page() {
                 </svg>
             </div>
         </div>
-        <div className="row gy-4 pt-12 text-center md:justify-between md:pt-24 lg:justify-around">
-            <div data-aos="fade-up-sm" className="md:col-auto">
+        <div className="lg:flex lg:flex-row :flex-wrap- spoce-y-6 pt-12 text-center  md:justify-between md:pt-24 lg:justify-around sm:flex-col sm:justify-between">
+            <div data-aos="fade-up-sm" className="md:w-auto">
                 <h2 className="sm:3xl mb-5 text-2xl font-semibold text-dark md:text-4xl">Contact Support</h2>
                 <p className="mb-2 text-lg sm:text-xl">
                     <a className="hover:underline hover:underline-offset-2" href="mailto:support@company.com">support@company.com</a>
@@ -116,7 +118,7 @@ export default function page() {
                     <a className="hover:underline hover:underline-offset-2" href="tel:+1 234 567 8999">+1 234 567 8999</a>
                 </p>
             </div>
-            <div data-aos="fade-up-sm" className="md:col-auto">
+            <div data-aos="fade-up-sm" className="md:w-auto">
                 <h2 className="sm:3xl mb-5 text-2xl font-semibold text-dark md:text-4xl">Contact Careers</h2>
                 <p className="mb-2 text-lg sm:text-xl">
                     <a className="hover:underline hover:underline-offset-2" href="mailto:support@company.com">careers@company.com</a>
@@ -125,7 +127,7 @@ export default function page() {
                     <a className="hover:underline hover:underline-offset-2" href="tel:+1 234 567 8999">+1 234 567 8999</a>
                 </p>
             </div>
-            <div data-aos="fade-up-sm" className="md:col-auto">
+            <div data-aos="fade-up-sm" className="md:w-auto">
                 <h2 className="sm:3xl mb-5 text-2xl font-semibold text-dark md:text-4xl">Contact Press</h2>
                 <p className="mb-2 text-lg sm:text-xl">
                     <a className="hover:underline hover:underline-offset-2" href="mailto:support@company.com">press@company.com</a>

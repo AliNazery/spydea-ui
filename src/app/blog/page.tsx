@@ -68,7 +68,7 @@ export default function Blog() {
                 <div className="flex flex-wrap mt-36 -mx-3 space-y-3">
                     <div data-aos="fade-up-sm" className="md:col-6 lg:flex-none w-1/3 box-border  max-w-full px-3 mt-0">
                         <div className="shadow-default group min-h-full overflow-hidden rounded-xl bg-white">
-                            <a className="inline-block h-full max-h-[270px] w-full overflow-hidden" href="/blog/post-1">
+                            <a className="inline-block h-full max-h-[270px] w-full overflow-hidden" href="/blog/BlogDetail">
                                 <img alt="author" loading="lazy" width="408" height="262" decoding="async" data-nimg="1" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105 transparent"  src="../images/Article/1-1.jpg"/>
                             </a>
                             <div className="px-5 pb-12">
