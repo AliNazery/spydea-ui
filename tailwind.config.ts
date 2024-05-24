@@ -72,6 +72,9 @@ const config: Config = {
         'primary': ['Maven Pro', 'sans-serif'],
         'merriweather': ['Merriweather', 'sans-serif'],
       },
+      fontSize:{
+        'custom-size': '2.28886641rem',
+      },
       boxShadow: {
         'default': '0 15px 60px rgba(0, 0, 0, .06)',
         'custom': '0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1), 4px 0 6px rgba(0, 0, 0, 0.1), -4px 0 6px rgba(0, 0, 0, 0.1)',
@@ -84,6 +87,9 @@ const config: Config = {
         '130px': '130px',
         'col-10': '83.33333333333334%',
         'col-6':'50%'
+      },
+      quotImae: {
+        qbg: 'url(./images/blog/qoute.svg)'
       },
      colors: {
       current: "currentColor",
@@ -105,8 +111,7 @@ const config: Config = {
       aboutbg:"#FFF9E4",
       abphoto:"#F9FAFB",
       borderColor:"#F9FAFB",
-      
-
+      foColor:"#C5C5C5",
      }
 
     },

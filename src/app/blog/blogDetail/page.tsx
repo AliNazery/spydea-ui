@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PostDetail() {
+export default function blogDetail() {
   return (
     <main>
         <section className="section page-header blog-single sm:pt-[100px] relative overflow-hidden pb-0 after:z-10 after:content-[''] after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-60 after:h-full after:w-full after:clip-path-custom-shape">
@@ -47,7 +47,7 @@ export default function PostDetail() {
                         <h1 className="h2 mb-6 font-secondary text-2xl capitalize !leading-normal text-dark md:text-3xl lg:text-4xl xl:text-5xl">The Real Product From The Buyers Improvements In Overflow Basis.</h1>
                         <div className="mb-6 flex flex-wrap items-center gap-x-12 gap-y-6">
                             <div className="flex items-center">
-                                <a title="author image" className="relative z-20 overflow-hidden rounded-full border-[6px] border-zinc-100" href="/authors/benjamin">
+                                <a title="author image" className="relative z-20 overflow-hidden rounded-full border-[6px] border-zinc-100" href="../images/blog/blogDetail">
                                     <img alt="Daniel Mitchell" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" className="h-[70px] w-[70px] object-cover"   src="../images/blog/2.jpg"/>
                                 </a>
                                 <a className="relative z-10 -ml-3 rounded-r-3xl bg-theme-light py-1 pl-6 pr-3 font-primary text-[15px] capitalize text-dark transition-colors hover:text-opacity-70" href="/authors/benjamin">benjamin</a>
@@ -65,15 +65,16 @@ export default function PostDetail() {
                             <p className='text-[18px] mb-8 leading-7'>The Service is provided for free during this pilot project, and is provided &quot;as is &quot;with no warranty. Conclude will provide User support for the Service, however; Conclude is not committed to any level of service or availability of the Service. A further description of the Service and our user support is available at the Site.</p>
                             <h5 className='text-[1.5129rem] font-semibold mb-8 font-primary'>Company Liability</h5>
                             <p className='text-[18px] mb-8 leading-7'>If you enter into this agreement on behalf of a company, you hereby agree that the company is responsible under this Agreement for all actions and omissions conducted by its designated users of the Service.</p>
-                            <blockquote className='py-14 pt-10 my-10 rounded-lg mt-10 mb-10 border-l-4 border-black bg-quote pb-10'>
-                                    <p className='text-[18px] mb-8 leading-7 pl-3'>Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once.</p>
-                                    <cite className='pl-3'>Esther Howard</cite>
+                            <blockquote className='py-14 pt-10 my-10 rounded-lg mt-10 mb-10 border-l-8 border-black bg-quote pb-10'>
+                                <span className='inline-block ml-2'><img src="../images/blog/quote.svg" alt="" /></span>
+                                    <p className='text-[18px] mb-8 leading-7 pl-10'>Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once.</p>
+                                    <cite className='pl-10'>Esther Howard</cite>
                                     <br/>
-                                    <span className='pl-3'>CEO &amp;Founder</span>
+                                    <span className='pl-10'>CEO &amp;Founder</span>
                             </blockquote>
                             <h5 className='text-[1.5129rem] font-semibold mb-8 font-primary'>Use internal mobility as an opportunity to use internal resources</h5>
                             <p className='text-[18px] mb-8 leading-7'>In order to use our Service, you must meet a number of conditions, including but not limited to:</p>
-                            <ul>
+                            <ul className='list-disc pl-6 leading-8 mb-8'>
                                 <li>Enhance or improve User experience, our Site, or our Service.</li>
                                 <li>Process transactions.</li>
                                 <li>Send emails about our Site or respond to inquiries.</li>
@@ -81,7 +82,7 @@ export default function PostDetail() {
                                 <li>Perform any other function that we believe in good is necessary to protect the or proper functioning of our Site or Service.</li>
                             </ul>
                             <h5 className='text-[1.5129rem] font-semibold mb-8 font-primary'>You must not</h5>
-                            <ul>
+                            <ul className='list-disc pl-6 leading-8 mb-8'>
                                 <li>Enhance or improve User experience, our Site, or our Service.</li>
                                 <li>Process transactions.</li>
                                 <li>Send emails about our Site or respond to inquiries.</li>
@@ -89,9 +90,19 @@ export default function PostDetail() {
                                 <li>Perform any other function that we believe in good is necessary to protect the or proper functioning of our Site or Service.</li>
                             </ul>
                         </div>
-                        <div className="mt-20">
-                            <div id="disqus_thread"></div>
-                        </div>
+                        {/* <div className="mt-20">
+                            <div id="disqus_thread">
+                                <iframe id="dsq-app6781"
+                                name="dsq-app6781"
+                                title="Disqus"
+                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts"
+                                width="100%"
+                                src="//tempest.services.disqus.com/ads-iframe/taboola/?position=top&shortname=themefisher-template&experiment=network_default&variant=fallthrough&service=dynamic&anchorColor=%23555555&colorScheme=light&sourceUrl=https%3A%2F%2Fspydea-nextjs.vercel.app%2Fblog%2Fpost-1&typeface=sans-serif&disqus_version=current"
+                                className='w-px min-w-full border-0 overflow-hidden h-0'>
+
+                                </iframe>
+                            </div>
+                        </div> */}
                     </div>
                 </article>
             </div>

@@ -174,29 +174,29 @@ export default function Footer() {
                             <h3 className="mb-8 text-white font-bold">Company</h3>
                             <ul className="flex flex-col gap-6">
                                 <li>
-                                    <a href="/about" className='hover:underline hover:underline-offset-4'>About us</a>
+                                    <a href="/about" className='hover:underline hover:underline-offset-4 text-foColor'>About us</a>
                                 </li>
                                 <li>
-                                    <a href="/contact" className='hover:underline hover:underline-offset-4'>Contact us</a>
+                                    <a href="/contact" className='hover:underline hover:underline-offset-4 text-foColor'>Contact us</a>
                                 </li>
                                 <li>
-                                    <a href="/pricing" className='hover:underline hover:underline-offset-4'>Pricing</a>
+                                    <a href="/pricing" className='hover:underline hover:underline-offset-4 text-foColor'>Pricing</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div className="sm:col-6 md:col-4 lg:flex-none w-1/6 xl:flex-none w-1/6">
+                    <div className="sm:col-6 md:col-4 lg:flex-none xl:flex-none w-1/6">
                         <div className="widget pl-0">
                             <h3 className=" mb-8 text-white font-bold">Resources</h3>
                             <ul className="flex flex-col gap-6">
                                 <li>
-                                    <a href="/blog" className='hover:underline hover:underline-offset-4 text-davy_grey'>Blog</a>
+                                    <a href="/blog" className='hover:underline hover:underline-offset-4 text-foColor'>Blog</a>
                                 </li>
                                 <li>
-                                    <a href="/career"className='hover:underline hover:underline-offset-4'>Career</a>
+                                    <a href="/career"className='hover:underline hover:underline-offset-4 text-foColor'>Career</a>
                                 </li>
                                 <li>
-                                    <a href="/terms-conditions" className='hover:underline hover:underline-offset-4'>Terms &amp;Conditions</a>
+                                    <a href="/terms-conditions" className='hover:underline hover:underline-offset-4 text-foColor'>Terms &amp;Conditions</a>
                                 </li>
                             </ul>
                         </div>

@@ -5,8 +5,6 @@ import Announcement from "@/components/announcement/Announcement";
 import Header from "@/components/Header/Header";
 import Section from "@/components/Section/page";
 import { Hero } from "@/components/Hero/Hero";
-import Main from "@/components/Hero/Main";
-import MLayout from "@/components/MLayout/MLayout";
 import Brands from "@/components/Brands/Brands";
 import Features from "@/components/Features/Features";
 import Experience from "@/components/Experience/Experience";

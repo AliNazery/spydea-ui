@@ -68,13 +68,13 @@ export default function Blog() {
                 <div className="flex flex-wrap mt-36 -mx-3 space-y-3">
                     <div data-aos="fade-up-sm" className="md:col-6 lg:flex-none w-1/3 box-border  max-w-full px-3 mt-0">
                         <div className="shadow-default group min-h-full overflow-hidden rounded-xl bg-white">
-                            <a className="inline-block h-full max-h-[270px] w-full overflow-hidden" href="/blog/BlogDetail">
+                            <a className="inline-block h-full max-h-[270px] w-full overflow-hidden" href="./blog/blogDetail">
                                 <img alt="author" loading="lazy" width="408" height="262" decoding="async" data-nimg="1" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105 transparent"  src="../images/Article/1-1.jpg"/>
                             </a>
                             <div className="px-5 pb-12">
                                 <div className="-mt-[30px] mb-3 flex items-center">
-                                    <a className="relative z-20 overflow-hidden rounded-full border-[6px] border-white" title="benjamin" href="/authors/benjamin">
-                                        <img alt="benjamin" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" className="h-[40px] w-[40px] object-cover transparent"  src="../images/Article/1-2.jpg"/>
+                                    <a className="relative z-20 overflow-hidden rounded-full border-[6px] border-white" title="benjamin" href="">
+                                    <img alt="benjamin" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" className="h-[40px] w-[40px] object-cover transparent"  src="../images/Article/1-2.jpg"/>
                                     </a>
                                     <a className="relative z-10 -ml-3 rounded-r-3xl bg-theme-light py-1 pl-6 pr-3 font-primary text-[15px] capitalize text-dark transition-colors hover:text-opacity-70" href="/authors/benjamin">benjamin</a>
                                 </div>

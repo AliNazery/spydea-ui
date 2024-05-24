@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <div className="shadow-black dark:bg-gray-800 flex relative z-20 items-center overflow-hidden after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-60 after:h-full after:w-full after:clip-path-custom-shape">
         <div className="container mx-auto px-1 flex relative py-16 z-30">
-            <div className="sm:w-2/3 lg:w-2/5 flex flex-col flex-1 relative z-20">
+            <div className="sm:w-2/3 lg:w-2/5 flex flex-col flex-1 relative z-20 ">
                     <h1 className="mb-6 text-[35px] sm:text-[50px] xl:text-[65px] aos-init aos-animate flex flex-col leading-none text-gray-800">
                         The smarter way to save documents
                     </h1>
@@ -21,12 +21,6 @@ export function Hero() {
                             Search
                         </button>
                     </form>
-                    {/* <a href="#" className="uppercase py-2 px-4 rounded-lg bg-pink-500 border-2 border-transparent text-white text-md mr-4 hover:bg-pink-400">
-                        Get started
-                    </a>
-                    <a href="#" className="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-pink-500 text-pink-500 dark:text-white hover:bg-pink-500 hover:text-white text-md">
-                        Read more
-                    </a> */}
                 </div>
                 <div className="flex items-center">
                 <span className="align-middle text-lg font-bold text-dark aos-init aos-animate">Supported</span>
