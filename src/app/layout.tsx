@@ -1,4 +1,3 @@
-import MLayout from "@/components/MLayout/MLayout";
 import Announcement from "@/components/announcement/Announcement";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";

@@ -1,15 +1,11 @@
 // import Image from "next/image";
 import { Metadata } from "next";
 import '../styles/globals.css'
-import Announcement from "@/components/announcement/Announcement";
-import Header from "@/components/Header/Header";
-import Section from "@/components/Section/page";
 import { Hero } from "@/components/Hero/Hero";
 import Brands from "@/components/Brands/Brands";
 import Features from "@/components/Features/Features";
 import Experience from "@/components/Experience/Experience";
 import Acheivement from "@/components/Acheivment/Acheivement";
-import Footer from "@/components/Footer/Footer";
 import Innovative from "@/components/Innovative/Innovative";
 import Article from "@/components/Article/Article";
 
@@ -30,8 +26,6 @@ export default function Home() {
         <Acheivement/>
         <Innovative/>
         <Article/>
-        {/* <Main/> */}
-        {/* <Footer/> */}
     </main>
   );
 }
