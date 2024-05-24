@@ -1,5 +1,4 @@
 import React from 'react'
-import Section from '../Section/page'
 import Cards from './Cards'
 
 export default function Features() {

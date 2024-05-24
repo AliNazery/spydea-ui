@@ -1,5 +1,4 @@
 import React from 'react'
-import Section from '../Acheivment/Section'
 
 export default function Acheivement() {
   return (

@@ -1,4 +1,3 @@
-import Header from '@/components/Header/Header'
 import MainSection from '@/components/Main'
 import GallerySection from '@/components/Section/GallerySection'
 import Vision from '@/components/Section/Vision'

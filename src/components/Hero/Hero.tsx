@@ -1,4 +1,3 @@
-import path from "path";
 import HeroPhoto from "./HeroPhoto";
 
 export function Hero() {
