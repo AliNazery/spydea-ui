@@ -111,43 +111,43 @@ const Header = () => {
                 </span>
               </label>
               <input className="peer hidden" type="checkbox" id="expand" />
-              <ul className="nav-dropdown-list absolute hidden peer-checked:block lg:group-hover:block lg:group-hover:opacity-100 shadow-lg w-[250px] rounded-md bg-white p-3">
-                <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2">
-                  <Link href="/elements" className="nav-dropdown-link block w-full p-1 px-4 font-normal text-gray-900">
+              <ul className="nav-dropdown-list absolute hidden peer-checked:block lg:group-hover:block lg:group-hover:opacity-100 shadow-lg w-[250px] rounded-md bg-white p-3 ">
+                <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
+                  <Link href="/element" className="nav-dropdown-link block w-full p-1 px-4 font-normal text-gray-900">
                     Elements
                   </Link>
                 </li>
-                <li className="nav-dropdown-item">
+                <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
                   <Link href="/integration" className="nav-dropdown-link">
                     Integration
                   </Link>
                 </li>
-                <li className="nav-dropdown-item">
+                <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
                   <Link href="/careers" className="nav-dropdown-link">
                     Careers
                   </Link>
                 </li>
-                <li className="nav-dropdown-item">
+                <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
                   <Link href="/pricing" className="nav-dropdown-link">
                     Pricing
                   </Link>
                 </li>
-                <li className="nav-dropdown-item">
+                <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
                   <Link href="/authors" className="nav-dropdown-link">
                     Authors
                   </Link>
                 </li>
-                <li className="nav-dropdown-item">
+                <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
                   <Link href="/contact" className="nav-dropdown-link">
                     Contact
                   </Link>
                 </li>
-                <li className="nav-dropdown-item">
+                <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
                   <Link href="/sign-up" className="nav-dropdown-link">
                     Sign up
                   </Link>
                 </li>
-                <li className="nav-dropdown-item">
+                <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
                   <Link
                     href="/terms-conditions"
                     className="nav-dropdown-link"
@@ -155,7 +155,7 @@ const Header = () => {
                     Terms & Conditions
                   </Link>
                 </li>
-                <li className="nav-dropdown-item">
+                <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
                   <Link href="/404" className="nav-dropdown-link">
                     404 Page
                   </Link>

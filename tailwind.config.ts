@@ -74,6 +74,7 @@ const config: Config = {
       },
       fontSize:{
         'custom-size': '2.28886641rem',
+        'customMarker': '1.125rem',
       },
       boxShadow: {
         'default': '0 15px 60px rgba(0, 0, 0, .06)',
@@ -82,6 +83,9 @@ const config: Config = {
       },
       content:{
         'wama':'url("/images/logo/logo.png")',
+      },
+      lineHeight: {
+        'customMarker': '1.75rem', // 28px
       },
       width: {
         '130px': '130px',
@@ -112,6 +116,8 @@ const config: Config = {
       abphoto:"#F9FAFB",
       borderColor:"#F9FAFB",
       foColor:"#C5C5C5",
+      hoverCo:"#ECECEC",
+      'custom-gray-marker': '#222',
      }
 
     },
@@ -127,6 +133,7 @@ const config: Config = {
       height: ['after'],
       width: ['after'],
       backgroundImage: ['after'],
+      marker: ['before', 'after'],
     },
   },
   plugins: [

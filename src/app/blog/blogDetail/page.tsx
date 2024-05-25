@@ -67,10 +67,10 @@ export default function blogDetail() {
                             <p className='text-[18px] mb-8 leading-7'>If you enter into this agreement on behalf of a company, you hereby agree that the company is responsible under this Agreement for all actions and omissions conducted by its designated users of the Service.</p>
                             <blockquote className='py-14 pt-10 my-10 rounded-lg mt-10 mb-10 border-l-8 border-black bg-quote pb-10'>
                                 <span className='inline-block ml-2'><img src="../images/blog/quote.svg" alt="" /></span>
-                                    <p className='text-[18px] mb-8 leading-7 pl-10'>Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once.</p>
-                                    <cite className='pl-10'>Esther Howard</cite>
-                                    <br/>
-                                    <span className='pl-10'>CEO &amp;Founder</span>
+                                <p className='text-[22px] mb-8 leading-7 pl-10 font-semibold'>Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once.</p>
+                                <cite className='pl-10 font-medium'>Esther Howard</cite>
+                                <br/>
+                                <span className='pl-10 font-medium'>CEO &amp;Founder</span>
                             </blockquote>
                             <h5 className='text-[1.5129rem] font-semibold mb-8 font-primary'>Use internal mobility as an opportunity to use internal resources</h5>
                             <p className='text-[18px] mb-8 leading-7'>In order to use our Service, you must meet a number of conditions, including but not limited to:</p>
