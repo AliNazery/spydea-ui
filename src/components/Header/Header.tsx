@@ -143,13 +143,13 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
-                  <Link href="/sign-up" className="nav-dropdown-link">
+                  <Link href="/signUp" className="nav-dropdown-link">
                     Sign up
                   </Link>
                 </li>
                 <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
                   <Link
-                    href="/terms-conditions"
+                    href="/terms"
                     className="nav-dropdown-link"
                   >
                     Terms & Conditions

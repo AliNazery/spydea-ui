@@ -120,77 +120,79 @@ export default function Elements() {
                             </p>
                         </li>
                     </ol>
-                    <hr/>
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Button</h3>
                     <a target="_blank" rel="noopener noreferrer nofollow" className="btn mb-4 me-4 btn-primary border-primary no-underline" href="#">Primary</a>
                     <a target="_blank" rel="noopener noreferrer nofollow" className="btn mb-4 me-4 btn-primary border-primary no-underline" href="#">Secondary</a>
-                    <hr/>
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Link</h3>
                     <p className='text-[18px] mb-8 leading-7'>
-                        <a href="https://www.google.com">I &#x27;m an inline-style link</a>
+                        <a href="https://www.google.com"className='hover:underline font-medium text-linkBlack ' >I &#x27;m an inline-style link</a>
                     </p>
                     <p className='text-[18px] mb-8 leading-7'>
-                        <a href="https://www.google.com" title="Google&#x27;s Homepage">I &#x27;m an inline-style link with title</a>
+                        <a href="https://www.google.com" title="Google&#x27;s Homepage" className='hover:underline font-medium text-linkBlack'>I &#x27;m an inline-style link with title</a>
                     </p>
                     <p className='text-[18px] mb-8 leading-7'>
-                        <a href="https://www.themefisher.com">I &#x27;m a reference-style link</a>
+                        <a href="https://www.themefisher.com" className='hover:underline font-medium text-linkBlack'>I &#x27;m a reference-style link</a>
                     </p>
                     <p className='text-[18px] mb-8 leading-7'>
-                        <a href="../blob/master/LICENSE">I &#x27;m a relative reference to a repository file</a>
+                        <a href="../blob/master/LICENSE" className='hover:underline font-medium text-linkBlack'>I &#x27;m a relative reference to a repository file</a>
                     </p>
-                    <p>
-                        <a href="https://gethugothemes.com">You can use numbers for reference-style link definitions</a>
+                    <p className='mb-8'>
+                        <a href="https://gethugothemes.com" className='hover:underline font-medium text-linkBlack '>You can use numbers for reference-style link definitions</a>
                     </p>
                     <p className='text-[18px] mb-8 leading-7'>
-                        Or leave it empty and use the <a href="https://www.getjekyllthemes.com">link text itself</a>
+                        Or leave it empty and use the <a href="https://www.getjekyllthemes.com" className='hover:underline font-medium text-linkBlack'>link text itself</a>
                         .
                     </p>
                     <p className='text-[18px] mb-8 leading-7'>example.com (but not on Github, for example).</p>
                     <p className='text-[18px] mb-8 leading-7'>Some text to show that the reference links can follow later.</p>
-                    <hr/>
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Ordered List</h3>
-                    <ol>
-                        <li>List item</li>
-                        <li>List item</li>
-                        <li>List item</li>
-                        <li>List item</li>
-                        <li>List item</li>
+                    <ol className='mb-8 pl-[1.625em] list-decimal'>
+                        <li className='pl-[.375em] my-2 marker:text-custom-gray-marker marker:text-customMarker marker:leading-customMarker'>List item</li>
+                        <li className='pl-[.375em] my-2 marker:text-custom-gray-marker marker:text-customMarker marker:leading-customMarker'>List item</li>
+                        <li className='pl-[.375em] my-2 marker:text-custom-gray-marker marker:text-customMarker marker:leading-customMarker'>List item</li>
+                        <li className='pl-[.375em] my-2 marker:text-custom-gray-marker marker:text-customMarker marker:leading-customMarker'>List item</li>
+                        <li className='pl-[.375em] my-2 marker:text-custom-gray-marker marker:text-customMarker marker:leading-customMarker'>List item</li>
                     </ol>
-                    <hr/>
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Unordered List</h3>
-                    <ul>
-                        <li>List item</li>
-                        <li>List item</li>
-                        <li>List item</li>
-                        <li>List item</li>
-                        <li>List item</li>
+                    <ul className='mt-0 mb-8 pl-[1.625em] list-disc'>
+                        <li className='pl-[.375em] my-2 marker:text-custom-gray-marker marker:text-customMarker marker:leading-customMarker'>List item</li>
+                        <li className='pl-[.375em] my-2 marker:text-custom-gray-marker marker:text-customMarker marker:leading-customMarker'>List item</li>
+                        <li className='pl-[.375em] my-2 marker:text-custom-gray-marker marker:text-customMarker marker:leading-customMarker'>List item</li>
+                        <li className='pl-[.375em] my-2 marker:text-custom-gray-marker marker:text-customMarker marker:leading-customMarker'>List item</li>
+                        <li className='pl-[.375em] my-2 marker:text-custom-gray-marker marker:text-customMarker marker:leading-customMarker'>List item</li>
                     </ul>
-                    <hr/>
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Code and Syntax Highlighting</h3>
-                    <h4>HTML</h4>
-                    <pre>
-                        <code className="language-html">&lt;ul &gt;&lt;li className=&quot;nav-item &quot;&gt;&lt;a className=&quot;nav-link &quot;href=&quot;/&quot;&gt;Home &lt;/a &gt;&lt;/li &gt;&lt;li className=&quot;nav-item &quot;&gt;&lt;a className=&quot;nav-link &quot;href=&quot;about/&quot;&gt;About &lt;/a &gt;&lt;/li &gt;&lt;/ul &gt;</code>
+                    <h4 className='text-[1.5129rem] font-semibold font-primary mt-2 mb-1.5'>HTML</h4>
+                    <pre className='bg-hoverCo overflow-x-auto font-normal text-sm rounded-lg leading-relaxed mb-8 p-3.5 px-4.5'>
+                        <code className="language-html px-1 bg-transparent border-0  p-0 font-inherit text-inherit leading-inherit">&lt;ul &gt; <br />   &lt;li className=&quot;nav-item &quot;&gt;<br />      &lt;a className=&quot;nav-link &quot;href=&quot;/&quot;&gt;Home &lt;/a &gt; <br />   &lt;/li &gt;<br />   &lt;li className=&quot;nav-item &quot;&gt;<br />      &lt;a className=&quot;nav-link &quot;href=&quot;about/&quot;&gt;About &lt;/a &gt;<br />   &lt;/li &gt;<br />&lt;/ul &gt;</code>
                     </pre>
-                    <hr/>
-                    <h4>CSS</h4>
-                    <pre>
-                        {/* <code className="language-css">img {
-                          vertical-align: middle;
-                          border: 0;
-                          max-width: 100%;
-                          height: auto;
-                          }
-                          </code> */}
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
+                    <h4 className='text-[1.5129rem] font-semibold font-primary mt-2 mb-1.5'>CSS</h4>
+                    <pre className='bg-hoverCo overflow-x-auto font-normal text-sm rounded-lg leading-relaxed mb-8 p-3.5 px-4.5'>
+                    <code className="language-css px-1 bg-transparent border-0 p-0 font-inherit text-inherit leading-inherit">
+                            img &#123;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;vertical-align: middle;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;border: 0;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;max-width: 100%;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;height: auto;<br />
+                            &#125;
+                            </code>
                     </pre>
-                    <hr/>
-                    <h4>JavaScript</h4>
-                    <pre>
-                        {/* <code className="language-javascript">window.addEventListener(&quot;load &quot;, (e) =&gt;{
-                        document.querySelector(&quot;.preloader &quot;).style.display = &quot;none &quot;;
-                        });
-                        </code> */}
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
+                    <h4 className='text-[1.5129rem] font-semibold font-primary mt-2 mb-1.5'>JavaScript</h4>
+                    <pre className='bg-hoverCo overflow-x-auto font-normal text-sm rounded-lg leading-relaxed mb-8 p-3.5 px-4.5'>
+                        <code className="language-javascript px-1 bg-transparent border-0 p-0 font-inherit text-inherit leading-inherit">
+                        window.addEventListener(&quot;load&quot;, (e) =&gt;&#123;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.querySelector(&quot;.preloader&quot;).style.display = &quot;none&quot;;<br />
+                        &#125;);
+                        </code>
                     </pre>
-                    <hr/>
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.5129rem] font-semibold mb-8 font-primary'>Quote</h3>
                     <blockquote className='py-14 pt-10 my-10 rounded-lg mt-10 mb-10 border-l-8 border-black bg-quote pb-10'>
                         <span className='inline-block ml-2'><img src="../images/blog/quote.svg" alt="" /></span>
@@ -199,9 +201,9 @@ export default function Elements() {
                             <br/>
                             <span className='pl-10 font-medium'>CEO &amp;Founder</span>
                     </blockquote>
-                    <hr/>
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.5129rem] font-semibold mb-8 font-primary'>Notice</h3>
-                    <div className="notice note">
+                    <div className="notice note border-noticeNote">
                         <div className="notice-head">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 9V14M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19ZM10.0498 6V6.1L9.9502 6.1002V6H10.0498Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -246,7 +248,7 @@ export default function Elements() {
                             <p className='text-[18px] mb-8 leading-7'>This is a simple note.</p>
                         </div>
                     </div>
-                    <hr/>
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Tab</h3>
                     <div className="tab">
                         {/* <ul className="tab-nav" role="tablist">
@@ -269,7 +271,7 @@ export default function Elements() {
                             <p className='text-[18px] mb-8 leading-7'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p>
                         </div>
                     </div>
-                    <hr/>
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Table</h3>
                     <table>
                         <thead>
@@ -301,7 +303,7 @@ export default function Elements() {
                             </tr>
                         </tbody>
                     </table>
-                    <hr/>
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Collapse</h3>
                     <div className="accordion false">
                         <div data-aos="fade-up-sm">
@@ -360,17 +362,17 @@ export default function Elements() {
                             </div>
                         </div>
                     </div>
-                    <hr/>
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Image</h3>
                     <p className='text-[18px] mb-8 leading-7'>
                         <img src="/images/image-placeholder.png" alt="image"/>
                     </p>
-                    <hr/>
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Youtube video</h3>
                     {/* <article className="yt-lite rounded-lg " data-title="Play:Youtube" style="background-image:url(https://i.ytimg.com/vi/ZEe-IFezQok/hqdefault.jpg);--aspect-ratio:56.25%">
                         <button type="button" className="lty-playbtn" aria-label="Watch Play:Youtube"></button>
                     </article> */}
-                    <hr/>
+                    <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Custom video</h3>
                     {/* <video className="overflow-hidden rounded-lg" width="100%" height="auto" controls="">
                         <source src="https://joy1.videvo.net/videvo_files/video/free/video0467/large_watermarked/_import_61516692993d77.04238324_preview.mp4" type="video/mp4"/>

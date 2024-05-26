@@ -58,6 +58,9 @@ const config: Config = {
       spacing:{
         'gutter-x': 'var(--bs-gutter-x)',
         'gutter-y': 'var(--bs-gutter-y)',
+        '3.5': '0.8571429em',
+        '4.5': '1.1428571em',
+        '7': '1.7142857em',
       },
       backgroundColor: {
         'white': 'rgba(255, 255, 255, 1)', // Set your custom background color and opacity here
@@ -66,11 +69,13 @@ const config: Config = {
         'theme-light': 'rgba(243, 240, 240, var(--tw-bg-opacity))',
         'theme-dark': 'rgba(0, 0, 0, var(--tw-bg-opacity))',
         'quote': '#f4fdff',
+        'prebg': 'rgb(229 231 235/var(--tw-bg-opacity))',
       },
       fontFamily: {
         'secondary': ['Merriweather', 'sans-serif'],
         'primary': ['Maven Pro', 'sans-serif'],
         'merriweather': ['Merriweather', 'sans-serif'],
+        'pre': ['monospace', 'monospace'],
       },
       fontSize:{
         'custom-size': '2.28886641rem',
@@ -86,6 +91,7 @@ const config: Config = {
       },
       lineHeight: {
         'customMarker': '1.75rem', // 28px
+        relaxed: '1.7142857', // This would be a custom value
       },
       width: {
         '130px': '130px',
@@ -99,6 +105,7 @@ const config: Config = {
       current: "currentColor",
       transparent: "transparent",
       black: "#222222",
+      linkBlack: "rgb(8 8 8)",
       davy_grey: "#555555",
       yellow_tan: "#FDE179",
       seafoam_blue: "#73CFA8",
@@ -117,7 +124,9 @@ const config: Config = {
       borderColor:"#F9FAFB",
       foColor:"#C5C5C5",
       hoverCo:"#ECECEC",
+      noticeNote :"rgb(27 131 226/var(--tw-text-opacity))",
       'custom-gray-marker': '#222',
+      
      }
 
     },
