@@ -1,6 +1,28 @@
-import React from 'react'
+"use client"
+
+import Collapes from '@/components/element/Collapes';
+import CustomeVideo from '@/components/element/CustomeVideo';
+import Tab from '@/components/element/Tab';
+import YouTubeLite from '@/components/element/YouTubeLite';
+import React, {useState} from 'react'
+
 
 export default function Elements() {
+    const [isVisible, setIsVisible] = useState(false);
+    // const [, setIsVisible] = useState(false);
+
+
+    const handleClick = () => {
+        setIsVisible(true);
+      };
+    
+      const handleBlur = () => {
+        setIsVisible(false);
+      };
+
+      const CollapesHandle = () =>{
+
+      }
   return (
     <main>
         <section className="section page-header relative overflow-hidden pb-96 after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-40 after:h-full after:w-full after:clip-path-custom-shape">
@@ -58,7 +80,7 @@ export default function Elements() {
                 </svg>
             </div>
         </section>
-        <section className="section-md relative z-20 mt-[-28rem] md:mt-[-32rem]">
+        <section className="section-md relative z-20 mt-[-28rem] md:mt-[-32rem] pb-40">
             <div className="container">
                 <div className="content shadow-default rounded-2xl bg-white px-8 py-8 sm:px-14 sm:py-14 lg:px-20 lg:py-16">
                     <h1 className='text-[2.8153056842999997rem] font-semibold font-primary'>Heading 1</h1>
@@ -203,177 +225,97 @@ export default function Elements() {
                     </blockquote>
                     <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.5129rem] font-semibold mb-8 font-primary'>Notice</h3>
-                    <div className="notice note border-noticeNote">
-                        <div className="notice-head">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="mb-6 rounded-md border p-6 px-8 border-noticeNote">
+                        <div className="flex items-center">
+                            <svg className='mr-3 text-noticeNote' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 9V14M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19ZM10.0498 6V6.1L9.9502 6.1002V6H10.0498Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
-                            <p className="my-0 ml-1.5">Note</p>
+                            <p className="my-0 ml-1.5 font-semibold text-lg text-dark font-secondary">Note</p>
                         </div>
-                        <div className="notice-body">
-                            <p className='text-[18px] mb-8 leading-7'>This is a simple note.</p>
+                        <div className="mt-3">
+                            <p className='text-[18px] my-0 leading-7 text-noticep'>This is a simple note.</p>
                         </div>
                     </div>
-                    <div className="notice tip">
-                        <div className="notice-head">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="mb-6 rounded-md border p-6 px-8 border-noticetip">
+                        <div className="flex items-center">
+                            <svg className='mr-3 text-noticetip' width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM12 2.4C6.69807 2.4 2.4 6.69807 2.4 12C2.4 17.3019 6.69807 21.6 12 21.6C17.3019 21.6 21.6 17.3019 21.6 12C21.6 6.69807 17.3019 2.4 12 2.4ZM15.9515 7.55147L9.6 13.9029L8.04853 12.3515C7.5799 11.8828 6.8201 11.8828 6.35147 12.3515C5.88284 12.8201 5.88284 13.5799 6.35147 14.0485L8.75147 16.4485C9.2201 16.9172 9.9799 16.9172 10.4485 16.4485L17.6485 9.24853C18.1172 8.7799 18.1172 8.0201 17.6485 7.55147C17.1799 7.08284 16.4201 7.08284 15.9515 7.55147Z" fill="currentColor"></path>
                             </svg>
-                            <p className="my-0 ml-1.5 ">Tip</p>
+                            <p className="my-0 ml-1.5 font-semibold text-lg text-dark font-secondary ">Tip</p>
                         </div>
-                        <div className="notice-body">
-                            <p className='text-[18px] mb-8 leading-7'>This is a simple note.</p>
+                        <div className="mt-3">
+                            <p className='text-[18px] my-0 leading-7 text-noticep'>This is a simple note.</p>
                         </div>
                     </div>
-                    <div className="notice info">
-                        <div className="notice-head">
-                            <svg width="20" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="mb-6 rounded-md border p-6 px-8 border-noticeinfo">
+                        <div className="flex items-center">
+                            <svg className='mr-3 text-noticeinfo' width="20" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.16109 0.993016C9.97971 1.03952 10.6611 1.42989 11.0721 2.22339L17.7981 15.8014C18.4502 17.1739 17.4403 19.0208 15.7832 19.0474H2.23859C0.730337 19.0234 -0.507163 17.3108 0.231587 15.7864L7.08321 2.20877C7.21146 1.96502 7.26996 1.89452 7.38059 1.76664C7.82534 1.25102 8.31171 0.975016 9.16109 0.993016ZM9.05046 2.49189C8.79284 2.50464 8.55696 2.64902 8.42834 2.87327C6.06134 7.36539 3.77946 11.9036 1.56546 16.4734C1.36071 16.9328 1.71209 17.5223 2.22621 17.547C6.74871 17.6201 11.2731 17.6201 15.7956 17.547C16.2925 17.523 16.666 16.953 16.459 16.4783C14.2866 11.9093 12.0471 7.37102 9.72171 2.87814C9.58446 2.63402 9.38309 2.48739 9.05046 2.49189Z" fill="currentColor"></path>
                                 <path d="M9.61323 13.2153H8.35773L8.21973 7.04688H9.75723L9.61323 13.2153ZM8.17773 15.1015C8.17773 14.8731 8.25161 14.6841 8.39973 14.5338C8.54823 14.3838 8.75036 14.3084 9.00648 14.3084C9.26298 14.3084 9.46511 14.3838 9.61323 14.5338C9.76136 14.6841 9.83561 14.8731 9.83561 15.1015C9.83561 15.3216 9.76323 15.5057 9.61923 15.6539C9.47486 15.802 9.27086 15.8762 9.00648 15.8762C8.74211 15.8762 8.53811 15.802 8.39373 15.6539C8.24973 15.5057 8.17773 15.3216 8.17773 15.1015Z" fill="currentColor"></path>
                             </svg>
-                            <p className="my-0 ml-1.5">Info</p>
+                            <p className="my-0 ml-1.5 font-semibold text-lg text-dark font-secondary">Info</p>
                         </div>
-                        <div className="notice-body">
-                            <p className='text-[18px] mb-8 leading-7'>This is a simple note.</p>
+                        <div className="mt-3">
+                            <p className='text-[18px] my-0 leading-7 text-noticep'>This is a simple note.</p>
                         </div>
                     </div>
-                    <div className="notice warning">
-                        <div className="notice-head">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="mb-6 rounded-md border p-6 px-8 border-noticewarning">
+                        <div className="flex items-center">
+                            <svg className='mr-3 text-noticewarning' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C15.522 0 20 4.478 20 10C20 15.522 15.522 20 10 20C4.478 20 0 15.522 0 10C0 4.478 4.478 0 10 0ZM10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18C14.411 18 18 14.411 18 10C18 5.589 14.411 2 10 2ZM12.293 6.293L13.707 7.707L11.414 10L13.707 12.293L12.293 13.707L10 11.414L7.707 13.707L6.293 12.293L8.586 10L6.293 7.707L7.707 6.293L10 8.586L12.293 6.293Z" fill="currentColor"></path>
                             </svg>
-                            <p className="my-0 ml-1.5">Warning</p>
+                            <p className="my-0 ml-1.5 font-semibold text-lg text-dark font-secondary">Warning</p>
                         </div>
-                        <div className="notice-body">
-                            <p className='text-[18px] mb-8 leading-7'>This is a simple note.</p>
+                        <div className="mt-3">
+                            <p className='text-[18px] my-0 leading-7 text-noticep'>This is a simple note.</p>
                         </div>
                     </div>
                     <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Tab</h3>
-                    <div className="tab">
-                        {/* <ul className="tab-nav" role="tablist">
-                            <li className="tab-nav-item active" role="tab" tabindex="0">Tab 1</li>
-                            <li className="tab-nav-item false" role="tab" tabindex="-1">Tab 2</li>
-                            <li className="tab-nav-item false" role="tab" tabindex="-1">Tab 3</li>
-                        </ul> */}
-                        <div className="tab-content block">
-                            <h4>Did you come here for something in particular?</h4>
-                            <p className='text-[18px] mb-8 leading-7'>Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We have a saboteur aboard. We know you’re dealing in stolen ore. But I wanna talk about the assassination attempt on Lieutenant Worf.</p>
-                        </div>
-                        <div className="tab-content hidden">
-                            <h4>I wanna talk about the assassination attempt</h4>
-                            <p className='text-[18px] mb-8 leading-7'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                            <p className='text-[18px] mb-8 leading-7'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div className="tab-content hidden">
-                            <h4>We know you’re dealing in stolen ore</h4>
-                            <p className='text-[18px] mb-8 leading-7'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                            <p className='text-[18px] mb-8 leading-7'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p>
-                        </div>
-                    </div>
+                    <Tab/>
                     <hr className='border-t border-t-1 mt-12 mb-12'/>
                     <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Table</h3>
-                    <table>
-                        <thead>
+                    <table className='mt-0 overflow-hidden border border-tableborder indent-0 border-collapse w-full table-auto text-left mb-8 text-sm leading-7'>
+                        <thead className='border border-b-[1px]'>
                             <tr>
-                                <th align="left">#</th>
-                                <th align="center">First</th>
-                                <th align="center">Last</th>
-                                <th align="right">Handle</th>
+                                <th className='p-4 text-dark text-left'>#</th>
+                                <th className="text-center">First</th>
+                                <th className="text-center">Last</th>
+                                <th className="text-right p-4">Handle</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td align="left">1</td>
-                                <td align="center">Row:1 Cell:1</td>
-                                <td align="center">Row:1 Cell:2</td>
-                                <td align="right">Row:1 Cell:3</td>
+                            <tr className='border border-tableborder '>
+                                <td className='p-4 text-dark text-left'>1</td>
+                                <td className="text-center">Row:1 Cell:1</td>
+                                <td className="text-center">Row:1 Cell:2</td>
+                                <td className="text-right p-4">Row:1 Cell:3</td>
                             </tr>
-                            <tr>
-                                <td align="left">2</td>
-                                <td align="center">Row:2 Cell:1</td>
-                                <td align="center">Row:2 Cell:2</td>
-                                <td align="right">Row:2 Cell:3</td>
+                            <tr className='border border-tableborder'>
+                                <td className="text-left text-dark p-4">2</td>
+                                <td className="text-center">Row:2 Cell:1</td>
+                                <td className="text-center">Row:2 Cell:2</td>
+                                <td className="text-right p-4">Row:2 Cell:3</td>
                             </tr>
-                            <tr>
-                                <td align="left">3</td>
-                                <td align="center">Row:3 Cell:1</td>
-                                <td align="center">Row:3 Cell:2</td>
-                                <td align="right">Row:3 Cell:3</td>
+                            <tr className='border border-tableborder'>
+                                <td className="text-left text-dark p-4">3</td>
+                                <td className="text-center">Row:3 Cell:1</td>
+                                <td className="text-center">Row:3 Cell:2</td>
+                                <td className="text-right p-4">Row:3 Cell:3</td>
                             </tr>
                         </tbody>
                     </table>
                     <hr className='border-t border-t-1 mt-12 mb-12'/>
-                    <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Collapse</h3>
-                    <div className="accordion false">
-                        <div data-aos="fade-up-sm">
-                            <button type="button" className="accordion-header w-full text-xl font-medium" data-accordion="true">
-                                <span>Why should you need to do this?</span>
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="accordion-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
-                                </svg>
-                            </button>
-                            <div className="accordion-content">
-                                <ul>
-                                    <li>This is a thing.</li>
-                                    <li>This is a thing.</li>
-                                    <li>This is a thing.</li>
-                                    <li>This is a thing.</li>
-                                    <li>This is a thing.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="accordion false">
-                        <div data-aos="fade-up-sm">
-                            <button type="button" className="accordion-header w-full text-xl font-medium" data-accordion="true">
-                                <span>How can I adjust Horizontal centering</span>
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="accordion-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
-                                </svg>
-                            </button>
-                            <div className="accordion-content">
-                                <ul>
-                                    <li>This is a thing.</li>
-                                    <li>This is a thing.</li>
-                                    <li>This is a thing.</li>
-                                    <li>This is a thing.</li>
-                                    <li>This is a thing.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="accordion false">
-                        <div data-aos="fade-up-sm">
-                            <button type="button" className="accordion-header w-full text-xl font-medium" data-accordion="true">
-                                <span>Should you use Negative margin?</span>
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="accordion-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
-                                </svg>
-                            </button>
-                            <div className="accordion-content">
-                                <ul>
-                                    <li>This is a thing.</li>
-                                    <li>This is a thing.</li>
-                                    <li>This is a thing.</li>
-                                    <li>This is a thing.</li>
-                                    <li>This is a thing.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <Collapes/>
                     <hr className='border-t border-t-1 mt-12 mb-12'/>
-                    <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Image</h3>
+                    <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-8'>Image</h3>
                     <p className='text-[18px] mb-8 leading-7'>
-                        <img src="/images/image-placeholder.png" alt="image"/>
+                        <img src="/images/elements/image-placeholder.png" alt="image"/>
                     </p>
                     <hr className='border-t border-t-1 mt-12 mb-12'/>
-                    <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Youtube video</h3>
-                    {/* <article className="yt-lite rounded-lg " data-title="Play:Youtube" style="background-image:url(https://i.ytimg.com/vi/ZEe-IFezQok/hqdefault.jpg);--aspect-ratio:56.25%">
-                        <button type="button" className="lty-playbtn" aria-label="Watch Play:Youtube"></button>
-                    </article> */}
+                    <YouTubeLite/>
                     <hr className='border-t border-t-1 mt-12 mb-12'/>
-                    <h3 className='text-[1.8608669999999998rem] font-semibold font-primary mt-2 mb-1.5'>Custom video</h3>
+                    <CustomeVideo src={undefined} poster={undefined}/>
                     {/* <video className="overflow-hidden rounded-lg" width="100%" height="auto" controls="">
                         <source src="https://joy1.videvo.net/videvo_files/video/free/video0467/large_watermarked/_import_61516692993d77.04238324_preview.mp4" type="video/mp4"/>
                     </video> */}

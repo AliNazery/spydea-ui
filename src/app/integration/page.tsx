@@ -1,23 +1,29 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function Integration() {
   return (
     <main>
         <main>
-            <section className="section page-header relative overflow-hidden pb-96 after:z-10">
-                <div className="container relative z-30">
+            <section className="section page-header relative overflow-hidden pb-96 after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-40 after:h-[696px] after:w-full after:clip-path-custom-shape">
+                <div className="container relative mb-[40px] z-30 pb-40" >
                     <div className="row items-center">
-                        <div className="mx-auto text-center lg:col-7">
-                            <h1 className="mb-6 text-[35px] sm:text-[50px] xl:text-[65px]" data-aos="fade-up-sm">How To Integrate With Spydea</h1>
+                        <div className="mx-auto mb-[40px] text-center lg:col-7 pt-[117px]">
+                            <h1 className="mb-12 text-4xl font-bold sm:text-[50px] xl:text-[65px]" data-aos="fade-up-sm">How To Integrate <span className='block pt-12'> With Spydea </span></h1>
                             <div data-aos="fade-up-sm" data-aos-dealy="50">
-                                <nav aria-label="Breadcrumb" className="breadcrumb">
-                                    <ol className="inline-flex" role="list">
-                                        <li className="breadcrumb-list-item" role="listitem">
-                                            <a className="text-primary " href="/">Home</a>
+                                <nav aria-label="Breadcrumb" className="ml-auto mr-auto mb-6 flex w-fit gap-10">
+                                    <ol className="inline-flex list-none m-0 p-0" role="list">
+                                        <li className="relative pl-8 align-middle text-xl font-medium text-black" role="listitem">
+                                            <div className="flex items-center space-x-2">
+                                                <span>
+                                                    <img src="../images/about/home.png" alt="" />
+                                                </span>
+                                                <a className="text-primary align-middle" href="/">Home</a>
+                                            </div>
                                         </li>
-                                        <li className="breadcrumb-list-item" role="listitem">
+                                        <li className="relative  align-middle text-xl font-medium" role="listitem">
                                             <span className="ml-3 mr-2 inline-block">/</span>
-                                            <span className="text-primary">Integration</span>
+                                            <span className="text- align-middle">Integration</span>
                                         </li>
                                     </ol>
                                 </nav>
@@ -54,13 +60,13 @@ export default function Integration() {
                     </svg>
                 </div>
             </section>
-            <section className="section-md relative mt-[-28rem] overflow-hidden md:mt-[-32rem]">
+            <section className="section-md relative mt-[-28rem] overflow-hidden md:mt-[-32rem] pb-40">
                 <div className="container relative z-20">
-                    <div className="row gy-4">
-                        <div data-aos="fade-up-sm" className="md:col-6 lg:col-4">
+                    <div className="flex flex-wrap gap-6 ">
+                        <div data-aos="fade-up-sm" className="w-full md:w-1/2 lg:w-[30%] ">
                             <div className="shadow-default overflow-hidden rounded-xl bg-white p-10">
-                                <div className="mb-6 flex flex-wrap items-center justify-between gap-y-4">
-                                    <img alt="icon" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="rounded-xl" src='../imagtes/integration'/>
+                                <div className="mb-6 flex flex-wrap justify-between gap-y-4">
+                                    <Image alt="icon" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="rounded-xl" src='../images/integration/figma.svg'/>
                                     <a href="#" className="btn btn-outline-primary">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="mr-3 inline-block h-5 w-5 fill-current" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
@@ -74,10 +80,10 @@ export default function Integration() {
                                 <p>We collect certain identifying personal data when you Sign up to our Service such as your name,</p>
                             </div>
                         </div>
-                        <div data-aos="fade-up-sm" className="md:col-6 lg:col-4">
+                        <div data-aos="fade-up-sm" className="md:w-6/12 lg:w-[30%]">
                             <div className="shadow-default overflow-hidden rounded-xl bg-white p-10">
                                 <div className="mb-6 flex flex-wrap items-center justify-between gap-y-4">
-                                    <img alt="icon" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="rounded-xl" src='../images/integration'/>
+                                    <Image alt="icon" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="rounded-xl" src='../images/integration/framer.svg'/>
                                     <a href="#" className="btn btn-outline-primary">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="mr-3 inline-block h-5 w-5 fill-current" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
@@ -91,10 +97,10 @@ export default function Integration() {
                                 <p>We collect certain identifying personal data when you Sign up to our Service such as your name,</p>
                             </div>
                         </div>
-                        <div data-aos="fade-up-sm" className="md:col-6 lg:col-4">
+                        <div data-aos="fade-up-sm" className="md:w-6/12 lg:w-[30%]">
                             <div className="shadow-default overflow-hidden rounded-xl bg-white p-10">
                                 <div className="mb-6 flex flex-wrap items-center justify-between gap-y-4">
-                                    <img alt="icon" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="rounded-xl" src='../images/integration'/>
+                                    <Image alt="icon" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="rounded-xl" src='../images/integration/slack.svg'/>
                                     <a href="#" className="btn btn-outline-primary">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="mr-3 inline-block h-5 w-5 fill-current" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
@@ -108,10 +114,10 @@ export default function Integration() {
                                 <p>We collect certain identifying personal data when you Sign up to our Service such as your name,</p>
                             </div>
                         </div>
-                        <div data-aos="fade-up-sm" className="md:col-6 lg:col-4">
+                        <div data-aos="fade-up-sm" className="md:w-6/12 lg:w-[30%]">
                             <div className="shadow-default overflow-hidden rounded-xl bg-white p-10">
                                 <div className="mb-6 flex flex-wrap items-center justify-between gap-y-4">
-                                    <img alt="icon" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="rounded-xl" src='../images/integration'/>
+                                    <Image alt="icon" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="rounded-xl" src='../images/integration/spotify.svg'/>
                                     <a href="#" className="btn btn-outline-primary">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="mr-3 inline-block h-5 w-5 fill-current" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
@@ -125,10 +131,10 @@ export default function Integration() {
                                 <p>We collect certain identifying personal data when you Sign up to our Service such as your name,</p>
                             </div>
                         </div>
-                        <div data-aos="fade-up-sm" className="md:col-6 lg:col-4">
+                        <div data-aos="fade-up-sm" className="md:w-6/12 lg:w-[30%]">
                             <div className="shadow-default overflow-hidden rounded-xl bg-white p-10">
                                 <div className="mb-6 flex flex-wrap items-center justify-between gap-y-4">
-                                    <img alt="icon" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="rounded-xl" src='../images/integration'/>
+                                    <Image alt="icon" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="rounded-xl" src='../images/integration/telegram.svg'/>
                                     <a href="#" className="btn btn-outline-primary">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="mr-3 inline-block h-5 w-5 fill-current" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>

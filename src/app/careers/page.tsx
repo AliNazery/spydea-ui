@@ -3,7 +3,7 @@ import React from 'react'
 export default function Careers() {
   return (
     <main>
-    <section className="section page-header relative overflow-hidden pb-96 after:z-10">
+    <section className="section page-header relative overflow-hidden pb-96 after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-40 after:h-full after:w-full after:clip-path-custom-shape">
         <div className="container relative z-30">
             <div className="row items-center">
                 <div className="mx-auto text-center lg:col-7">

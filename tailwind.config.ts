@@ -35,6 +35,12 @@ const config: Config = {
         padding: ['responsive'], // Enable responsive padding utilities
       },
     },
+    accordion:{
+      extend :{
+        borderColor: 'hsla(0,0%,86%,.2)',
+        bgColor: 'rgb(255 255 255)',
+      }
+    },
     extend: {
       backgroundImage: {
         'dotted-line': "url('data:image/svg+xml,%3Csvg width='1px' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='none' stroke='%23F96D61' stroke-width='2' stroke-dasharray='6, 14' stroke-dashoffset='0' stroke-linecap='square'/%3E%3C/svg%3E')",
@@ -124,6 +130,12 @@ const config: Config = {
       borderColor:"#F9FAFB",
       foColor:"#C5C5C5",
       hoverCo:"#ECECEC",
+      noticep:"rgb(85 85 85);",
+      noticetip:"rgb(64 210 148 )",
+      noticeinfo:"rgb(227 167 44 )",
+      noticewarning:"rgb(219 44 35 )",
+      tableborder:"rgb(219 219 219 )",
+      tablenvbg:"rgb(243 240 240 )",
       noticeNote :"rgb(27 131 226/var(--tw-text-opacity))",
       'custom-gray-marker': '#222',
       
