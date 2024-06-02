@@ -1,28 +1,34 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function Careers() {
   return (
     <main>
-    <section className="section page-header relative overflow-hidden pb-96 after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-40 after:h-full after:w-full after:clip-path-custom-shape">
-        <div className="container relative z-30">
+    <section className="section page-header relative overflow-hidden pb-96 after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-40 after:h-[696px] after:w-full after:clip-path-custom-shape">
+        <div className="container relative mb-[40px] z-30" >
             <div className="row items-center">
-                <div className="mx-auto text-center lg:col-7">
-                    <h1 className="mb-6 text-[35px] sm:text-[50px] xl:text-[65px]" data-aos="fade-up-sm">Career At Spydea</h1>
+                <div className="mx-auto mb-[40px] text-center lg:col-7  pt-[117px]">
+                    <h1 className="mb-12 text-4xl font-bold sm:text-[50px] xl:text-[65px]" data-aos="fade-up-sm">Career At Spydea</h1>
                     <div data-aos="fade-up-sm" data-aos-dealy="50">
-                        <nav aria-label="Breadcrumb" className="breadcrumb">
-                            <ol className="inline-flex" role="list">
-                                <li className="breadcrumb-list-item" role="listitem">
-                                    <a className="text-primary " href="/">Home</a>
+                        <nav aria-label="Breadcrumb" className="ml-auto mr-auto mb-6 flex w-fit gap-10">
+                            <ol className="inline-flex list-none m-0 p-0" role="list">
+                                <li className="relative pl-8 align-middle text-xl font-medium text-black" role="listitem">
+                                    <div className="flex items-center space-x-2">
+                                        <span>
+                                            <img src="../images/about/home.png" alt="" />
+                                        </span>
+                                        <a className="text-primary align-middle" href="/">Home</a>
+                                    </div>
                                 </li>
-                                <li className="breadcrumb-list-item" role="listitem">
+                                <li className="relative  align-middle text-xl font-medium" role="listitem">
                                     <span className="ml-3 mr-2 inline-block">/</span>
-                                    <span className="text-primary">Careers</span>
+                                    <span className="text- align-middle">Careers</span>
                                 </li>
                             </ol>
                         </nav>
                     </div>
                     <hr className="mx-auto mb-6 h-[1px] w-[100px] border-0 border-b border-t border-dark border-opacity-50 bg-transparent" data-aos="fade-up-sm" data-aos-delay="50"/>
-                    <p className="mb-6 text-[20px]" data-aos="fade-up-sm" data-aos-delay="100">Nulla quis lorem ut libero male suada feugiat. Prae sent massa, convallis a pellent esque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Quisque velit nisi</p>
+                    <p className="mb-6 text-[20px]  " data-aos="fade-up-sm" data-aos-delay="100">Nulla quis lorem ut libero male suada feugiat. Prae sent massa, convallis a <br /> pellent esque nec, egestas non nisi. Vivamus magna justo, lacinia eget <br /> consectetur sed, convallis at tellus. Proin eget tortor risus. Quisque velit nisi</p>
                 </div>
             </div>
         </div>
@@ -59,12 +65,12 @@ export default function Careers() {
         <div className="container relative">
             <div className="row">
                 <div className="col-11 mx-auto">
-                    <div data-aos="fade-up-sm" className="relative z-10 rounded-[15px] border-[6px] border-white bg-white sm:border-[12px]">
-                        <img alt="career" loading="lazy" width="1140" height="600" decoding="async" data-nimg="1" className="w-full rounded-[15px] object-cover" src='../images/career'/>
+                    <div data-aos="fade-up-sm" className="relative z-10 rounded-[15px] border-[6px] border-white bg-white sm:border-[12px] mb-20">
+                        <Image alt="career" loading="lazy" width="1140" height="600" decoding="async" data-nimg="1" className="w-full rounded-[15px] object-cover" src='/images/career/career.jpg'/>
                     </div>
                 </div>
             </div>
-            <div className="pointer-events-none absolute left-0 top-1/2 -z-10 hidden -translate-y-1/2 select-none md:block lg:left-[-4%]">
+            <div className="pointer-events-none absolute left-0 top-1/2 -z-10 hidden -translate-y-1/2 select-none md:block lg:left-[-4%] ">
                 <svg className="w-full text-tertiary" width="225" height="242" viewBox="0 0 225 242" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M67.6131 84.6415C67.521 83.5649 66.4959 82.4478 65.315 82.8838C60.8175 84.5158 56.9907 88.205 54.4206 92.6332C53.9646 93.353 53.5734 94.1238 53.2386 94.9136C51.6507 98.3871 50.8021 102.166 50.9715 105.698C51.0156 106.532 51.5065 107.057 52.1087 107.297C52.4961 108.329 53.5839 109.011 54.7151 108.358C58.9965 105.887 63.556 103.658 65.9055 99.0755C68.1834 94.6402 68.0024 89.4721 67.6131 84.6415Z" fill="currentColor"></path>
                     <path d="M91.7392 119.875C96.0206 117.405 100.58 115.175 102.93 110.593C105.213 106.147 105.042 100.985 104.653 96.1547C104.561 95.078 103.536 93.961 102.355 94.397C97.8575 96.029 94.0307 99.7182 91.4606 104.146C91.0046 104.866 90.6135 105.637 90.2787 106.427C88.6908 109.9 87.8421 113.679 88.0116 117.211C88.0556 118.045 88.5466 118.571 89.1487 118.811C89.5304 119.852 90.608 120.528 91.7392 119.875Z" fill="currentColor"></path>
@@ -356,18 +362,18 @@ export default function Careers() {
     </section>
     <section className="section relative z-20 overflow-hidden">
         <div className="container">
-            <div className="row pb-12 text-center">
-                <div className="mx-auto lg:col-7">
+            <div className="flex flex-wrap pb-12 text-center">
+                <div className="mx-auto lg:w-7/12">
                     <span className="mb-6 inline-block font-medium uppercase text-red-400" data-aos="fade-up-sm">BENEFITS AND ADVANTAGES</span>
-                    <h2 className="mb-6 font-semibold" data-aos="fade-up-sm" data-aos-delay="50">Why Working With Us?</h2>
+                    <h2 className="mb-6 font-semibold text-[2.28886641rem]" data-aos="fade-up-sm" data-aos-delay="50">Why Working With Us?</h2>
                     <p className="text-lg" data-aos="fade-up-sm" data-aos-delay="100">Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum</p>
                 </div>
             </div>
-            <div className="colored-box-icon has-colored-text row gy-4">
-                <div data-aos="fade-up-sm" data-aos-delay="50" className="md:col-6 lg:col-4">
-                    <div className="shadow-default h-full rounded-2xl bg-white p-8 text-center transition-all duration-300 hover:shadow-md sm:p-12">
-                        <div className="icon-box mx-auto">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <div className="  flex flex-wrap gap-6 -mx-2 pb-20 items-center">
+                <div data-aos="fade-up-sm" data-aos-delay="50" className="md:w-1/2 lg:w-[32%] flex justify-center">
+                    <div className="shadow-default h-full rounded-2xl bg-white px-8 py-12 text-center transition-all duration-300 hover:shadow-md sm:p-12">
+                        <div className="mx-auto mb-10 w-[60px] rounded-lg p-4 bg-opacity-20 bg-bxIcoCo text-center text-xl leading-8 flex justify-center items-center text-bxIcoCo ">
+                            <svg className='block' stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path>
                             </svg>
                         </div>
@@ -375,10 +381,10 @@ export default function Careers() {
                         <p className="mb-0">laoreet elementum nulla dolor sit amet conctetur adipiscing elit aluam lorem amet eget netus dictum odio</p>
                     </div>
                 </div>
-                <div data-aos="fade-up-sm" data-aos-delay="50" className="md:col-6 lg:col-4">
-                    <div className="shadow-default h-full rounded-2xl bg-white p-8 text-center transition-all duration-300 hover:shadow-md sm:p-12">
-                        <div className="icon-box mx-auto">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <div data-aos="fade-up-sm" data-aos-delay="50" className="md:w-1/2 lg:w-[32%] flex justify-center">
+                    <div className="shadow-default h-full rounded-2xl bg-white px-8 py-12 text-center transition-all duration-300 hover:shadow-md sm:p-12">
+                        <div className="mx-auto mb-10 w-[60px] rounded-lg p-4 bg-opacity-20 bg-bxIcoCol text-center text-xl leading-8 flex justify-center items-center text-bxIcoCol ">
+                            <svg className='block' stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M218.3 8.5c12.3-11.3 31.2-11.3 43.4 0l208 192c6.7 6.2 10.3 14.8 10.3 23.5H336c-19.1 0-36.3 8.4-48 21.7V208c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16h64V416H112c-26.5 0-48-21.5-48-48V256H32c-13.2 0-25-8.1-29.8-20.3s-1.6-26.2 8.1-35.2l208-192zM352 304V448H544V304H352zm-48-16c0-17.7 14.3-32 32-32H560c17.7 0 32 14.3 32 32V448h32c8.8 0 16 7.2 16 16c0 26.5-21.5 48-48 48H544 352 304c-26.5 0-48-21.5-48-48c0-8.8 7.2-16 16-16h32V288z"></path>
                             </svg>
                         </div>
@@ -386,10 +392,10 @@ export default function Careers() {
                         <p className="mb-0">laoreet elementum nulla dolor sit amet conctetur adipiscing elit aluam lorem amet eget netus dictum odio</p>
                     </div>
                 </div>
-                <div data-aos="fade-up-sm" data-aos-delay="50" className="md:col-6 lg:col-4">
-                    <div className="shadow-default h-full rounded-2xl bg-white p-8 text-center transition-all duration-300 hover:shadow-md sm:p-12">
-                        <div className="icon-box mx-auto">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <div data-aos="fade-up-sm" data-aos-delay="50" className="md:w-1/2 lg:w-[32%] flex justify-center">
+                    <div className="shadow-default h-full rounded-2xl bg-white px-8 py-12 text-center transition-all duration-300 hover:shadow-md sm:p-12">
+                        <div className="mx-auto mb-10 w-[60px] rounded-lg p-4 bg-opacity-20 bg-bxIcoColo text-center text-xl leading-8 flex justify-center items-center text-bxIcoColo ">
+                            <svg className='block' stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"></path>
                             </svg>
                         </div>
@@ -400,24 +406,24 @@ export default function Careers() {
             </div>
         </div>
     </section>
-    <section className="section relative z-20 overflow-hidden">
+    <section className="section relative z-20 overflow-hidden pb-20 pt-20">
         <div className="container relative z-20">
             <div className="colored-box-bg items-start lg:columns-2">
                 <div className="mb-16">
                     <span className="mb-6 inline-block font-medium uppercase text-red-400" data-aos="fade-up-sm">INSPIRING TESTIMONIALS</span>
                     <div data-aos="fade-up-sm" className="border-l-2 border-dark border-opacity-50 py-2 pl-6">
-                        <h2 className="font-semibold" data-aos-delay="50">Take an Look at Our Customers Stories</h2>
+                        <h2 className="font-semibold text-[2.28886641rem]" data-aos-delay="50">Take an Look at Our Customers Stories</h2>
                     </div>
                 </div>
                 <div data-aos="fade-up-sm" className="shadow-default aos-init aos-animate mb-6 flex flex-col overflow-hidden rounded-xl border border-border/50 bg-white !transition-all !duration-300 last-of-type:mb-0 hover:shadow-sm sm:flex-row sm:border-0">
-                    <div className="box-bg">
-                        <img alt="logo" loading="lazy" width="265" height="94" decoding="async" data-nimg="1" className="img !max-w-[140px] sm:min-w-[40px] sm:-rotate-90 sm:transform" src='../images/career'/>
+                    <div className="flex items-center bg-custom-blue">
+                        <img alt="logo" loading="lazy" width="265" height="94" decoding="async" data-nimg="1" className="img !max-w-[140px] sm:min-w-[40px] sm:-rotate-90 sm:transform transparent"  src="../images/Innovative/1-1.png"/>
                     </div>
                     <div className="px-6 py-12">
                         <h3 className="mb-5 text-xl font-semibold sm:text-2xl">Efficient Experience with Superb Customer Support</h3>
                         <p className="mb-6 sm:text-lg">elementum sed sit amet. Nulla port titor accumsan tincidunt. Proin eget tortor risus. Vestibulum ac diam sit amet quam</p>
                         <div className="flex items-center gap-4">
-                            <img alt="logo" loading="lazy" width="65" height="65" decoding="async" data-nimg="1" className="img h-[70px] w-[70px] object-cover" src='../images/career'/>
+                            <img alt="logo" loading="lazy" width="65" height="65" decoding="async" data-nimg="1" className="img h-[70px] w-[70px] object-cover transparent"  src="../images/Innovative/1-1.jpg"/>
                             <div className="items-start rounded-full">
                                 <div className="flex flex-col justify-center">
                                     <h4 className="mb-1 font-primary text-lg">Devon Lane</h4>
@@ -428,14 +434,14 @@ export default function Careers() {
                     </div>
                 </div>
                 <div data-aos="fade-up-sm" className="shadow-default aos-init aos-animate mb-6 flex flex-col overflow-hidden rounded-xl border border-border/50 bg-white !transition-all !duration-300 last-of-type:mb-0 hover:shadow-sm sm:flex-row sm:border-0">
-                    <div className="box-bg">
-                        <img alt="logo" loading="lazy" width="265" height="94" decoding="async" data-nimg="1" className="img !max-w-[140px] sm:min-w-[40px] sm:-rotate-90 sm:transform" src='../images/career'/>
+                    <div className="flex items-center bg-custom-red">
+                        <img alt="logo" loading="lazy" width="265" height="94" decoding="async" data-nimg="1" className="img !max-w-[140px] sm:min-w-[40px] sm:-rotate-90 sm:transform transparent"  src="../images/Innovative/2-1.png"/>
                     </div>
                     <div className="px-6 py-12">
                         <h3 className="mb-5 text-xl font-semibold sm:text-2xl">Seamless Integration and Powerful Functionality</h3>
                         <p className="mb-6 sm:text-lg">elementum sed sit amet. Nulla port titor accumsan tincidunt. Proin eget tortor risus. Vestibulum ac diam sit amet quam</p>
                         <div className="flex items-center gap-4">
-                            <img alt="logo" loading="lazy" width="65" height="65" decoding="async" data-nimg="1" className="img h-[70px] w-[70px] object-cover" src='../images/career'/>
+                            <img alt="logo" loading="lazy" width="65" height="65" decoding="async" data-nimg="1" className="img h-[70px] w-[70px] object-cover transparent"  src="../images/Innovative/2-1.jpg"/>
                             <div className="items-start rounded-full">
                                 <div className="flex flex-col justify-center">
                                     <h4 className="mb-1 font-primary text-lg">Guy Hawkins</h4>
@@ -446,14 +452,14 @@ export default function Careers() {
                     </div>
                 </div>
                 <div data-aos="fade-up-sm" className="shadow-default aos-init aos-animate mb-6 flex flex-col overflow-hidden rounded-xl border border-border/50 bg-white !transition-all !duration-300 last-of-type:mb-0 hover:shadow-sm sm:flex-row sm:border-0">
-                    <div className="box-bg">
-                        <img alt="logo" loading="lazy" width="265" height="94" decoding="async" data-nimg="1" className="img !max-w-[140px] sm:min-w-[40px] sm:-rotate-90 sm:transform" src='../images/career'/>
+                    <div className="flex items-center bg-custom-blue">
+                        <img alt="logo" loading="lazy" width="265" height="94" decoding="async" data-nimg="1" className="img !max-w-[140px] sm:min-w-[40px] sm:-rotate-90 sm:transform transparent"  src="../images/Innovative/3-1.png"/>
                     </div>
                     <div className="px-6 py-12">
                         <h3 className="mb-5 text-xl font-semibold sm:text-2xl">Empowering Businesses with Cutting-Edge Solutions</h3>
                         <p className="mb-6 sm:text-lg">elementum sed sit amet. Nulla port titor accumsan tincidunt. Proin eget tortor risus. Vestibulum ac diam sit amet quam</p>
                         <div className="flex items-center gap-4">
-                            <img alt="logo" loading="lazy" width="65" height="65" decoding="async" data-nimg="1" className="img h-[70px] w-[70px] object-cover" src='../images/career'/>
+                            <img alt="logo" loading="lazy" width="65" height="65" decoding="async" data-nimg="1" className="img h-[70px] w-[70px] object-cover transparent"  src="../images/Innovative/3.jpg"/>
                             <div className="items-start rounded-full">
                                 <div className="flex flex-col justify-center">
                                     <h4 className="mb-1 font-primary text-lg">Savannah Nguyen</h4>
@@ -464,14 +470,14 @@ export default function Careers() {
                     </div>
                 </div>
                 <div data-aos="fade-up-sm" className="shadow-default aos-init aos-animate mb-6 flex flex-col overflow-hidden rounded-xl border border-border/50 bg-white !transition-all !duration-300 last-of-type:mb-0 hover:shadow-sm sm:flex-row sm:border-0">
-                    <div className="box-bg">
-                        <img alt="logo" loading="lazy" width="265" height="94" decoding="async" data-nimg="1" className="img !max-w-[140px] sm:min-w-[40px] sm:-rotate-90 sm:transform" src='../images/career'/>
+                    <div className="flex items-center bg-custom-red">
+                        <img alt="logo" loading="lazy" width="265" height="94" decoding="async" data-nimg="1" className="img !max-w-[140px] sm:min-w-[40px] sm:-rotate-90 sm:transform transparent"  src="../images/Innovative/1-1.png"/>
                     </div>
                     <div className="px-6 py-12">
                         <h3 className="mb-5 text-xl font-semibold sm:text-2xl">Revolutionizing Business with Scalable Solutions</h3>
                         <p className="mb-6 sm:text-lg">elementum sed sit amet. Nulla port titor accumsan tincidunt. Proin eget tortor risus. Vestibulum ac diam sit amet quam</p>
                         <div className="flex items-center gap-4">
-                            <img alt="logo" loading="lazy" width="65" height="65" decoding="async" data-nimg="1" className="img h-[70px] w-[70px] object-cover" src='../images/career'/>
+                            <img alt="logo" loading="lazy" width="65" height="65" decoding="async" data-nimg="1" className="img h-[70px] w-[70px] object-cover transparent"  src="../images/Innovative/4.jpg"/>
                             <div className="items-start rounded-full">
                                 <div className="flex flex-col justify-center">
                                     <h4 className="mb-1 font-primary text-lg">Ronald Richards</h4>
@@ -531,15 +537,15 @@ export default function Careers() {
     </section>
     <section className="section-md relative z-30 overflow-hidden pt-0">
         <div className="container relative">
-            <div className="row pb-12 text-center">
-                <div className="mx-auto lg:col-7">
+            <div className="flex flex-wrap pb-12 text-center">
+                <div className="mx-auto lg:w-7/12">
                     <span className="mb-6 inline-block font-medium uppercase text-red-400" data-aos="fade-up-sm">JOIN OUR TEAM</span>
-                    <h2 className="mb-6 font-semibold" data-aos="fade-up-sm" data-aos-delay="50">Spydea Open Positions</h2>
+                    <h2 className="mb-6 font-semibold text-[2.28886641rem]" data-aos="fade-up-sm" data-aos-delay="50">Spydea Open Positions</h2>
                     <p className="text-lg" data-aos="fade-up-sm" data-aos-delay="100">Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum</p>
                 </div>
             </div>
-            <div className="row gy-4 relative justify-center">
-                <div data-aos="fade-up-sm" className="md:col-8 lg:col-6 xl:col-5">
+            <div className="flex flex-wrap relative justify-center pb-20 gap-6">
+                <div data-aos="fade-up-sm" className="md:w-8/12 lg:w-6/12 xl:w-5/12">
                     <a href="careers/position-1">
                         <div className="shadow-default relative h-full rounded-2xl bg-white p-8 transition-transform duration-300 hover:-translate-y-1 sm:p-12">
                             <h3 className="mb-6 text-xl font-semibold text-dark sm:text-2xl">Sr. React Native Developer</h3>
@@ -571,7 +577,7 @@ export default function Careers() {
                         </div>
                     </a>
                 </div>
-                <div data-aos="fade-up-sm" className="md:col-8 lg:col-6 xl:col-5">
+                <div data-aos="fade-up-sm" className="md:w-8/12 lg:w-6/12 xl:w-5/12">
                     <a href="careers/position-2">
                         <div className="shadow-default relative h-full rounded-2xl bg-white p-8 transition-transform duration-300 hover:-translate-y-1 sm:p-12">
                             <h3 className="mb-6 text-xl font-semibold text-dark sm:text-2xl">Lead UI/UX Designer</h3>
@@ -603,7 +609,7 @@ export default function Careers() {
                         </div>
                     </a>
                 </div>
-                <div data-aos="fade-up-sm" className="md:col-8 lg:col-6 xl:col-5">
+                <div data-aos="fade-up-sm" className="md:w-8/12 lg:w-6/12 xl:w-5/12">
                     <a href="careers/position-3">
                         <div className="shadow-default relative h-full rounded-2xl bg-white p-8 transition-transform duration-300 hover:-translate-y-1 sm:p-12">
                             <h3 className="mb-6 text-xl font-semibold text-dark sm:text-2xl">Head of Inbound Marketing</h3>
@@ -635,7 +641,7 @@ export default function Careers() {
                         </div>
                     </a>
                 </div>
-                <div data-aos="fade-up-sm" className="md:col-8 lg:col-6 xl:col-5">
+                <div data-aos="fade-up-sm" className="md:w-8/12 lg:w-6/12 xl:w-5/12">
                     <a href="careers/position-4">
                         <div className="shadow-default relative h-full rounded-2xl bg-white p-8 transition-transform duration-300 hover:-translate-y-1 sm:p-12">
                             <h3 className="mb-6 text-xl font-semibold text-dark sm:text-2xl">Lead Brand Designer</h3>

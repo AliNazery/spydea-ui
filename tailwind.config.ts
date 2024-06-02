@@ -34,6 +34,7 @@ const config: Config = {
       extend: {
         padding: ['responsive'], // Enable responsive padding utilities
       },
+      margin: ['last'],
     },
     accordion:{
       extend :{
@@ -94,6 +95,7 @@ const config: Config = {
       },
       content:{
         'wama':'url("/images/logo/logo.png")',
+        'empty': "''",
       },
       lineHeight: {
         'customMarker': '1.75rem', // 28px
@@ -136,6 +138,9 @@ const config: Config = {
       noticewarning:"rgb(219 44 35 )",
       tableborder:"rgb(219 219 219 )",
       tablenvbg:"rgb(243 240 240 )",
+      bxIcoCo:"rgb(251 146 137)",
+      bxIcoCol:"rgb(115 207 168)",
+      bxIcoColo:"rgb(115 177 255)",
       noticeNote :"rgb(27 131 226/var(--tw-text-opacity))",
       'custom-gray-marker': '#222',
       

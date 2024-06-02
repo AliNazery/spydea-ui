@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import '../styles/globals.css'
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
+import AOSWrapper from "@/components/AOS/AOSWrapper";
 // import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <AOSWrapper/>
         <Announcement/>
         <Header/>
           {children}

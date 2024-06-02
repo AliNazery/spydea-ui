@@ -62,8 +62,8 @@ export default function Integration() {
             </section>
             <section className="section-md relative mt-[-28rem] overflow-hidden md:mt-[-32rem] pb-40">
                 <div className="container relative z-20">
-                    <div className="flex flex-wrap gap-6 ">
-                        <div data-aos="fade-up-sm" className="w-full md:w-1/2 lg:w-[30%] ">
+                    <div className="flex flex-wrap gap-6 mx-auto ">
+                        <div data-aos="fade-up-sm" className="w-full md:w-1/2 lg:w-[32%] ">
                             <div className="shadow-default overflow-hidden rounded-xl bg-white p-10">
                                 <div className="mb-6 flex flex-wrap justify-between gap-y-4">
                                     <Image alt="icon" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="rounded-xl" src='../images/integration/figma.svg'/>
@@ -80,7 +80,7 @@ export default function Integration() {
                                 <p>We collect certain identifying personal data when you Sign up to our Service such as your name,</p>
                             </div>
                         </div>
-                        <div data-aos="fade-up-sm" className="md:w-6/12 lg:w-[30%]">
+                        <div data-aos="fade-up-sm" className="md:w-6/12 lg:w-[32%]">
                             <div className="shadow-default overflow-hidden rounded-xl bg-white p-10">
                                 <div className="mb-6 flex flex-wrap items-center justify-between gap-y-4">
                                     <Image alt="icon" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="rounded-xl" src='../images/integration/framer.svg'/>
@@ -97,7 +97,7 @@ export default function Integration() {
                                 <p>We collect certain identifying personal data when you Sign up to our Service such as your name,</p>
                             </div>
                         </div>
-                        <div data-aos="fade-up-sm" className="md:w-6/12 lg:w-[30%]">
+                        <div data-aos="fade-up-sm" className="md:w-6/12 lg:w-[32%]">
                             <div className="shadow-default overflow-hidden rounded-xl bg-white p-10">
                                 <div className="mb-6 flex flex-wrap items-center justify-between gap-y-4">
                                     <Image alt="icon" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="rounded-xl" src='../images/integration/slack.svg'/>

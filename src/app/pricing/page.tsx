@@ -1,22 +1,31 @@
 import React from 'react'
+import Image from 'next/image'
+import Collapes from '@/components/price/Collapes';
+
 
 export default function Pricing() {
+    
   return (
     <main>
-    <section className="section page-header relative overflow-hidden pb-96 after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-40 after:h-full after:w-full after:clip-path-custom-shape">
-        <div className="container relative z-30">
+    <section className="section page-header relative overflow-hidden pb-96 after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-40 after:h-[696px] after:w-full after:clip-path-custom-shape">
+        <div className="container relative mb-[40px] z-30 pb-40" >
             <div className="row items-center">
-                <div className="mx-auto text-center lg:col-7">
-                    <h1 className="mb-6 text-[35px] sm:text-[50px] xl:text-[65px]" data-aos="fade-up-sm">Choose the Plan That’s Right for You</h1>
+                <div className="mx-auto mb-[40px] text-center lg:col-7 pt-[117px]">
+                    <h1 className="mb-12 text-4xl font-bold sm:text-[50px] xl:text-[65px]" data-aos="fade-up-sm">Choose the Plan <span className='block pt-12'> That’s Right for You </span></h1>
                     <div data-aos="fade-up-sm" data-aos-dealy="50">
-                        <nav aria-label="Breadcrumb" className="breadcrumb">
-                            <ol className="inline-flex" role="list">
-                                <li className="breadcrumb-list-item" role="listitem">
-                                    <a className="text-primary " href="/">Home</a>
+                        <nav aria-label="Breadcrumb" className="ml-auto mr-auto mb-6 flex w-fit gap-10">
+                            <ol className="inline-flex list-none m-0 p-0" role="list">
+                                <li className="relative pl-8 align-middle text-xl font-medium text-black" role="listitem">
+                                    <div className="flex items-center space-x-2">
+                                        <span>
+                                            <img src="../images/about/home.png" alt="" />
+                                        </span>
+                                        <a className="text-primary align-middle" href="/">Home</a>
+                                    </div>
                                 </li>
-                                <li className="breadcrumb-list-item" role="listitem">
+                                <li className="relative  align-middle text-xl font-medium" role="listitem">
                                     <span className="ml-3 mr-2 inline-block">/</span>
-                                    <span className="text-primary">Pricing</span>
+                                    <span className="text- align-middle">Pricing</span>
                                 </li>
                             </ol>
                         </nav>
@@ -53,80 +62,192 @@ export default function Pricing() {
             </svg>
         </div>
     </section>
-    <section className="section relative z-20 mt-[-26rem] overflow-hidden">
+    <section className="section relative z-20 mt-[-26rem] overflow-hidden md:py-[100px]">
         <div className="container relative">
-            <div className="row g-5">
-                <div className="relative order-2 lg:col-10 xl:col-8 xl:order-0">
-                    <div className="shadow-default flex flex-col justify-between rounded-xl bg-white px-8 py-12 md:flex-row xl:px-14">
-                        <div data-aos="fade-up-sm" className="px-0 py-3 sm:px-2">
+            <div className="flex flex-wrap gap-6">
+                <div className="relative order-0 lg:w-10/12 xl:w-[65%] xl:order-0 xl:max-w-[1280px]">
+                    <div className="shadow-default flex flex-col justify-between rounded-xl bg-white px-8 py-12  md:flex-row xl:px-12">
+                        <div data-aos="fade-up-sm" className="px-0 py-3 sm:px-2 w-[332px] ">
                             <div className="mb-6 flex items-center gap-4">
-                                <img alt="icon" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" className="rounded-md" src='../images/pricing'/>
+                                <img alt="icon" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" className="rounded-md text-transparent" src='../images/price/award.svg'/>
                             </div>
                             <h2 className="mb-3 text-xl font-bold text-dark sm:text-2xl">Standard license</h2>
                             <p className="mb-6 text-dark">Traffic Corporate Sites</p>
                             <div className="block w-full border-b border-b-border border-opacity-70 pb-6">
-                                <h2 className="h1 plan-price">
+                                <h2 className="text-[2.8153056842999997rem] font-secondary plan-price">
                                     $200 <span className="text-lg font-semibold text-dark">/month</span>
                                 </h2>
                             </div>
-                            <ul className="pricing-details">
-                                <li className="relative mb-5 pl-5 before:absolute before:left-0 before:top-[6px] before:h-[25px] before:w-[25px] before:bg-no-repeat before:content-[&#x27;&#x27;] last-of-type:mb-0">
-                                    <strong>Pellentesque</strong>
-                                    dapibus quam
-                                </li>
-                                <li className="relative mb-5 pl-5 before:absolute before:left-0 before:top-[6px] before:h-[25px] before:w-[25px] before:bg-no-repeat before:content-[&#x27;&#x27;] last-of-type:mb-0">
-                                    <strong>Morbi convallis</strong>
-                                    a urna quis lacinia
-                                </li>
-                                <li className="relative mb-5 pl-5 before:absolute before:left-0 before:top-[6px] before:h-[25px] before:w-[25px] before:bg-no-repeat before:content-[&#x27;&#x27;] last-of-type:mb-0">
-                                    <strong>Aliquam</strong>
-                                    vehicula laoreet ligula
-                                </li>
-                                <li className="relative mb-5 pl-5 before:absolute before:left-0 before:top-[6px] before:h-[25px] before:w-[25px] before:bg-no-repeat before:content-[&#x27;&#x27;] last-of-type:mb-0">
-                                    <strong>Sed dapibus</strong>
-                                    vitae mauris id fringilla
-                                </li>
-                            </ul>
-                            <a href="#?" className="btn btn-icon btn-outline-primary">
-                                Start Free Trial
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <ul className="mb-10 mt-8 border-b border-b-gray-300/70 pb-8 text-lg leading-7 text-gray-900">
+                                <div className="flex items-center mb-5 last:mb-0">
+                                <span className="inline-block pr-2 text-base">
+                                    <svg
+                                    stroke="none"
+                                    fill="currentColor"
+                                    strokeWidth="0"
+                                    viewBox="0 0 320 512"
+                                    height="1em"
+                                    width="1em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
                                     <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
-                                </svg>
+                                    </svg>
+                                </span>
+                                <li className="list-none pl-0">
+                                    <strong>Pellentesque</strong> dapibus quam
+                                </li>
+                                </div>
+                                <div className="flex items-center mb-5 last:mb-0">
+                                <span className="inline-block pr-2 text-base">
+                                    <svg
+                                    stroke="none"
+                                    fill="currentColor"
+                                    strokeWidth="0"
+                                    viewBox="0 0 320 512"
+                                    height="1em"
+                                    width="1em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                                    </svg>
+                                </span>
+                                <li className="list-none pl-0">
+                                    <strong>Morbi convallis</strong> a urna quis lacinia
+                                </li>
+                                </div>
+                                <div className="flex items-center mb-5 last:mb-0">
+                                <span className="inline-block pr-2 text-base">
+                                    <svg
+                                    stroke="none"
+                                    fill="currentColor"
+                                    strokeWidth="0"
+                                    viewBox="0 0 320 512"
+                                    height="1em"
+                                    width="1em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                                    </svg>
+                                </span>
+                                <li className="list-none pl-0">
+                                    <strong>Aliquam</strong> vehicula laoreet ligula
+                                </li>
+                                </div>
+                                <div className="flex items-center mb-5 last:mb-0">
+                                <span className="inline-block pr-2 text-base">
+                                    <svg
+                                    stroke="none"
+                                    fill="currentColor"
+                                    strokeWidth="0"
+                                    viewBox="0 0 320 512"
+                                    height="1em"
+                                    width="1em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                                    </svg>
+                                </span>
+                                <li className="list-none pl-0">
+                                    <strong>Sed dapibus</strong> vitae mauris id fringilla
+                                </li>
+                                </div>
+                            </ul>
+                            <a href="#?" className="btn btn-icon btn-outline-primary inline-flex  py-5 w-[313px]">
+                                Start Free Trial
+                                <svg className='ml-auto' stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                                    </svg>
                             </a>
                         </div>
-                        <div data-aos="fade-up-sm" className="px-0 py-3 sm:px-2">
+                        <div data-aos="fade-up-sm" className="px-0 py-3 sm:px-2  w-[332px] ">
                             <div className="mb-6 flex items-center gap-4">
-                                <img alt="icon" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" className="rounded-md" src='../images/pricing'/>
+                                <img alt="icon" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" className="rounded-md" src='../images/price/price-tag.svg'/>
                                 <span className="rounded-[4px] bg-black px-4 py-[3px] align-middle text-sm font-medium capitalize text-white">popular</span>
                             </div>
                             <h2 className="mb-3 text-xl font-bold text-dark sm:text-2xl">Enterprise License</h2>
                             <p className="mb-6 text-dark">Traffic Corporate Sites</p>
                             <div className="block w-full border-b border-b-border border-opacity-70 pb-6">
-                                <h2 className="h1 plan-price">
+                                <h2 className="text-[2.8153056842999997rem] font-secondary plan-price">
                                     $500 <span className="text-lg font-semibold text-dark">/month</span>
                                 </h2>
                             </div>
-                            <ul className="pricing-details">
-                                <li className="relative mb-5 pl-5 before:absolute before:left-0 before:top-[6px] before:h-[25px] before:w-[25px] before:bg-no-repeat before:content-[&#x27;&#x27;] last-of-type:mb-0">
-                                    <strong>Pellentesque</strong>
-                                    dapibus quam
+                            <ul className="mb-10 mt-8 border-b border-b-gray-300/70 pb-8 text-lg leading-7 text-gray-900">
+                                <div className="flex items-center mb-5 last:mb-0">
+                                <span className="inline-block pr-2 text-base">
+                                    <svg
+                                    stroke="none"
+                                    fill="currentColor"
+                                    strokeWidth="0"
+                                    viewBox="0 0 320 512"
+                                    height="1em"
+                                    width="1em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                                    </svg>
+                                </span>
+                                <li className="list-none pl-0">
+                                    <strong>Pellentesque</strong> dapibus quam
                                 </li>
-                                <li className="relative mb-5 pl-5 before:absolute before:left-0 before:top-[6px] before:h-[25px] before:w-[25px] before:bg-no-repeat before:content-[&#x27;&#x27;] last-of-type:mb-0">
-                                    <strong>Morbi convallis</strong>
-                                    a urna quis lacinia
+                                </div>
+                                <div className="flex items-center mb-5 last:mb-0">
+                                <span className="inline-block pr-2 text-base">
+                                    <svg
+                                    stroke="none"
+                                    fill="currentColor"
+                                    strokeWidth="0"
+                                    viewBox="0 0 320 512"
+                                    height="1em"
+                                    width="1em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                                    </svg>
+                                </span>
+                                <li className="list-none pl-0">
+                                    <strong>Morbi convallis</strong> a urna quis lacinia
                                 </li>
-                                <li className="relative mb-5 pl-5 before:absolute before:left-0 before:top-[6px] before:h-[25px] before:w-[25px] before:bg-no-repeat before:content-[&#x27;&#x27;] last-of-type:mb-0">
-                                    <strong>Aliquam</strong>
-                                    vehicula laoreet ligula
+                                </div>
+                                <div className="flex items-center mb-5 last:mb-0">
+                                <span className="inline-block pr-2 text-base">
+                                    <svg
+                                    stroke="none"
+                                    fill="currentColor"
+                                    strokeWidth="0"
+                                    viewBox="0 0 320 512"
+                                    height="1em"
+                                    width="1em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                                    </svg>
+                                </span>
+                                <li className="list-none pl-0">
+                                    <strong>Aliquam</strong> vehicula laoreet ligula
                                 </li>
-                                <li className="relative mb-5 pl-5 before:absolute before:left-0 before:top-[6px] before:h-[25px] before:w-[25px] before:bg-no-repeat before:content-[&#x27;&#x27;] last-of-type:mb-0">
-                                    <strong>Sed dapibus</strong>
-                                    vitae mauris id fringilla
+                                </div>
+                                <div className="flex items-center mb-5 last:mb-0">
+                                <span className="inline-block pr-2 text-base">
+                                    <svg
+                                    stroke="none"
+                                    fill="currentColor"
+                                    strokeWidth="0"
+                                    viewBox="0 0 320 512"
+                                    height="1em"
+                                    width="1em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                                    </svg>
+                                </span>
+                                <li className="list-none pl-0">
+                                    <strong>Sed dapibus</strong> vitae mauris id fringilla
                                 </li>
+                                </div>
                             </ul>
-                            <a href="#?" className="btn btn-icon btn-primary">
+                            <a href="#?" className="btn btn-icon btn-primary inline-flex  py-5 w-[313px]">
                                 Start Free Trial
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <svg className='ml-auto' stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
                                 </svg>
                             </a>
@@ -417,16 +538,16 @@ export default function Pricing() {
                         </svg>
                     </div>
                 </div>
-                <div className="lg:col-12 xl:col-4">
+                <div className="lg:w-full xl:w-[30%]">
                     <span className="mb-6 inline-block font-medium uppercase text-red-400" data-aos="fade-up-sm">CHOOSE PLAN FOR YOU</span>
                     <div className="mb-6 border-l-2 border-dark border-opacity-50 py-2 pl-6" data-aos="fade-up-sm" data-aos-delay="50">
-                        <h2 className="font-semibold">Try Spydea for free Now</h2>
+                        <h2 className="font-semibold text-[2.28886641rem]">Try Spydea for free Now</h2>
                     </div>
                     <p className="mb-8 pl-6 text-lg" data-aos="fade-up-sm" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur mag na dictum porta. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. elementum id enim. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut</p>
                     <span data-aos="fade-up-sm" data-aos-delay="150">
-                        <a href="/login" className="btn btn-outline-primary btn-icon ml-6 max-w-[250px] md:max-w-[300px]">
+                        <a href="/login" className="btn btn-outline-primary btn-icon w-[300px] ml-6 max-w-[250px] md:max-w-[300px] inline-flex  py-5 ">
                             Sign up For Free
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" className="ml-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <svg className='ml-auto' stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
                             </svg>
                         </a>
@@ -437,24 +558,28 @@ export default function Pricing() {
     </section>
     <section className="section-md faq relative z-20 after:-z-10">
         <div className="container relative z-30">
-            <div className="row gy-4 justify-between">
-                <div className="lg:col-5">
+            <div className="flex flex-wrap justify-between">
+                <div className="lg:w-5/12">
                     <span className="mb-6 inline-block font-medium uppercase text-red-400" data-aos="fade-up-sm">COMMON INQUIRIES</span>
                     <div className="mb-6 border-l-2 border-dark border-opacity-50 py-2 pl-6" data-aos="fade-up-sm" data-aos-delay="50">
-                        <h2 className="font-semibold">Frequently Asked Questions</h2>
+                        <h2 className="font-semibold text-[2.28886641rem]">Frequently Asked Questions</h2>
                     </div>
                     <p className="pl-6 text-lg" data-aos="fade-up-sm" data-aos-delay="100">Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Vestibulum ac diam sit amet quam vehicula elementum.</p>
                 </div>
-                <div className="lg:col-6">
-                    <div className="accordion false">
+                <div className="lg:w-6/12">
+                    <Collapes/>
+                </div>
+                {/* <div className="lg:w-6/12">
+                    <div className="mb-6 mt-0 rounded-xl border border-borderColor bg-bgColor">
                         <div data-aos="fade-up-sm">
-                            <button type="button" className="accordion-header w-full text-xl font-medium" data-accordion="true">
+                            <button type="button" className="flex cursor-pointer select-none items-center justify-between gap-3 p-6 capitalize text-dark px-10 w-full text-xl font-medium" data-accordion="true"
+                            onClick={handleClick}>
                                 <span>How does the free trial work?</span>
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="accordion-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <svg className={`h-[.68em] w-[.68em]  transform transition-transform duration-200 ease-linear  ${ isActive ? 'rotate-180': 'rotate-0'}`} stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="accordion-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
                                 </svg>
                             </button>
-                            <div className="accordion-content">
+                            <div className={` ${isVisible ? 'block' : 'hidden'} overflow-hidden max-h-screen text-lg leading-7 px-10 pb-10`}>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat veritatis necessitatibus nemo ullam dolores aut veniam officiis asperiores, unde quo magni repudiandae impedit iusto voluptatum eos, aliquam, consectetur aliquid.</p>
                             </div>
                         </div>
@@ -524,7 +649,7 @@ export default function Pricing() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
         <div className="line-bg absolute z-20">
