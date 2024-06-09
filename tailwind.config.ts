@@ -51,6 +51,7 @@ const config: Config = {
       },
       clipPath: {
         'custom-shape': 'polygon(0 -1%, 100% 0, 100% 85%, 0 45%)',
+        'custom-shaped': 'polygon(0 0%, 100% 0, 100% 85%, 0 60%)',
       },
       transitionProperty: {
         'padding': 'padding',
@@ -141,6 +142,7 @@ const config: Config = {
       bxIcoCo:"rgb(251 146 137)",
       bxIcoCol:"rgb(115 207 168)",
       bxIcoColo:"rgb(115 177 255)",
+      bgo1Color:"rgb(244 253 255)",
       noticeNote :"rgb(27 131 226/var(--tw-text-opacity))",
       'custom-gray-marker': '#222',
       

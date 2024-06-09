@@ -1,22 +1,29 @@
 import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Authors() {
   return (
     <main>
-    <section className="section page-header relative overflow-hidden pb-96 after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-40 after:h-full after:w-full after:clip-path-custom-shape">
-        <div className="container relative z-30">
+    <section className="section page-header relative overflow-hidden pb-96 after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-40 after:h-[696px] after:w-full after:clip-path-custom-shape">
+        <div className="container relative mb-[40px] z-30 pb-40" >
             <div className="row items-center">
-                <div className="mx-auto text-center lg:col-7">
-                    <h1 className="mb-6 text-[35px] sm:text-[50px] xl:text-[65px]" data-aos="fade-up-sm">Authors</h1>
+                <div className="mx-auto mb-[40px] text-center lg:col-7 pt-[117px]">
+                    <h1 className="mb-12 text-4xl font-bold sm:text-[50px] xl:text-[65px]" data-aos="fade-up-sm">Authors</h1>
                     <div data-aos="fade-up-sm" data-aos-dealy="50">
-                        <nav aria-label="Breadcrumb" className="breadcrumb">
-                            <ol className="inline-flex" role="list">
-                                <li className="breadcrumb-list-item" role="listitem">
-                                    <a className="text-primary " href="/">Home</a>
+                        <nav aria-label="Breadcrumb" className="ml-auto mr-auto mb-6 flex w-fit gap-10">
+                            <ol className="inline-flex list-none m-0 p-0" role="list">
+                                <li className="relative pl-8 align-middle text-xl font-medium text-black" role="listitem">
+                                    <div className="flex items-center space-x-2">
+                                        <span>
+                                            <img src="../images/about/home.png" alt="" />
+                                        </span>
+                                        <Link className="text-primary align-middle" href="/">Home</Link>
+                                    </div>
                                 </li>
-                                <li className="breadcrumb-list-item" role="listitem">
+                                <li className="relative  align-middle text-xl font-medium" role="listitem">
                                     <span className="ml-3 mr-2 inline-block">/</span>
-                                    <span className="text-primary">Authors</span>
+                                    <span className="text- align-middle">Authors</span>
                                 </li>
                             </ol>
                         </nav>
@@ -53,14 +60,14 @@ export default function Authors() {
             </svg>
         </div>
     </section>
-    <section className="section-md mt-[-28rem] md:mt-[-32rem]">
+    <section  className=" md:py-[200px] mt-[-28rem] md:mt-[-32rem]">
         <div className="container relative z-40">
-            <div className="row gy-5">
-                <div data-aos="fade-up-sm" className="md:col-6 lg:col-4 xl:col-3">
-                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-sm transition-all duration-300 hover:shadow-md">
-                        <a className="h-full max-h-[900px] w-full" href="/authors/benjamin">
-                            <img alt="Benjamin" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover" src='../images/author' />
-                        </a>
+            <div className="flex flex-wrap -mt-6 -mx-3 gap-1 justify-center ">
+                <div data-aos="fade-up-sm" className="w-full sm:1/2 md:w-1/3 lg:w-[24%] xl:w-[300px] box-border max-w-full pr-3 pl-3 mt-6 ">
+                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-default transition-all duration-300 hover:shadow-md">
+                        <Link className="h-full max-h-[900px] w-full" href="/authors/benjamin">
+                            <Image alt="Benjamin" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover" src='/images/author/1.jpg' />
+                        </Link>
                         <div className="px-5 pt-8 text-center">
                             <h3 className="mb-4 text-xl font-semibold text-dark sm:text-2xl">
                                 <a href="/authors/benjamin">Benjamin</a>
@@ -93,10 +100,10 @@ export default function Authors() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-up-sm" className="md:col-6 lg:col-4 xl:col-3">
-                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div data-aos="fade-up-sm" className="w-full sm:1/2 md:w-1/3 lg:w-[24%] xl:w-[300px] box-border max-w-full pr-3 pl-3 mt-6">
+                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-default transition-all duration-300 hover:shadow-md">
                         <a className="h-full max-h-[900px] w-full" href="/authors/daniel-mitchell">
-                            <img alt="Daniel Mitchell" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='../images/author'/>
+                            <Image alt="Daniel Mitchell" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='/images/author/3.jpg'/>
                         </a>
                         <div className="px-5 pt-8 text-center">
                             <h3 className="mb-4 text-xl font-semibold text-dark sm:text-2xl">
@@ -130,10 +137,10 @@ export default function Authors() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-up-sm" className="md:col-6 lg:col-4 xl:col-3">
-                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div data-aos="fade-up-sm" className="w-full sm:1/2 md:w-1/3 lg:w-[24%] xl:w-[300px] box-border max-w-full pr-3 pl-3 mt-6">
+                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-default transition-all duration-300 hover:shadow-md">
                         <a className="h-full max-h-[900px] w-full" href="/authors/darlene-robertson">
-                            <img alt="Darlene Robertson" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='../images/author'/>
+                            <Image alt="Darlene Robertson" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='/images/author/4.jpg'/>
                         </a>
                         <div className="px-5 pt-8 text-center">
                             <h3 className="mb-4 text-xl font-semibold text-dark sm:text-2xl">
@@ -167,10 +174,10 @@ export default function Authors() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-up-sm" className="md:col-6 lg:col-4 xl:col-3">
-                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div data-aos="fade-up-sm" className="w-full sm:1/2 md:w-1/3 lg:w-[24%] xl:w-[300px] box-border max-w-full pr-3 pl-3 mt-6">
+                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-default transition-all duration-300 hover:shadow-md">
                         <a className="h-full max-h-[900px] w-full" href="/authors/devid-harrison">
-                            <img alt="David Harrison" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='../images/author'/>
+                            <Image alt="David Harrison" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='/images/author/1.jpg'/>
                         </a>
                         <div className="px-5 pt-8 text-center">
                             <h3 className="mb-4 text-xl font-semibold text-dark sm:text-2xl">
@@ -204,10 +211,10 @@ export default function Authors() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-up-sm" className="md:col-6 lg:col-4 xl:col-3">
-                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div data-aos="fade-up-sm" className="w-full sm:1/2 md:w-1/3 lg:w-[24%] xl:w-[300px] box-border max-w-full pr-3 pl-3 mt-6">
+                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-default transition-all duration-300 hover:shadow-md">
                         <a className="h-full max-h-[900px] w-full" href="/authors/devon-lane">
-                            <img alt="Devon Lane" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='../images/author'/>
+                            <Image alt="Devon Lane" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='/images/author/5.jpg'/>
                         </a>
                         <div className="px-5 pt-8 text-center">
                             <h3 className="mb-4 text-xl font-semibold text-dark sm:text-2xl">
@@ -242,10 +249,10 @@ export default function Authors() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-up-sm" className="md:col-6 lg:col-4 xl:col-3">
-                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div data-aos="fade-up-sm" className="w-full sm:1/2 md:w-1/3 lg:w-[24%] xl:w-[300px] box-border max-w-full pr-3 pl-3 mt-6">
+                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-default transition-all duration-300 hover:shadow-md">
                         <a className="h-full max-h-[900px] w-full" href="/authors/jacob-jones">
-                            <img alt="Jacob Jones" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='../images/author'/>
+                            <Image alt="Jacob Jones" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='/images/author/6.jpg'/>
                         </a>
                         <div className="px-5 pt-8 text-center">
                             <h3 className="mb-4 text-xl font-semibold text-dark sm:text-2xl">
@@ -279,10 +286,10 @@ export default function Authors() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-up-sm" className="md:col-6 lg:col-4 xl:col-3">
-                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div data-aos="fade-up-sm" className="w-full sm:1/2 md:w-1/3 lg:w-[24%] xl:w-[300px] box-border max-w-full pr-3 pl-3 mt-6">
+                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-default transition-all duration-300 hover:shadow-md">
                         <a className="h-full max-h-[900px] w-full" href="/authors/jerome-bell">
-                            <img alt="Jerome Bell" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='../images/author'/>
+                            <Image alt="Jerome Bell" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='/images/author/7.jpg'/>
                         </a>
                         <div className="px-5 pt-8 text-center">
                             <h3 className="mb-4 text-xl font-semibold text-dark sm:text-2xl">
@@ -316,10 +323,10 @@ export default function Authors() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-up-sm" className="md:col-6 lg:col-4 xl:col-3">
-                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div data-aos="fade-up-sm" className="w-full sm:1/2 md:w-1/3 lg:w-[300px] xl:w-[300px] box-border max-w-full pr-3 pl-3 mt-6">
+                    <div className="overflow-hidden rounded-xl bg-white px-3 py-8 shadow-default transition-all duration-300 hover:shadow-md">
                         <a className="h-full max-h-[900px] w-full" href="/authors/john-doe">
-                            <img alt="John Doe" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='../images/author'/>
+                            <Image alt="John Doe" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" className="mx-auto h-[180px] w-[180px] rounded-full object-cover"  src='/images/author/4.jpg'/>
                         </a>
                         <div className="px-5 pt-8 text-center">
                             <h3 className="mb-4 text-xl font-semibold text-dark sm:text-2xl">

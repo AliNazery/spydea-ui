@@ -62,7 +62,7 @@ export default function Pricing() {
             </svg>
         </div>
     </section>
-    <section className="section relative z-20 mt-[-26rem] overflow-hidden md:py-[100px]">
+    <section className="section relative z-20 mt-[-26rem] mb-6 overflow-hidden md:py-[100px]">
         <div className="container relative">
             <div className="flex flex-wrap gap-6">
                 <div className="relative order-0 lg:w-10/12 xl:w-[65%] xl:order-0 xl:max-w-[1280px]">
@@ -556,7 +556,7 @@ export default function Pricing() {
             </div>
         </div>
     </section>
-    <section className="section-md faq relative z-20 after:-z-10">
+    <section className="section-md faq z-20 pt-40  relative h-[988px] w-[1349px] overflow-hidden after:content-[''] after:z-10 after:bg-bgo1Color after:skew-y-[12deg]  after:absolute after:left-0 after:-top-40 after:h-[988px] after:w-full after:clip-path-custom-shaped">
         <div className="container relative z-30">
             <div className="flex flex-wrap justify-between">
                 <div className="lg:w-5/12">
