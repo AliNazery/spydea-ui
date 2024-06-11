@@ -8,6 +8,7 @@ import Experience from "@/components/Experience/Experience";
 import Acheivement from "@/components/Acheivment/Acheivement";
 import Innovative from "@/components/Innovative/Innovative";
 import Article from "@/components/Article/Article";
+import bgLines from "@/components/lines/bgLines";
 
 
 
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
+        {/* <bgLine/> */}
         <Hero/>
         <Brands/>
         <Features/>

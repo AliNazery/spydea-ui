@@ -5,6 +5,7 @@ import '../styles/globals.css'
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import AOSWrapper from "@/components/AOS/AOSWrapper";
+import OverlayImage from "@/components/OverlayImage";
 // import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,14 +21,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-line-bg">
       <body className={inter.className}>
-        <AOSWrapper/>
-        <Announcement/>
-        <Header/>
+          <AOSWrapper />
+          <Announcement />
+          <OverlayImage />
+          <Header />
           {children}
-        <Footer/>
-        </body>
+          <Footer />
+      </body>
     </html>
   );
 }

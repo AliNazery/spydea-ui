@@ -45,6 +45,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'dotted-line': "url('data:image/svg+xml,%3Csvg width='1px' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='none' stroke='%23F96D61' stroke-width='2' stroke-dasharray='6, 14' stroke-dashoffset='0' stroke-linecap='square'/%3E%3C/svg%3E')",
+         'line-bg': "url('/images/about/line.svg')", 
       },
       height: {
         '140p': '140%', // 140% height for the after element
@@ -69,6 +70,7 @@ const config: Config = {
         '3.5': '0.8571429em',
         '4.5': '1.1428571em',
         '7': '1.7142857em',
+        '1px': '1px',
       },
       backgroundColor: {
         'white': 'rgba(255, 255, 255, 1)', // Set your custom background color and opacity here

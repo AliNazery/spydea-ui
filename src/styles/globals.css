@@ -157,6 +157,19 @@ audio, canvas, embed, iframe, img, object, svg, video {
   }
 }
 
+/* body {
+  --dot-bg: #ffffff;
+  --dot-color: #000000;
+  --dot-size: 1px;
+  --dot-space: 50px;
+  --dot-z-index: 50;
+  background:
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+  
+} */
+
 
 
 .feature.triangle-up::after {
