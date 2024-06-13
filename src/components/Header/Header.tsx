@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,24 +28,28 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header z-50 h-[85.5px] ${
+        className={`header z-50 ${
           sticky ? "bg-white shadow-lg" : "bg-quaternary/20"
-        }`}
+        } xs:h-18 h-20`}
       >
-        <nav className="flex flex-wrap items-center justify-between  pt-4 pb-4 transition-padding duration-200 ease-in-out container relative z-30 lg:py-[4px]">
-          <Link href="/" className="navbar-brand text-[15px]">
-            <img
+        <nav
+          className="flex flex-wrap items-center justify-center lg:justify-between h-auto
+      pt-4 pb-4 lg:py-5 transition-padding duration-200 ease-in-out
+      container relative z-30
+      xs:px-4 xs:max-w-[480px] sm:mx-0 sm:px-6 sm:max-w-[575px]
+      md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1320px] mx-auto "
+        >
+          <Link href="/" className="navbar-brand xs:text-[15px]">
+            <Image
               alt="wamaSolution"
-              loading="lazy"
               width="158"
               height="36"
-              decoding="async"
-              style={{ color: "transparent" }}
+              className="transparent"
               src="/images/logo/logo-dark.png"
             />
           </Link>
           <button
-            className={`navbar-toggler group relative ml-auto lg:hidden md:block ${
+            className={`navbar-toggler group relative xs:ml-[276px] sm:ml-[355px] md:ml-[548px] border-2 p-[4px] rounded-md border-black lg:hidden md:block ${
               isOpen ? "active" : ""
             }`}
             aria-label="navbar toggler"
@@ -91,16 +96,16 @@ const Header = () => {
             </div>
           </button>
           <div
-            className={`lg:flex ${
+            className={`lg:flex max-w-[768px] ${
               isOpen
                 ? "flex flex-col bg-white justify-between items-center"
                 : "hidden"
-            } w-full lg:w-auto bg-transparent visible static h-auto rounded-xl flex-row overflow-visible py-4 opacity-100 filter-none drop-shadow-n`}
+            } w-full lg:w-auto bg-transparent h-auto rounded-xl flex-row overflow-visible opacity-100`}
           >
             <ul
-              className={`order-2 w-auto ${
+              className={`order-2 w-full ${
                 isOpen
-                  ? "flex flex-col items-center bg-white w-full md:w-auto space-y-4 py-4"
+                  ? "flex flex-col items-center bg-white w-full md:w-full space-y-4 py-4"
                   : "hidden"
               } md:flex md:flex-col md:items-center md:space-y-4 lg:flex-row lg:space-x-9 lg:space-y-0`}
             >

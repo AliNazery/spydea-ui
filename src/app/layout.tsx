@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={inter.className}>
           <AOSWrapper />
           <Announcement />
-          <OverlayImage />
+          {/* <OverlayImage /> */}
           <Header />
           {children}
           <Footer />
