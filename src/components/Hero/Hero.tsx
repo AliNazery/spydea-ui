@@ -4,10 +4,10 @@ import HeroPhoto from "./HeroPhoto";
 
 export function Hero() {
   return (
-    <section className="section banner relative py-[60px] overflow-hidden before:z-10 after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-60 after:h-full after:w-full after:clip-path-custom-shape">
-      <div className="container relative z-30">
-        <div className="row items-center">
-          <div className="lg:col-6 px-3 ">
+    <section className="section banner relative py-[60px] md:py-[100px] overflow-hidden before:z-10 after:content-[''] after:z-10 after:bg-aboutbg after:skew-y-[12deg]  after:absolute after:left-0 after:-top-60 after:h-full after:w-full after:clip-path-custom-shape">
+      <div className="container relative z-30 sm:px-6">
+        <div className="lg:flex lg:items-center lg:-mx-3">
+          <div className="lg:w-6/12 px-3 ">
             <h1
               data-aos="fade-up-sm"
               className="mb-6 font-bold text-[35px] sm:text-[50px] xl:text-[65px]"
@@ -164,11 +164,11 @@ export function Hero() {
               </li>
             </ul>
           </div>
-          <div className="mx-auto max-w-[600px] pt-24 px-3 lg:col-6 lg:pt-0">
+          <div className="mx-auto max-w-[600px] pt-24 px-3 sm:mx-0 sm:w-full md:mx-[72px] lg:w-6/12 lg:mx-0 lg:pt-0 xl:mx-6">
             <div
               data-aos="fade-up-sm"
               className="image-block relative mr-[5.5%] pl-8 md:mr-6 lg:ml-6 before:content-[''] before:-z-10 before:bg-tertiary before:absolute before:h-full before:w-calc-100-minus-80 before:-top-4 before:left-4 before:right-16 before:skew--[12deg] before:clip-path-before-hero  
-              after:content-[''] after:-z-10 after:bg-yellow_tan  after:absolute after:left-[100px] after:-right-5 after:top-[15px] after:bottom-[-15px] after:h-full after:calc-100-minus-80 after:after-hero"
+              after:content-[''] after:-z-10 after:bg-yellow_tan  after:absolute after:left-[100px] after:-right-5  after:top-[15px]  after:bottom-[-15px] after:xl:bottom-[-30px] after:h-full after:calc-100-minus-80 after:after-hero"
             >
               <Image
                 alt="banner-image"

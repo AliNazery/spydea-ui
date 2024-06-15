@@ -54,9 +54,10 @@ const config: Config = {
       clipPath: {
         "custom-shape": "polygon(0 -1%, 100% 0, 100% 85%, 0 45%)",
         "custom-shaped": "polygon(0 0%, 100% 0, 100% 85%, 0 60%)",
-        "before-hero": "polygon(38% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 30%)",
-        'after-hero': 'polygon(38% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 30%)',
-
+        "before-hero":
+          "polygon(38% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 30%)",
+        "after-hero":
+          "polygon(38% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 30%)",
       },
       transitionProperty: {
         padding: "padding",
@@ -106,6 +107,7 @@ const config: Config = {
         "14px": "14px !important",
         "15px": "15px !important",
         customMarker: "1.125rem",
+        h2: ["1.831093128rem", { lineHeight: "1.375rem" }],
       },
       boxShadow: {
         default: "0 15px 60px rgba(0, 0, 0, .06)",
@@ -201,25 +203,25 @@ const config: Config = {
           left: "100px",
         },
       };
-      addUtilities(newUtilities, ["responsive", "hover"]), 
-      addUtilities(
-        {
-          ".after-dotted-line": {
-            "&::after": {
-              backgroundImage:
-                "url('data:image/svg+xml,%3Csvg width='1px' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='none' stroke='%23F96D61' stroke-width='2' stroke-dasharray='6, 14' stroke-dashoffset='0' stroke-linecap='square'/%3E%3C/svg%3E')",
-              content: "''",
-              position: "absolute",
-              left: "0",
-              top: "50%",
-              height: "140%",
-              width: "1px",
-              transform: "translateY(-50%)",
+      addUtilities(newUtilities, ["responsive", "hover"]),
+        addUtilities(
+          {
+            ".after-dotted-line": {
+              "&::after": {
+                backgroundImage:
+                  "url('data:image/svg+xml,%3Csvg width='1px' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='none' stroke='%23F96D61' stroke-width='2' stroke-dasharray='6, 14' stroke-dashoffset='0' stroke-linecap='square'/%3E%3C/svg%3E')",
+                content: "''",
+                position: "absolute",
+                left: "0",
+                top: "50%",
+                height: "140%",
+                width: "1px",
+                transform: "translateY(-50%)",
+              },
             },
           },
-        },
-        ["responsive"]
-      );
+          ["responsive"]
+        );
     },
     require("@tailwindcss/forms"),
     require("tailwindcss-pseudo-elements")({
