@@ -54,6 +54,9 @@ const config: Config = {
       clipPath: {
         "custom-shape": "polygon(0 -1%, 100% 0, 100% 85%, 0 45%)",
         "custom-shaped": "polygon(0 0%, 100% 0, 100% 85%, 0 60%)",
+        "before-hero": "polygon(38% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 30%)",
+        'after-hero': 'polygon(38% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 30%)',
+
       },
       transitionProperty: {
         padding: "padding",
@@ -124,6 +127,7 @@ const config: Config = {
         "130px": "130px",
         "col-10": "83.33333333333334%",
         "col-6": "50%",
+        "calc-100-minus-80": "calc(100% - 80px)",
       },
       quotImae: {
         qbg: "url(./images/blog/qoute.svg)",
@@ -185,6 +189,19 @@ const config: Config = {
   },
   plugins: [
     function ({ addUtilities }) {
+      const newUtilities = {
+        "after-hero": {
+          clipPath:
+            "polygon(38% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 30%)",
+          content: '""',
+          position: "absolute",
+          top: "15px",
+          right: "-20px",
+          bottom: "-15px",
+          left: "100px",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]), 
       addUtilities(
         {
           ".after-dotted-line": {

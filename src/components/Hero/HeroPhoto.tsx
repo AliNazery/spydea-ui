@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HeroPhoto() {
   return (
-    <div className="mx-auto max-w-[600px] pt-24 lg:col-6 lg:pt-0 md:order-2">
+    <div className="mx-auto max-w-[600px] pt-24 lg:w-6/12 lg:pt-0 flex-1 order-2">
         <div className="image-block relative mr-[5.5%] md:mr-6 lg:ml-6 aos-init aos-animate">
             <img src="../images/brands/banner-image.png" className="banner-image w-100 h-auto max-w-full"/>
             <img src="../images/brands/banner-image-part-1.png" alt=""  className='absolute bottom-16 left-0 w-[40%] rounded-lg shadow-md aos-init aos-animate color-transparent'/>

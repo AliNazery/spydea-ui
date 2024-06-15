@@ -33,11 +33,11 @@ const Header = () => {
         } xs:h-18 h-20`}
       >
         <nav
-          className="flex flex-wrap items-center justify-center lg:justify-between h-auto
+          className={`flex flex-wrap items-center justify-center lg:justify-between h-auto
       pt-4 pb-4 lg:py-5 transition-padding duration-200 ease-in-out
       container relative z-30
       xs:px-4 xs:max-w-[480px] sm:mx-0 sm:px-6 sm:max-w-[575px]
-      md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1320px] mx-auto "
+      md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1320px] mx-auto `}
         >
           <Link href="/" className="navbar-brand xs:text-[15px]">
             <Image
@@ -96,11 +96,11 @@ const Header = () => {
             </div>
           </button>
           <div
-            className={`lg:flex max-w-[768px] ${
+            className={`flex flex-col ${
               isOpen
-                ? "flex flex-col bg-white justify-between items-center"
+                ? "flex flex-col bg-white justify-between items-center h-auto rounded-xl p-3"
                 : "hidden"
-            } w-full lg:w-auto bg-transparent h-auto rounded-xl flex-row overflow-visible opacity-100`}
+            } w-full lg:w-auto bg-transparent h-auto  flex-row overflow-visible opacity-100`}
           >
             <ul
               className={`order-2 w-full ${

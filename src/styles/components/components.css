@@ -53,7 +53,7 @@
       sm:pb-15
     }
     .btn.btn-md {
-      @apply pl-10 pr-10 pt-[17px] pb-[17px]
+      @apply pl-10 pr-10 py-[13px]
     }
 
     .header{
