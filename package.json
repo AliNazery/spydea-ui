@@ -13,9 +13,11 @@
     "@types/tailwindcss": "^3.1.0",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.19",
+    "countup.js": "^2.8.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-intersection-observer": "^9.10.3",
     "tailwindcss-pseudo-elements": "^2.0.0"
   },
   "devDependencies": {

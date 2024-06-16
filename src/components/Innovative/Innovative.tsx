@@ -6,7 +6,7 @@ export default function Innovative() {
     <section className='section-lg feature triangle-up pb-0 relative z-20 overflow-hidden'>
         <div className='container relative z-20'>
             <div className='flex flex-wrap gy-4 items-center'>
-                <div className='lg:col-7 order-1 aos-init aos-animate'>
+                <div className='lg:w-7/12 order-1 aos-init aos-animate'>
                     <div className='feature-clip-path-1 relative'>
                         <img src="../images/innovative/feature-1.png" 
                         alt="feature image" 
@@ -46,7 +46,7 @@ export default function Innovative() {
             <div className="lg:flex-shrink-0 w-5/12 order-2">
                 <span className="mb-6 inline-block font-medium uppercase text-red-400" data-aos="fade-right-sm">INNOVATIVE STRATEGIES</span>
                 <div data-aos="fade-right-sm" className="mb-6 border-l-2 border-dark border-opacity-50 py-2 pl-6">
-                    <h2 className="font-semibold" data-aos="fade-right-sm" data-aos-delay="100">Take Your Marketing to the Next Level.</h2>
+                    <h2 className="font-semibold text-h2" data-aos="fade-right-sm" data-aos-delay="100">Take Your Marketing to the Next Level.</h2>
                 </div>
                 <p className="pl-6 text-lg" data-aos="fade-right-sm" data-aos-delay="150">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus.</p>
             </div>
@@ -77,7 +77,7 @@ export default function Innovative() {
                         <div className="lg:flex-shrink-0 w-5/12 order-1">
                             <span className="mb-6 inline-block font-medium uppercase text-red-400" data-aos="fade-right-sm">COLLABORATIVE SOLUTIONS</span>
                             <div data-aos="fade-right-sm" className="mb-6 border-l-2 border-dark border-opacity-50 py-2 pl-6">
-                                <h2 className="font-semibold" data-aos="fade-right-sm" data-aos-delay="100">Choose the Right Plan for Your Team</h2>
+                                <h2 className="font-semibold text-4xl" data-aos="fade-right-sm" data-aos-delay="100">Choose the Right Plan for Your Team</h2>
                             </div>
                             <p className="pl-6 text-lg" data-aos="fade-right-sm" data-aos-delay="150">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus.</p>
                         </div>

@@ -107,7 +107,9 @@ const config: Config = {
         "14px": "14px !important",
         "15px": "15px !important",
         customMarker: "1.125rem",
-        h2: ["1.831093128rem", { lineHeight: "1.375rem" }],
+        h2: "1.831093128rem",
+        h4: "1.5129rem",
+        h6: "1rem",
       },
       boxShadow: {
         default: "0 15px 60px rgba(0, 0, 0, .06)",
