@@ -36,7 +36,7 @@ export default function Acheivement() {
               ACHIEVING EXCELLENCE
             </span>
             <h2
-              className="mb-6 font-semibold text-h2"
+              className="mb-6 font-semibold text-h2 md:text-mdh2"
               data-aos="fade-up-sm"
               data-aos-delay="100"
             >
@@ -51,8 +51,8 @@ export default function Acheivement() {
         </div>
         <div className="row relative -mx-3 flex flex-wrap">
           <div className="w-full flex-none px-3">
-            <ul className="list-dotted-line-separator shadow-default flex flex-col justify-between gap-6 rounded-2xl bg-white px-12 py-10 sm:py-14 md:flex-row md:justify-between md:gap-0">
-              <li ref={ref1} className="text-center md:pr-15 lg:pr-23 xl:pr-27">
+            <ul className="list-dotted-line-separator shadow-default flex flex-col md:h-full justify-center gap-6 rounded-2xl bg-white px-12 py-10 sm:py-14 md:flex-row md:justify-between md:gap-0">
+              <li ref={ref1} className="text-center md:pr-10 lg:pr-22 xl:pr-26">
                 <span className="mb-6 block font-secondary text-3xl font-bold text-dark md:text-4xl xl:text-6xl">
                   <span ref={countUpRefs[0]}>94</span>%
                 </span>
@@ -61,9 +61,13 @@ export default function Acheivement() {
                 </div>
               </li>
               <li className="hidden  md:block">
-                <img src="../images/about/line.svg" alt="" />
+                <img
+                  className="h-[116px] lg:h-[90px] xl:h-[124px]"
+                  src="../images/about/line.svg"
+                  alt=""
+                />
               </li>
-              <li ref={ref2} className="text-center md:pr-15 lg:pr-23 xl:pr-27">
+              <li ref={ref2} className="text-center md:pr-10 lg:pr-23 xl:pr-27">
                 <span className="mb-6 block font-secondary text-3xl font-bold text-dark md:text-4xl xl:text-6xl">
                   <span ref={countUpRefs[1]}>70</span>
                   M+
@@ -73,9 +77,13 @@ export default function Acheivement() {
                 </div>
               </li>
               <li className="hidden md:block">
-                <img src="../images/about/line.svg" alt="" />
+                <img
+                  className="h-[116px] lg:h-[90px] xl:h-[124px]"
+                  src="../images/about/line.svg"
+                  alt=""
+                />
               </li>
-              <li ref={ref3} className="text-center md:pr-15 lg:pr-23 xl:pr-27">
+              <li ref={ref3} className="text-center md:pr-10 lg:pr-23 xl:pr-27">
                 <span className="mb-6 block font-secondary text-3xl font-bold text-dark md:text-4xl xl:text-6xl">
                   <span ref={countUpRefs[2]}>10</span>
                   K+

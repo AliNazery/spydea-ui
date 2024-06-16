@@ -18,7 +18,7 @@ export default function Features() {
                 data-aos="fade-up-sm"
               >
                 <h2
-                  className="mb-6 font-semibold text-h2"
+                  className="mb-6 font-semibold text-h2 md:text-mdh2"
                   data-aos="fade-up-sm"
                   data-aos-delay="50"
                 >

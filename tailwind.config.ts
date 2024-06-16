@@ -108,6 +108,7 @@ const config: Config = {
         "15px": "15px !important",
         customMarker: "1.125rem",
         h2: "1.831093128rem",
+        mdh2: "2.28886641rem",
         h4: "1.5129rem",
         h6: "1rem",
       },
@@ -132,6 +133,9 @@ const config: Config = {
         "col-10": "83.33333333333334%",
         "col-6": "50%",
         "calc-100-minus-80": "calc(100% - 80px)",
+      },
+      columns: {
+        '2': '2',
       },
       quotImae: {
         qbg: "url(./images/blog/qoute.svg)",
