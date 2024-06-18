@@ -9,7 +9,7 @@ const AOSWrapper = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Duration of animation in milliseconds
-      easing: 'ease-in-out', // Easing function
+      easing: 'ease-in-out-back', // Easing function
       once: true, // Whether animation should happen only once
     });
   }, []);

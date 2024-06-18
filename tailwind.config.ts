@@ -111,6 +111,7 @@ const config: Config = {
         mdh2: "2.28886641rem",
         h4: "1.5129rem",
         h6: "1rem",
+        copyp: ["15px", { lineHeight: "1.625rem" }],
       },
       boxShadow: {
         default: "0 15px 60px rgba(0, 0, 0, .06)",
@@ -135,7 +136,7 @@ const config: Config = {
         "calc-100-minus-80": "calc(100% - 80px)",
       },
       columns: {
-        '2': '2',
+        "2": "2",
       },
       quotImae: {
         qbg: "url(./images/blog/qoute.svg)",
@@ -163,7 +164,10 @@ const config: Config = {
         borderColor: "#F9FAFB",
         foColor: "#C5C5C5",
         hoverCo: "#ECECEC",
+        light: "#e6e1e1",
         noticep: "rgb(85 85 85);",
+        footerli: "hsla(0, 0%, 100%, .8);",
+        copyco: "#ffffff",
         noticetip: "rgb(64 210 148 )",
         noticeinfo: "rgb(227 167 44 )",
         noticewarning: "rgb(219 44 35 )",
