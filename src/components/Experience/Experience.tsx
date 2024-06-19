@@ -98,18 +98,6 @@ export default function Experience() {
                 />
               </div>
             ))}
-            {/* <div className="active shadow-default group relative">
-              <div className="invisible h-0 opacity-70 transition-opacity duration-300 ">
-                <Image
-                  alt="feature image"
-                  width="840"
-                  height="610"
-                  data-nimg="1"
-                  className="h-full w-full rounded-xl"
-                  src={tabs[activeTab].imageSrc}
-                />
-              </div>
-            </div> */}
             <div
               data-aos="fade-up-md"
               className="pointer-events-none absolute right-[-40px] top-[-50px] -z-10 hidden select-none lg:block"

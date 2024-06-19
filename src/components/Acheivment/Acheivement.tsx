@@ -9,16 +9,20 @@ export default function Acheivement() {
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
 
-  const countUpRefs = [useRef(null), useRef(null), useRef(null)];
+   const countUpRefs = [
+     useRef<HTMLSpanElement | null>(null),
+     useRef<HTMLSpanElement | null>(null),
+     useRef<HTMLSpanElement | null>(null),
+   ];
 
   useEffect(() => {
-    if (inView1) {
+    if (inView1 && countUpRefs[0].current) {
       new CountUp(countUpRefs[0].current, 94).start();
     }
-    if (inView2) {
+    if (inView2 && countUpRefs[1].current) {
       new CountUp(countUpRefs[1].current, 70).start();
     }
-    if (inView3) {
+    if (inView3 && countUpRefs[2].current) {
       new CountUp(countUpRefs[2].current, 10).start();
     }
   }, [inView1, inView2, inView3]);

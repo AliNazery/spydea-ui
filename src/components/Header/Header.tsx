@@ -115,7 +115,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link lg:py-4 xl:px-6" href="/Linkbout">
+                <Link className="nav-link lg:py-4 xl:px-6" href="/about">
                   About
                 </Link>
               </li>
