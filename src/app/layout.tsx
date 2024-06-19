@@ -26,7 +26,7 @@ export default function RootLayout({
           <AOSWrapper />
           <Announcement />
           {/* <OverlayImage /> */}
-          <Header />
+        <Header />
           {children}
           <Footer />
       </body>

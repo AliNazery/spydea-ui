@@ -115,6 +115,9 @@ const config: Config = {
       },
       boxShadow: {
         default: "0 15px 60px rgba(0, 0, 0, .06)",
+        navdrop: "0 4px 15px rgba(0,0,0,.05)",
+        shdwhead: "0 20px 25px rgba(0,0,0,.03)",
+        navwrap: "0 10px 10px rgba(0,0,0,.07)",
         custom:
           "0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1), 4px 0 6px rgba(0, 0, 0, 0.1), -4px 0 6px rgba(0, 0, 0, 0.1)",
         "custom-soft":
@@ -202,6 +205,18 @@ const config: Config = {
   plugins: [
     function ({ addUtilities }) {
       const newUtilities = {
+        ".clip-path-polygon": {
+          "clip-path": "polygon(0 -1px,100% -1px,100% 100%,0 38%)",
+        },
+        ".clip-path-feature-polygon": {
+          "clip-path": "polygon(0 0, 100% 0, 100% 60%, 0 100%)",
+        },
+        ".clip-path-Innovative-polygon": {
+          "clip-path": "polygon(0 25%, 100% 0, 100% 100%, 0 100%)",
+        },
+        ".clip-path-article-polygon": {
+          "clip-path": "polygon(0 0, 100% 0, 100% 90%, 0 60%)",
+        },
         "after-hero": {
           clipPath:
             "polygon(38% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 30%)",

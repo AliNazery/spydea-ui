@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Article() {
   return (
-    <section className="section-md articles relative z-20 overflow-hidden after:-z-10 py-[100px] md:py-[200px]">
+    <section className="section-md articles relative z-20 overflow-hidden py-[100px] md:py-[200px] after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-full after:bg-bgo1Color after:content-[''] after:clip-path-article-polygon">
       <div className="container relative z-30 sm:px-6">
         <div className="flex flex-wrap items-end justify-between pb-12 -mx-3">
           <div className="lg:w-8/12 xl:w-6/12 px-3">

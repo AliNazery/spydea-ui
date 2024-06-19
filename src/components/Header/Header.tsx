@@ -1,7 +1,8 @@
 "use client";
-import Link from "next/link";
-import { useState, useEffect } from "react";
+
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +11,7 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
       setSticky(true);
@@ -17,9 +19,13 @@ const Header = () => {
       setSticky(false);
     }
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleStickyNavbar);
-  });
+    return () => {
+      window.removeEventListener("scroll", handleStickyNavbar);
+    };
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,28 +34,25 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header z-50 ${
-          sticky ? "bg-white shadow-lg" : "bg-quaternary/20"
-        } xs:h-18 h-20`}
+        className={`header z-50 bg-quaternary/20 top-[-1px] sticky transition-colors duration-200 ease-out ${
+          sticky ? "bg-white z-999 shadow-shdwhead" : "bg-opacity-0"
+        }`}
       >
-        <nav
-          className={`flex flex-wrap items-center justify-center lg:justify-between h-auto
-      pt-4 pb-4 lg:py-5 transition-padding duration-200 ease-in-out
-      container relative z-30
-      xs:px-4 xs:max-w-[480px] sm:mx-0 sm:px-6 sm:max-w-[575px]
-      md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1320px] mx-auto `}
-        >
-          <Link href="/" className="navbar-brand xs:text-[15px]">
+        <nav className="navbar container relative z-30 flex flex-wrap items-center justify-center sm:px-6 py-3 transition-[padding] duration-200 ease-out">
+          <Link className="navbar-brand" href="/">
             <Image
-              alt="wamaSolution"
+              alt="Wama-solution"
               width="158"
               height="36"
-              className="transparent"
+              decoding="async"
+              data-nimg="1"
+              // style="color:transparent"
+              // srcSet="/_next/image?url=%2Fimages%2Flogo-dark.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Flogo-dark.png&amp;w=384&amp;q=75 2x"
               src="/images/logo/logo-dark.png"
             />
           </Link>
           <button
-            className={`navbar-toggler group relative xs:ml-[276px] sm:ml-[355px] md:ml-[548px] border-2 p-[4px] rounded-md border-black lg:hidden md:block ${
+            className={`navbar-toggler group lg:hidden relative ml-auto lg:ml-4 block rounded-md border-2 border-black/75 p-1 ${
               isOpen ? "active" : ""
             }`}
             aria-label="navbar toggler"
@@ -96,128 +99,140 @@ const Header = () => {
             </div>
           </button>
           <div
-            className={`flex flex-col ${
+            className={`navbar-wrapper ${
               isOpen
-                ? "flex flex-col bg-white justify-between items-center h-auto rounded-xl p-3"
+                ? "h-auto rounded-lg p-3 opacity-100 shadow-md max-h-[calc(100vh-250%)] overflow-auto"
                 : "hidden"
-            } w-full lg:w-auto bg-transparent h-auto  flex-row overflow-visible opacity-100`}
+            } lg:flex lg:flex-row lg:items-center lg:justify-between lg:w-auto`}
           >
-            <ul
-              className={`order-2 w-full ${
-                isOpen
-                  ? "flex flex-col items-center bg-white w-full md:w-full space-y-4 py-4"
-                  : "hidden"
-              } md:flex md:flex-col md:items-center md:space-y-4 lg:flex-row lg:space-x-9 lg:space-y-0`}
-            >
-              <li className="relative z-10 mr-0">
+            <ul className="navbar-nav flex w-full flex-col items-center text-center order-3 mx-auto md:text-left lg:order-2 lg:ml-auto lg:mr-0 lg:flex-row lg:w-auto lg:bg-transparent ">
+              <li className="nav-item relative text-center z-10 mr-0 lg:text-left">
                 <Link
+                  className="nav-link lg:pl-0 pointer select-none lg:py-4 xl:pr-6"
                   href="/"
-                  className="nav-link text-[15px] cursor-pointer select-none lg:py-4 lg:pl-0 bg-transparent"
                 >
                   Home
                 </Link>
               </li>
-              <li className="relative z-10 mr-0">
-                <Link
-                  href="/about"
-                  className="nav-link text-[15px] cursor-pointer select-none lg:py-4 lg:pl-0 bg-transparent"
-                >
+              <li className="nav-item">
+                <Link className="nav-link lg:py-4 xl:px-6" href="/Linkbout">
                   About
                 </Link>
               </li>
-              <li className="relative z-10 mr-0">
-                <Link
-                  href="/blog"
-                  className="nav-link text-[15px] cursor-pointer select-none lg:py-4 lg:pl-0 bg-transparent"
-                >
+              <li className="nav-item">
+                <Link className="nav-link lg:py-4 xl:px-6" href="/blog">
                   Blog
                 </Link>
               </li>
-              <li className="relative z-10 mr-0 lg:text-left nav-dropdown group">
-                <label htmlFor="expand" className="cursor-pointer">
-                  <span className="nav-link text-[15px] cursor-pointer select-none lg:py-4 lg:pl-0 bg-transparent inline-flex items-center hover:text-black">
+              <li className="nav-item nav-dropdown group">
+                <label htmlFor="expand">
+                  <span className="nav-link inline-flex items-center lg:py-4 xl:px-6 ">
                     Pages
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
-                      strokeWidth="0"
+                      stroke-width="0"
                       viewBox="0 0 16 16"
                       height="1em"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
                         d="M7.976 10.072l4.357-4.357.62.618L8.284 11h-.618L3 6.333l.619-.618 4.357 4.357z"
                       ></path>
                     </svg>
                   </span>
                 </label>
                 <input className="peer hidden" type="checkbox" id="expand" />
-                <ul className="nav-dropdown-list absolute hidden peer-checked:block lg:group-hover:block lg:group-hover:opacity-100 shadow-lg w-[250px] rounded-md bg-white p-3 ">
-                  <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
+                <ul className="nav-dropdown-list invisible absolute m-0 block w-[250px] shadow-navdrop rounded-lg bg-white z-10 lg:group-hover:visible lg:group-hover:opacity-100 peer-checked:max-lg:block p-3">
+                  <li className="nav-dropdown-item py-2 hover:bg-hoverCo hover:rounded-lg">
                     <Link
+                      className="nav-dropdown-link py-1 lg:py-2"
                       href="/element"
-                      className="nav-dropdown-link block w-full p-1 px-4 font-normal text-gray-900"
                     >
                       Elements
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
-                    <Link href="/integration" className="nav-dropdown-link">
+                  <li className="nav-dropdown-item py-2 hover:bg-hoverCo hover:rounded-lg">
+                    <Link
+                      className="nav-dropdown-link py-1 lg:py-2"
+                      href="/integration"
+                    >
                       Integration
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
-                    <Link href="/careers" className="nav-dropdown-link">
+                  <li className="nav-dropdown-item py-2 hover:bg-hoverCo hover:rounded-lg">
+                    <Link
+                      className="nav-dropdown-link py-1 lg:py-2"
+                      href="careers"
+                    >
                       Careers
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
-                    <Link href="/pricing" className="nav-dropdown-link">
+                  <li className="nav-dropdown-item py-2 hover:bg-hoverCo hover:rounded-lg">
+                    <Link
+                      className="nav-dropdown-link py-1 lg:py-2"
+                      href="/pricing"
+                    >
                       Pricing
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
-                    <Link href="/authors" className="nav-dropdown-link">
+                  <li className="nav-dropdown-item py-2 hover:bg-hoverCo hover:rounded-lg">
+                    <Link
+                      className="nav-dropdown-link py-1 lg:py-2"
+                      href="/authors"
+                    >
                       Authors
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
-                    <Link href="/contact" className="nav-dropdown-link">
+                  <li className="nav-dropdown-item py-2 hover:bg-hoverCo hover:rounded-lg">
+                    <Link
+                      className="nav-dropdown-link py-1 lg:py-2"
+                      href="/contact"
+                    >
                       Contact
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
-                    <Link href="/signUp" className="nav-dropdown-link">
+                  <li className="nav-dropdown-item py-2 hover:bg-hoverCo hover:rounded-lg">
+                    <Link
+                      className="nav-dropdown-link py-1 lg:py-2"
+                      href="/signUp"
+                    >
                       Sign up
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
-                    <Link href="/terms" className="nav-dropdown-link">
+                  <li className="nav-dropdown-item py-2 hover:bg-hoverCo hover:rounded-lg">
+                    <Link
+                      className="nav-dropdown-link py-1 lg:py-2"
+                      href="/terms"
+                    >
                       Terms & Conditions
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item rounded-lg transition-all duration-200 tex-[15px] py-2 hover:bg-hoverCo">
-                    <Link href="/404" className="nav-dropdown-link">
+                  <li className="nav-dropdown-item py-2 hover:bg-hoverCo hover:rounded-lg">
+                    <Link
+                      className="nav-dropdown-link py-1 lg:py-2"
+                      href="/404"
+                    >
                       404 Page
                     </Link>
                   </li>
                 </ul>
               </li>
             </ul>
-            <div className="order-2 mx-auto mb-4 flex flex-col items-center lg:mx-0 lg:mb-0 lg:ml-7 lg:flex-row">
+            <div className="order-2 mx-auto mb-[0.75rem] flex flex-col items-center lg:mx-0 lg:mb-0 lg:ml-7 lg:flex-row">
               <div className="flex flex-col justify-center gap-5 pt-4 text-center lg:ml-7 lg:flex-row lg:gap-7 lg:pt-0 lg:text-left">
                 <Link
+                  className="btn-login btn-outline-primary w-[200px] min-[340px]:w-[300px] lg:w-auto"
                   href="/login"
-                  className="btn btn-outline-primary w-52 lg:w-auto"
                 >
                   Login
                 </Link>
                 <Link
+                  className="btn-login btn-primary w-[200px] min-[340px]:w-[300px] lg:w-auto"
                   href="/contact"
-                  className="btn btn-primary w-52 lg:w-auto"
                 >
                   Get Started
                 </Link>
@@ -225,13 +240,15 @@ const Header = () => {
             </div>
           </div>
         </nav>
-        <div className="line-bg absolute z-20 flex justify-between">
-          <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
-          <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
-          <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
-          <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
-          <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
-          <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
+        <div className="line-bg absolute z-20">
+          <div className="container flex justify-between">
+            <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
+            <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
+            <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
+            <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
+            <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
+            <span className="bg-line-yellow inline-block h-full opacity-50 md:opacity-100"></span>
+          </div>
         </div>
       </header>
     </>

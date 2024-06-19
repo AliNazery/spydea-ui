@@ -147,13 +147,6 @@ audio, canvas, embed, iframe, img, object, svg, video {
   }
 }
 
-
-@media (min-width: 1024px) {
-  .hidden-navbar-toggler {
-    display: none;
-  }
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;

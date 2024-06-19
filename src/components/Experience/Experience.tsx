@@ -1,7 +1,32 @@
+'use client'
 import Image from 'next/image';
+import { useState } from "react";
 import React from 'react'
 
 export default function Experience() {
+
+   const [activeTab, setActiveTab] = useState(0);
+
+   const tabs = [
+     {
+       title: "Features You will Need",
+       description:
+         "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem.",
+       imageSrc: "/images/experience/dash.png",
+     },
+     {
+       title: "Increase Your Sales",
+       description:
+         "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem.",
+       imageSrc: "/images/experience/dash2.jpg",
+     },
+     {
+       title: "Choose Right Plan",
+       description:
+         "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem.",
+       imageSrc: "/images/experience/dash3.jpg",
+     },
+   ];
   return (
     <section className="section relative z-20 overflow-hidden py-[60px] md:py-[100px]">
       <div className="container relative z-30 sm:px-6">
@@ -29,61 +54,62 @@ export default function Experience() {
         </div>
         <div className="row flex flex-wrap -mt-6" data-tab-group="">
           <div className="flex flex-wrap gap-4 mt-6 px-3 xl:w-4/12 lg:gap-6">
-            <div data-aos="fade-up-sm">
-              <button className="group active">
-                <div className="h-full rounded-xl border border-border/50 bg-white px-4 py-4 text-left group-[.active]:border-white group-[.active]:shadow-md xl:px-8 xl:py-10">
-                  <h3 className="text-sm font-semibold xl:mb-6 xl:text-2xl">
-                    Features You will Need
-                  </h3>
-                  <p className="hidden xl:block">
-                    Proin eget tortor risus. Donec sollicitudin molestie
-                    imperdiet et, porttitor at sem.
-                  </p>
-                </div>
-              </button>
-            </div>
-            <div data-aos="fade-up-sm">
-              <button className="group false">
-                <div className="h-full rounded-xl border border-border/50 bg-white px-4 py-4 text-left group-[.active]:border-white group-[.active]:shadow-md xl:px-8 xl:py-10">
-                  <h3 className="text-sm font-semibold xl:mb-6 xl:text-2xl">
-                    Increase Your Sales
-                  </h3>
-                  <p className="hidden xl:block">
-                    Proin eget tortor risus. Donec sollicitudin molestie
-                    imperdiet et, porttitor at sem.
-                  </p>
-                </div>
-              </button>
-            </div>
-            <div data-aos="fade-up-sm">
-              <button className="group false">
-                <div className="h-full rounded-xl border border-border/50 bg-white px-4 py-4 text-left group-[.active]:border-white group-[.active]:shadow-md xl:px-8 xl:py-10">
-                  <h3 className="text-sm font-semibold xl:mb-6 xl:text-2xl">
-                    Choose Right Plan
-                  </h3>
-                  <p className="hidden xl:block">
-                    Proin eget tortor risus. Donec sollicitudin molestie
-                    imperdiet et, porttitor at sem.
-                  </p>
-                </div>
-              </button>
-            </div>
+            {tabs.map((tab, index) => (
+              <div key={index} data-aos="fade-up-sm">
+                <button
+                  className={`group ${activeTab === index ? "active" : ""}`}
+                  onClick={() => setActiveTab(index)}
+                >
+                  <div
+                    className={`h-full rounded-xl border border-border/50 bg-white px-4 py-4 text-left ${
+                      activeTab === index
+                        ? "border-white shadow-md"
+                        : "group-[.active]:border-white group-[.active]:shadow-md"
+                    } xl:px-8 xl:py-10`}
+                  >
+                    <h3 className="text-sm font-semibold xl:mb-6 xl:text-2xl">
+                      {tab.title}
+                    </h3>
+                    <p className="hidden xl:block">{tab.description}</p>
+                  </div>
+                </button>
+              </div>
+            ))}
           </div>
-          <div className="relative xl:w-8/12 lg:w-full mt-6 px-3" data-aos="fade-in">
-            <div className="active shadow-default group relative">
-              <div className="invisible h-0 opacity-70 transition-opacity duration-300 group-[.active]:visible group-[.active]:h-full group-[.active]:opacity-100">
+          <div
+            className="relative xl:w-8/12 lg:w-full mt-6 px-3"
+            data-aos="fade-in"
+          >
+            {tabs.map((tab, index) => (
+              <div
+                key={index}
+                className={`${
+                  activeTab === index
+                    ? "visible opacity-100"
+                    : "hidden opacity-0"
+                } transition-opacity duration-300`}
+              >
+                <Image
+                  alt="feature image"
+                  width="840"
+                  height="610"
+                  className="h-full w-full rounded-xl"
+                  src={tab.imageSrc}
+                />
+              </div>
+            ))}
+            {/* <div className="active shadow-default group relative">
+              <div className="invisible h-0 opacity-70 transition-opacity duration-300 ">
                 <Image
                   alt="feature image"
                   width="840"
                   height="610"
                   data-nimg="1"
                   className="h-full w-full rounded-xl"
-                //   style="color:transparent"
-                //   srcSet="/_next/image?url=%2Fimages%2Ftab-contents%2Ffeature-tab-content-1.jpg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fimages%2Ftab-contents%2Ffeature-tab-content-1.jpg&amp;w=1920&amp;q=75 2x"
-                  src="/images/experience/dash.png"
+                  src={tabs[activeTab].imageSrc}
                 />
               </div>
-            </div>
+            </div> */}
             <div
               data-aos="fade-up-md"
               className="pointer-events-none absolute right-[-40px] top-[-50px] -z-10 hidden select-none lg:block"

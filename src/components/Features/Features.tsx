@@ -1,9 +1,8 @@
 import React from 'react'
-import Cards from './Cards'
 
 export default function Features() {
     return (
-      <section className="section features py-[60px] md:py-[100px] relative z-20 overflow-hidden after:-z-10">
+      <section className="section features py-[60px] md:py-[100px] relative z-20 overflow-hidden after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-full after:bg-bgo1Color after:content-[''] after:clip-path-feature-polygon">
         <div className="container relative z-30 px-4 sm:px-6 ">
           <div className="row flex flex-wrap items-end justify-between pb-12">
             <div className="lg:w-8/12 xl:w-6/12 px-3">
