@@ -1,14 +1,18 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
 
 export default function Team() {
   return (
     <div>
-      <section className="lg:py-[200px] py-[100px] relative z-20 overflow-hidden">
-        <div className="container relative z-20 mx-auto xl:max-w-[1280px] w-full pr-6 pl-6">
-          <div className="flex flex-wrap mt-0 -mx-[0.75rem] items-end justify-between">
+      <section
+        id={"team"}
+        className="section-lg has-bg-shape team-member relative z-20 overflow-hidden py-[100px] lg:py-[200px] xl:py-[300px] after:content-[''] after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-bgo1Color after:clip-path-team-polygon"
+      >
+        <div className="container relative z-20 sm:px-6">
+          <div className="row items-end justify-between">
             <div
               data-aos="fade-up-sm"
-              className="box-border max-w-full pr-[0.75rem] pl-[0.75rem] mt-0 lg:flex-none w-2/3 xl:flex-none w-1/2"
+              className="lg:w-8/12 xl:w-6/12 px-3 box-border flex-shrink-0 w-full max-w-full"
             >
               <span
                 className="mb-6 inline-block font-medium uppercase text-red-400"
@@ -17,9 +21,9 @@ export default function Team() {
               >
                 OUR TEAM MEMBERS
               </span>
-              <div className="mb-8 border-l-2 border-borderLeft border-opacity-50 py-2 pl-6 lg:mb-0">
+              <div className="mb-8 border-l-2 border-dark border-opacity-50 py-2 pl-6 lg:mb-0">
                 <h2
-                  className="font-semibold text-[2.28886641rem] leading-[1.375] text-gray-900"
+                  className="font-semibold text-h2 md:text-mdh2"
                   data-aos="fade-up-sm"
                   data-aos-delay="100"
                 >
@@ -30,22 +34,22 @@ export default function Team() {
             <div
               data-aos="fade-right-sm"
               data-aos-delay="150"
-              className="flex-none w-auto box-border max-w-full pr-3 pl-3 mt-0 sm:py-[17px]"
+              className="col-auto flex-none w-auto px-3 box-border max-w-full"
             >
-              <a href="#" className="btn btn-primary btn-md">
+              <a href="#" className="btn-footer btn-primary btn-md">
                 Become A Team Member
               </a>
             </div>
           </div>
-          <div className="flex flex-wrap -mx-3 mt-0 pt-16 space-y-4">
+          <div className="row gy-4 pt-16 -mt-6">
             <div
               data-aos="fade-up-sm"
               data-aos-delay="50"
-              className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-4"
+              className="md:w-6/12 lg:w-4/12 xl:w-3/12 px-3 mt-6 box-border w-full max-w-full"
             >
               <div className="shadow-default overflow-hidden rounded-xl bg-white p-3 pb-0 transition-all duration-300 hover:-translate-y-1">
                 <div className="h-full max-h-[900px] w-full">
-                  <img
+                  <Image
                     alt="Virtual Reality for Training"
                     loading="lazy"
                     width="280"
@@ -53,7 +57,7 @@ export default function Team() {
                     decoding="async"
                     data-nimg="1"
                     className="h-full w-full rounded-xl rounded-b-none object-cover"
-                    src="../images/team/1.jpg"
+                    src="/images/team/1.jpg"
                   />
                 </div>
                 <div className="px-5 py-8">
@@ -138,11 +142,11 @@ export default function Team() {
             <div
               data-aos="fade-up-sm"
               data-aos-delay="100"
-              className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-4"
+              className="md:w-6/12 lg:w-4/12 xl:w-3/12 px-3 mt-6 box-border w-full max-w-full"
             >
               <div className="shadow-default overflow-hidden rounded-xl bg-white p-3 pb-0 transition-all duration-300 hover:-translate-y-1">
                 <div className="h-full max-h-[900px] w-full">
-                  <img
+                  <Image
                     alt="Virtual Reality for Training"
                     loading="lazy"
                     width="280"
@@ -150,7 +154,7 @@ export default function Team() {
                     decoding="async"
                     data-nimg="1"
                     className="h-full w-full rounded-xl rounded-b-none object-cover"
-                    src="../images/team/2.jpg"
+                    src="/images/team/2.jpg"
                   />
                 </div>
                 <div className="px-5 py-8">
@@ -235,11 +239,11 @@ export default function Team() {
             <div
               data-aos="fade-up-sm"
               data-aos-delay="150"
-              className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-4"
+              className="md:w-6/12 lg:w-4/12 xl:w-3/12 px-3 mt-6 box-border w-full max-w-full"
             >
               <div className="shadow-default overflow-hidden rounded-xl bg-white p-3 pb-0 transition-all duration-300 hover:-translate-y-1">
                 <div className="h-full max-h-[900px] w-full">
-                  <img
+                  <Image
                     alt="Virtual Reality for Training"
                     loading="lazy"
                     width="280"
@@ -247,7 +251,7 @@ export default function Team() {
                     decoding="async"
                     data-nimg="1"
                     className="h-full w-full rounded-xl rounded-b-none object-cover"
-                    src="../images/team/3.jpg"
+                    src="/images/team/3.jpg"
                   />
                 </div>
                 <div className="px-5 py-8">
@@ -332,11 +336,11 @@ export default function Team() {
             <div
               data-aos="fade-up-sm"
               data-aos-delay="200"
-              className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-4"
+              className="md:w-6/12 lg:w-4/12 xl:w-3/12 px-3 mt-6 box-border w-full max-w-full"
             >
               <div className="shadow-default overflow-hidden rounded-xl bg-white p-3 pb-0 transition-all duration-300 hover:-translate-y-1">
                 <div className="h-full max-h-[900px] w-full">
-                  <img
+                  <Image
                     alt="Virtual Reality for Training"
                     loading="lazy"
                     width="280"
@@ -344,7 +348,7 @@ export default function Team() {
                     decoding="async"
                     data-nimg="1"
                     className="h-full w-full rounded-xl rounded-b-none object-cover"
-                    src="../images/team/4.jpg"
+                    src="/images/team/4.jpg"
                   />
                 </div>
                 <div className="px-5 py-8">
@@ -429,11 +433,11 @@ export default function Team() {
             <div
               data-aos="fade-up-sm"
               data-aos-delay="250"
-              className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-4"
+              className="md:w-6/12 lg:w-4/12 xl:w-3/12 px-3 mt-6 box-border w-full max-w-full"
             >
               <div className="shadow-default overflow-hidden rounded-xl bg-white p-3 pb-0 transition-all duration-300 hover:-translate-y-1">
                 <div className="h-full max-h-[900px] w-full">
-                  <img
+                  <Image
                     alt="Virtual Reality for Training"
                     loading="lazy"
                     width="280"
@@ -441,7 +445,7 @@ export default function Team() {
                     decoding="async"
                     data-nimg="1"
                     className="h-full w-full rounded-xl rounded-b-none object-cover"
-                    src="../images/team/5.jpg"
+                    src="/images/team/5.jpg"
                   />
                 </div>
                 <div className="px-5 py-8">
@@ -526,11 +530,11 @@ export default function Team() {
             <div
               data-aos="fade-up-sm"
               data-aos-delay="300"
-              className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-4"
+              className="md:w-6/12 lg:w-4/12 xl:w-3/12 px-3 mt-6 box-border w-full max-w-full"
             >
               <div className="shadow-default overflow-hidden rounded-xl bg-white p-3 pb-0 transition-all duration-300 hover:-translate-y-1">
                 <div className="h-full max-h-[900px] w-full">
-                  <img
+                  <Image
                     alt="Virtual Reality for Training"
                     loading="lazy"
                     width="280"
@@ -538,7 +542,7 @@ export default function Team() {
                     decoding="async"
                     data-nimg="1"
                     className="h-full w-full rounded-xl rounded-b-none object-cover"
-                    src="../images/team/6.jpg"
+                    src="/images/team/6.jpg"
                   />
                 </div>
                 <div className="px-5 py-8">
@@ -623,11 +627,11 @@ export default function Team() {
             <div
               data-aos="fade-up-sm"
               data-aos-delay="350"
-              className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-4"
+              className="md:w-6/12 lg:w-4/12 xl:w-3/12 px-3 mt-6 box-border w-full max-w-full"
             >
               <div className="shadow-default overflow-hidden rounded-xl bg-white p-3 pb-0 transition-all duration-300 hover:-translate-y-1">
                 <div className="h-full max-h-[900px] w-full">
-                  <img
+                  <Image
                     alt="Virtual Reality for Training"
                     loading="lazy"
                     width="280"
@@ -635,7 +639,7 @@ export default function Team() {
                     decoding="async"
                     data-nimg="1"
                     className="h-full w-full rounded-xl rounded-b-none object-cover"
-                    src="../images/team/7.jpg"
+                    src="/images/team/7.jpg"
                   />
                 </div>
                 <div className="px-5 py-8">
@@ -720,11 +724,11 @@ export default function Team() {
             <div
               data-aos="fade-up-sm"
               data-aos-delay="400"
-              className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-4"
+              className="md:w-6/12 lg:w-4/12 xl:w-3/12 px-3 mt-6 box-border w-full max-w-full"
             >
               <div className="shadow-default overflow-hidden rounded-xl bg-white p-3 pb-0 transition-all duration-300 hover:-translate-y-1">
                 <div className="h-full max-h-[900px] w-full">
-                  <img
+                  <Image
                     alt="Virtual Reality for Training"
                     loading="lazy"
                     width="280"
@@ -732,7 +736,7 @@ export default function Team() {
                     decoding="async"
                     data-nimg="1"
                     className="h-full w-full rounded-xl rounded-b-none object-cover"
-                    src="../images/team/8.jpg"
+                    src="/images/team/8.jpg"
                   />
                 </div>
                 <div className="px-5 py-8">

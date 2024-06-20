@@ -1,18 +1,20 @@
 import MainSection from "@/components/Main";
-import GallerySection from "@/components/Section/GallerySection";
-import Vision from "@/components/Section/Vision";
 import React from "react";
-import Achieving from "@/components/Section/Achieving";
+import Acheivement from "@/components/Acheivment/Acheivement";
+import Photo from "@/components/Section/photo";
+import Tittle from "@/components/Section/titles";
 import Team from "@/components/Section/team";
+import JoinOurTeam from "@/components/Section/joinOurTeam";
 
 export default function About() {
   return (
     <>
       <MainSection />
-      <GallerySection />
-      <Vision />
-      <Achieving />
+      <Photo />
+      <Tittle/>
+      <Acheivement/>
       <Team />
+      <JoinOurTeam/>
     </>
   );
 }

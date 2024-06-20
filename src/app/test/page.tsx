@@ -1,4 +1,8 @@
 import React from 'react'
+import Photo from '../../components/Section/photo';
+import Tittle from '../../components/Section/titles';
+import Team from '../../components/Section/team';
+import JoinOurTeam from '../../components/Section/joinOurTeam';
 
 export default function Test() {
   return (
@@ -135,6 +139,10 @@ export default function Test() {
           </svg>
         </div>
       </section>
+      <Photo />
+      <Tittle />
+      <Team />
+      <JoinOurTeam/>
     </div>
   );
 }

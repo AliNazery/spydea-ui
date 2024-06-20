@@ -47,7 +47,7 @@ const config: Config = {
         "dotted-line":
           "url('data:image/svg+xml,%3Csvg width='1px' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='none' stroke='%23F96D61' stroke-width='2' stroke-dasharray='6, 14' stroke-dashoffset='0' stroke-linecap='square'/%3E%3C/svg%3E')",
         "line-bg": "url('/images/about/line.svg')",
-        "abthome": "url('/images/about/home.svg')",
+        abthome: "url('/images/about/home.svg')",
       },
       height: {
         "140p": "140%", // 140% height for the after element
@@ -182,6 +182,7 @@ const config: Config = {
         bxIcoColo: "rgb(115 177 255)",
         bgo1Color: "rgb(244 253 255)",
         noticeNote: "rgb(27 131 226/var(--tw-text-opacity))",
+        zinc: "rgb(113 113 122)",
         "custom-gray-marker": "#222",
       },
     },
@@ -223,6 +224,9 @@ const config: Config = {
         },
         ".clip-path-abtafter-polygon": {
           "clip-path": "polygon(0 -1%,100% 0,100% 85%,0 45%)",
+        },
+        ".clip-path-team-polygon": {
+          "clip-path": "polygon(0 12%,100% 0,100% 88%,0 100%)",
         },
         "after-hero": {
           clipPath:
