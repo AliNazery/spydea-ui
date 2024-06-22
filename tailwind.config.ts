@@ -228,6 +228,9 @@ const config: Config = {
         ".clip-path-team-polygon": {
           "clip-path": "polygon(0 12%,100% 0,100% 88%,0 100%)",
         },
+        ".clip-path-singleAuthor-polygon": {
+          "clip-path": "polygon(0 0,100% 0,100% 80%,0 50%)",
+        },
         "after-hero": {
           clipPath:
             "polygon(38% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 30%)",

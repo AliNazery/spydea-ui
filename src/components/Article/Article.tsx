@@ -46,8 +46,6 @@ export default function Article() {
                   decoding="async"
                   data-nimg="1"
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  // style="color:transparent"
-                  // srcSet="/_next/image?url=%2Fimages%2Farticles%2F1.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Farticles%2F1.jpg&amp;w=828&amp;q=75 2x"
                   src="/images/Article/2-1.jpg"
                 />
               </a>
@@ -66,8 +64,6 @@ export default function Article() {
                       decoding="async"
                       data-nimg="1"
                       className="h-[40px] w-[40px] object-cover"
-                      // style="color:transparent"
-                      // srcSet="/_next/image?url=%2Fimages%2Fauthors%2F1.jpg&amp;w=48&amp;q=75 1x, /_next/image?url=%2Fimages%2Fauthors%2F1.jpg&amp;w=96&amp;q=75 2x"
                       src="/images/Article/1-2.jpg"
                     />
                   </a>
@@ -107,8 +103,6 @@ export default function Article() {
                   decoding="async"
                   data-nimg="1"
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  // style="color:transparent"
-                  // srcSet="/_next/image?url=%2Fimages%2Farticles%2F2.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Farticles%2F2.jpg&amp;w=828&amp;q=75 2x"
                   src="/images/Article/1-1.jpg"
                 />
               </a>
@@ -127,8 +121,6 @@ export default function Article() {
                       decoding="async"
                       data-nimg="1"
                       className="h-[40px] w-[40px] object-cover"
-                      // style="color:transparent"
-                      // srcSet="/_next/image?url=%2Fimages%2Fauthors%2F2.jpg&amp;w=48&amp;q=75 1x, /_next/image?url=%2Fimages%2Fauthors%2F2.jpg&amp;w=96&amp;q=75 2x"
                       src="/images/Article/2-2.jpg"
                     />
                   </a>
@@ -168,8 +160,6 @@ export default function Article() {
                   decoding="async"
                   data-nimg="1"
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  // style="color:transparent"
-                  // srcSet="/_next/image?url=%2Fimages%2Farticles%2F3.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Farticles%2F3.jpg&amp;w=828&amp;q=75 2x"
                   src="/images/Article/3-1.jpg"
                 />
               </a>
@@ -188,8 +178,6 @@ export default function Article() {
                       decoding="async"
                       data-nimg="1"
                       className="h-[40px] w-[40px] object-cover"
-                      // style="color:transparent"
-                      // srcSet="/_next/image?url=%2Fimages%2Fauthors%2F3.jpg&amp;w=48&amp;q=75 1x, /_next/image?url=%2Fimages%2Fauthors%2F3.jpg&amp;w=96&amp;q=75 2x"
                       src="/images/Article/3-2.jpg"
                     />
                   </a>
