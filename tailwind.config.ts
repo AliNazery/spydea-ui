@@ -109,7 +109,9 @@ const config: Config = {
         "15px": "15px !important",
         customMarker: "1.125rem",
         h2: "1.831093128rem",
+        h1: "2.2522445474399997rem",
         mdh2: "2.28886641rem",
+        mdh1: "2.8153056842999997rem",
         h4: "1.5129rem",
         h6: "1rem",
         copyp: ["15px", { lineHeight: "1.625rem" }],
@@ -146,9 +148,24 @@ const config: Config = {
         qbg: "url(./images/blog/qoute.svg)",
       },
       colors: {
+        primary: {
+          light: "#00C6FF", // Light Blue
+          DEFAULT: "#0072FF", // Primary Blue
+          dark: "#011F4B", // Dark Blue
+        },
+        secondari: {
+          white: "#FFFFFF", // White
+          lightGrey: "#F5F5F5", // Light Grey
+          darkGrey: "#333333", // Dark Grey
+          silver: "#C0C0C0", // Silver
+          yellow: "#FFD700", // Soft Yellow
+          turquoise: "#40E0D0", // Turquoise
+        },
         current: "currentColor",
         transparent: "transparent",
         black: "#222222",
+        // the blue color for buttons
+        blue: "#0072FF",
         linkBlack: "rgb(8 8 8)",
         davy_grey: "#555555",
         yellow_tan: "#FDE179",
@@ -181,6 +198,7 @@ const config: Config = {
         bxIcoCol: "rgb(115 207 168)",
         bxIcoColo: "rgb(115 177 255)",
         bgo1Color: "rgb(244 253 255)",
+        htmlColor: "rgb(0 0 0/var(1))",
         noticeNote: "rgb(27 131 226/var(--tw-text-opacity))",
         zinc: "rgb(113 113 122)",
         "custom-gray-marker": "#222",
@@ -222,6 +240,9 @@ const config: Config = {
         ".clip-path-abtbefore-polygon": {
           "clip-path": "polygon(0 -1%,100% 0,100% 85%,0 45%)",
         },
+        ".clip-path-project-polygon": {
+          "clip-path": "polygon(0 40%, 100% 0, 100% 100%, 0 100%)",
+        },
         ".clip-path-abtafter-polygon": {
           "clip-path": "polygon(0 -1%,100% 0,100% 85%,0 45%)",
         },
@@ -230,6 +251,12 @@ const config: Config = {
         },
         ".clip-path-singleAuthor-polygon": {
           "clip-path": "polygon(0 0,100% 0,100% 80%,0 50%)",
+        },
+        ".clip-path-herobefore-polygon": {
+          "clip-path": "polygon(38% 0,100% 0,100% 50%,100% 100%,0 100%,0 30%)",
+        },
+        ".clip-path-hero-polygon": {
+          "clip-path": "polygon(32% 0,100% 0,100% 50%,100% 100%,0 100%,1% 28%)",
         },
         "after-hero": {
           clipPath:
