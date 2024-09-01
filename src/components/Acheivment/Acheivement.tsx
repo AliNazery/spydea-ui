@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import { CountUp } from "countup.js";
-import SectionMiddleTitle from "../Common/SectionMiddleTitle";
+import SectionMiddleTitle from "../Common/Title/SectionMiddleTitle";
 import { listItems as items } from "./ListItems";
 import { AcheivementOneSvg, AcheivementTwoSvg } from "../Common/svg";
 

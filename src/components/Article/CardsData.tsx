@@ -1,0 +1,32 @@
+export const cardsData = [
+  {
+    id: 1,
+    postUrl: "/blog/post-1",
+    imageUrl: "/images/Article/2-1.jpg",
+    authorUrl: "/authors/benjamin",
+    authorImage: "/images/Article/1-2.jpg",
+    authorName: "benjamin",
+    title: "The Real Product From The Buyers Improvements In Overflow Basis.",
+    date: "04 Apr, 2022",
+  },
+  {
+    id: 2,
+    postUrl: "/blog/post-2",
+    imageUrl: "/images/Article/1-1.jpg",
+    authorUrl: "/authors/daniel-mitchell",
+    authorImage: "/images/Article/2-2.jpg",
+    authorName: "Daniel Mitchell",
+    title: "The Real Product From The Buyers Improvements In Overflow Basis.",
+    date: "04 Apr, 2022",
+  },
+  {
+    id: 3,
+    postUrl: "/blog/post-3",
+    imageUrl: "/images/Article/3-1.jpg",
+    authorUrl: "/authors/daniel-mitchell",
+    authorImage: "/images/Article/3-2.jpg",
+    authorName: "Daniel Mitchell",
+    title: "The Real Product From The Buyers Improvements In Overflow Basis.",
+    date: "04 Apr, 2022",
+  },
+];

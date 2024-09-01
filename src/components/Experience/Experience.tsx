@@ -4,7 +4,7 @@ import { useState } from "react";
 import React from "react";
 import { tabs } from "./ExperienceData";
 import { ExperienceOneSvg, ExperienceTwoSvg } from "../Common/svg";
-import SectionMiddleTitle from "../Common/SectionMiddleTitle";
+import SectionMiddleTitle from "../Common/Title/SectionMiddleTitle";
 
 export default function Experience() {
   const [activeTab, setActiveTab] = useState(0);

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "../Common/Title/SectionTitle";
 import { FeatureFiveSvg, FeatureSixSvg } from "../Common/svg";
 import { features } from "./FeatureData";
 
