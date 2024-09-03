@@ -53,7 +53,7 @@
   }
 
   .btn {
-    @apply inline-block whitespace-nowrap rounded-lg px-7 py-[13px] sm:py-[15px] text-[15px] font-semibold transition-colors duration-200
+    @apply inline-block whitespace-nowrap rounded-lg px-7 sm:py-[13px]  text-[15px] font-semibold transition-colors duration-200
   }
 
   .btn-login {
