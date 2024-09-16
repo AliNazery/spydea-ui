@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
-import { brandImages } from '../Hero/Data';
+import { brandImages } from './Brand';
+
 
 export default function Brands() {
   return (
@@ -17,8 +18,8 @@ export default function Brands() {
                   src={src}
                   alt={`Brand ${index + 1}`}
                   className="inline-block py-4 sm:mx-auto text-transparent"
-                  width={150} // Example width, adjust as needed
-                  height={100} // Example height, adjust as needed
+                  width={150} 
+                  height={100} 
                   layout="responsive"
                 />
               </div>

@@ -1,4 +1,4 @@
-"use lient"
+
 
 export const HeroOne = () => (
  
