@@ -22,8 +22,6 @@ export default function Innovative() {
                   decoding="async"
                   data-nimg="1"
                   className="mx-auto block xl:mx-auto"
-                  //   style="color:transparent"
-                  //   srcSet="/_next/image?url=%2Fimages%2Ffeature-1.png&amp;w=750&amp;q=75 1x, /_next/image?url=%2Fimages%2Ffeature-1.png&amp;w=1920&amp;q=75 2x"
                   src="/images/innovative/feature-1.png"
                 />
 

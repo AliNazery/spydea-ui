@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import SectionTitleTwo from "../Common/Title/SectionTitleTwo";
 import { TeamOneSvg, TeamTwoSvg } from "../Common/AboutSvg";
 import { FaceBookIcon, LinkedinIcon, TwitterIcon } from "../Common/Icons/footerIcon/SocialIcon";
 import Link from "next/link";

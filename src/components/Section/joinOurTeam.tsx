@@ -48,7 +48,7 @@ export default function JoinOurTeam() {
                 Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam
                 vehicula elementum"
           />
-          <div className="row gy-4 relative justify-center -mt-6">
+          <div className="row relative justify-center -mt-6">
             {positions.map((position, index) => (
               <div
                 key={index}

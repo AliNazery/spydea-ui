@@ -1,19 +1,9 @@
-import Image from "next/image";
 import React from "react";
 import {
   FooterIconFive,
   FooterIconFour,
-  FooterIconOne,
-  FooterIconSix,
-  FooterIconThree,
-  FooterIconTwo,
+   FooterIconSix,
 } from "../Common/Icons/footerIcon/FooterIcon";
-import {
-  FaceBookIcon,
-  LinkedinIcon,
-  SKypeIcon,
-  TwitterIcon,
-} from "../Common/Icons/footerIcon/SocialIcon";
 import FooterBanner from "./FooterBanner";
 import MainFooter from "./MainFooter";
 

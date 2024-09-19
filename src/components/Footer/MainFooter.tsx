@@ -55,7 +55,7 @@ export default function MainFooter() {
               </ul>
             </div>
           </div>
-          <div className="box-border flex-shrink-0 w-full max-w-full sm:w-6/12 md:w-4/12 lg:w-2/12 px-3 mt-12 lg:mt-[24px]xl:w-2/12">
+          <div className="box-border flex-shrink-0 w-full max-w-full sm:w-6/12 md:w-4/12 lg:w-2/12 px-3 mt-6 lg:mt-[24px]xl:w-2/12">
             <div className="widget pl-0">
               <h3 className="widget-title md:mb-8 ">Resources</h3>
               <ul className="widget-content flex flex-col gap-3 md:gap-6">
